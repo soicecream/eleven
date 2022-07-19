@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/soicecream/eleven.git -b gh-pages"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.9",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
@@ -17,6 +20,7 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "gh-pages": "^4.0.0",
     "vue-template-compiler": "^2.6.14"
   },
   "browserslist": [
