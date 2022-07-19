@@ -9,8 +9,9 @@
     <span v-show="Show_Show" class="title_span_to_to"> <router-link title="图库" to="/picture"> 1 </router-link> </span>
     <span v-show="Show_Show" class="title_span_to_to"> <router-link title="日志" to="/journal"> 2 </router-link> </span>
     <span v-show="Show_Show" class="title_span_to_to"> <router-link title="水波" to=""> 3 </router-link> </span>
-    <span v-show="Show_Show" class="title_span_to_to"> <a title="去拾忆" href="https://soicecream.github.io/soicecream.github.io/"> 4 </a> </span>
-    <span v-show="Show_Show" class="title_span_to_to"> <a title="去水木加贝" href="https://soicecream.github.io/soicecreams.github.io/"> 5 </a> </span>
+    <span v-show="Show_Show" class="title_span_to_to"> <router-link title="催眠" to="/hypnosis"> 4 </router-link> </span>
+    <span v-show="Show_Show" class="title_span_to_to"> <a title="拾忆" href="https://soicecream.github.io/soicecream.github.io/"> 5 </a> </span>
+    <span v-show="Show_Show" class="title_span_to_to"> <a title="水木加贝" href="https://soicecream.github.io/soicecreams.github.io/"> 6 </a> </span>
 
     <div style="float: right; text-align: center">
       <span :style="{'color': this.$store.state.top_header_time_color}"> {{ ShowNowDate }} </span>
