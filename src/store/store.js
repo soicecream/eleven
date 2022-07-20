@@ -46,7 +46,7 @@ export default new Vuex.Store({
           { name: "优酷视频", url: "https://www.youku.com/", targets: "_blank", introduce: "", },
 
           { name: "芒果视频", url: "https://www.mgtv.com/", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "咪咕视频", url: "https://www.migu.cn/index.html", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
@@ -397,7 +397,7 @@ export default new Vuex.Store({
           { name: "矢量图", url: "https://www.iconfont.cn/", targets: "_blank", introduce: "阿里的矢量图图库", },
 
           { name: "FontAwesome", url: "https://fontawesome.com/", targets: "_blank", introduce: "Font Awesome 图标库", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "IconPark", url: "https://iconpark.oceanengine.com/official", targets: "_blank", introduce: "字节跳动官方图标库", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "菜鸟正则测试", url: "https://c.runoob.com/front-end/854", targets: "_blank", introduce: "", },
@@ -484,7 +484,7 @@ export default new Vuex.Store({
           { name: "优酷视频", url: "https://www.youku.com/", targets: "_blank", introduce: "", },
 
           { name: "芒果视频", url: "https://www.mgtv.com/", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "咪咕视频", url: "https://www.migu.cn/index.html", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },

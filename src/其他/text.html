@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .sticky header {
+            position: sticky;
+            background: #fff;
+            top: 0;
+            font-size: 20px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .sticky shadow::before {
+            content: '';
+            box-shadow: 0 0 10px 1px #333;
+            position: fixed;
+            width: 100%;
+        }
+
+        .sticky shadow::after {
+            content: '';
+            width: 100%;
+            height: 15px;
+            background: linear-gradient(to bottom, #fff 50%, transparent);
+            position: absolute;
+            top: 0;
+        }
+
+        .sticky main {
+            height: 1800px;
+            /*padding-top: 10px;*/
+            line-height: 200%;
+        }
+    </style>
+</head>
+<body>
+<div class='sticky'>
+    <header>LOGO</header>
+    <shadow></shadow>
+    <main>很多内容文本</main>
+</div>
+</body>
+</html>

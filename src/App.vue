@@ -1,7 +1,8 @@
 <template>
   <div id="app" >
     <top_title class="top_title"/>
-    <router-view />
+    <router-view v-if="vis_top_top" />
+    <router-view v-else />
     <div class="to_top">
       <img class="to_top_img" src="./assets/img/imgs/gotop.png" @click="go_to_top" :style="{'display': vis_f}">
     </div>
@@ -29,7 +30,9 @@ export default {
 
   data() {
     return {
-      vis_f: "none"
+      vis_f: "none",
+      vis_top_top: true,
+
     }
   },
 
@@ -70,9 +73,10 @@ export default {
 }
 
 .top_title{
-  top: 0;
   z-index: 9999;
+  position: sticky;
   top: unset;
+  top: 0;
 }
 
 .to_top_img{

@@ -1,5 +1,4 @@
 <template>
-  <div class="body_body">
     <div class="container">
       <div class="circle"></div>
       <div class="circle"></div>
@@ -8,7 +7,6 @@
       <div class="circle"></div>
       <div class="circle"></div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -23,17 +21,8 @@ export default {
   padding: 0;
 }
 
-.body_body {
-  /* 100% 窗体宽度*/
-  height: 100vh;
-  /* 弹性布局 水平+垂直居中你 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #121212;
-}
-
 .container {
+  margin-top: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
