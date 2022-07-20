@@ -125,7 +125,7 @@ export default new Vuex.Store({
         content: [
           { name: "斗鱼", url: "https://www.douyu.com/", targets: "_blank", introduce: "", },
           { name: "虎牙", url: "https://www.huya.com/", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "抖音", url: "https://www.douyin.com/?enter=guide", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
@@ -505,7 +505,7 @@ export default new Vuex.Store({
 
           { name: "斗鱼", url: "https://www.douyu.com/", targets: "_blank", introduce: "", },
           { name: "虎牙", url: "https://www.huya.com/", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "抖音", url: "https://www.douyin.com/?enter=guide", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
