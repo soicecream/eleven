@@ -6,6 +6,9 @@ import store from './store/store'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
+// npm install font-awesome --save
+import 'font-awesome/css/font-awesome.min.css'
+
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
@@ -36,7 +39,7 @@ router.beforeEach((to, from, next) => {
     // document.getElementsByTagName('head')[0].appendChild(script);
   }
 
-  if(to.path === '/hypnosis')
+  if(to.path === '/hypnosis' || to.path === '/paper_plane')
   {
     document.body.style.backgroundColor = '#00b8a9'
     store.state.top_header_time_color = '#ffffff'
