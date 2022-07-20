@@ -76,7 +76,6 @@ export default {
   z-index: 9999;
   position: sticky;
   top: unset;
-  top: 0;
 }
 
 .to_top_img{
