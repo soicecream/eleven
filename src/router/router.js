@@ -7,10 +7,10 @@ const routes = [
   { path: '/', name: '首页', component: () => import('../views/Home'), },
   { path: '/eleven', name: '拾忆', component: () => import('../views/ShiYiEleven'), children: [ ], },
   { path: '/quiet', name: '水木加贝', component: () => import('../views/IWant'), },
-  { path: '/picture', name: '图库', component: () => import('../views/Picture_list'), },
+  // { path: '/picture', name: '图库', component: () => import('../views/Picture_list'), },
   { path: '/journal', name: '日志', component: () => import('../views/Journal'), },
   { path: '/hypnosis', name: '脉冲波纹催眠', component: () => import('../views/Hypnosis'), },
-  { path: '/paper_plane', name: '纸飞机', component: () => import('../views/PaperPlane'), },
+  // { path: '/paper_plane', name: '纸飞机', component: () => import('../views/PaperPlane'), },
   { path: '/HomeView', name: 'HomeView', component: () => import('../views/HomeView'), },
   { path: '/about', name: 'about', component: () => import('../views/AboutView'), },
 ]
