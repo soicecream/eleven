@@ -583,7 +583,7 @@ export default new Vuex.Store({
           "https://www.giaott.com/images/2022/07/01/V5lR.jpg\n" +
           "https://www.giaott.com/images/2022/07/01/Vosc.jpg",
 
-      title_top_text:
+      tongue_twister_text:
           "葡萄皮儿\n" +
           "吃葡萄不吐葡萄皮儿，不吃葡萄倒吐葡萄皮儿\n" +
           "{}{}{}\n" +

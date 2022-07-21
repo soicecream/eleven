@@ -36,7 +36,7 @@ export default {
 
   methods: {
     getData() {
-      let data = this.$store.state.text.title_top_text.split("{}{}{}\n")
+      let data = this.$store.state.text.tongue_twister_text.split("{}{}{}\n")
 
       let num = Math.floor(Math.random() * data.length)
       // let num = 0
