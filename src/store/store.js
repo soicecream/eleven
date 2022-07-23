@@ -8,6 +8,9 @@ export default new Vuex.Store({
 
     top_header_time_color: "",
 
+    paper_plane_vie: false,
+    show_show_top_title_vis: false,
+
     ShiYi_eleven_url: [
       {
         title: "搜索",

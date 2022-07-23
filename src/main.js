@@ -43,6 +43,17 @@ router.beforeEach((to, from, next) => {
 
   if(to.path === '/hypnosis' || to.path === '/paper_plane')
   {
+    if(to.path === '/paper_plane')
+    {
+      if(store.state.paper_plane_vie)
+      {
+        store.state.paper_plane_vie = false
+        next()
+        location.reload()
+      }
+      else
+        store.state.paper_plane_vie = true
+    }
     document.body.style.backgroundColor = '#00b8a9'
     store.state.top_header_time_color = '#ffffff'
   }
