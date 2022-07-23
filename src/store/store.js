@@ -6,11 +6,16 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
 
+    // 标题上日期的颜色
     top_header_time_color: "",
 
+    // 是否进入到了追踪纸飞机页面
     paper_plane_vie: false,
+
+    // 页头的显示多页面
     show_show_top_title_vis: false,
 
+    // 拾忆的url
     ShiYi_eleven_url: [
       {
         title: "搜索",
@@ -171,6 +176,7 @@ export default new Vuex.Store({
       },
     ],
 
+    // 水木加贝的url
     eleven_url: [
       {
         title: "搜索",
@@ -553,6 +559,7 @@ export default new Vuex.Store({
       },
     ],
 
+    //所有text
     text: {
       background_img_text:
           "https://www.giaott.com/images/2022/07/01/a701.jpg\n" +
