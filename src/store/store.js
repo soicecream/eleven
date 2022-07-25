@@ -43,6 +43,14 @@ export default new Vuex.Store({
 
           { name: "CSDN", url: "https://www.csdn.net/", targets: "_blank", introduce: "全球知名中文IT技术交流平台", },
           { name: "博客云", url: "https://www.cnblogs.com/", targets: "_blank", introduce: "一个面向开发者的知识分享社区", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "逗逼拯救世界", url: "https://www.dbbqb.com/", targets: "_blank", introduce: "表情包搜索", },
+
         ],
       },
       {
@@ -230,6 +238,12 @@ export default new Vuex.Store({
           { name: "ICPC", url: "https://icpc.global/", targets: "_blank", introduce: "", },
           { name: "CCPC", url: "https://ccpc.io/", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "逗逼拯救世界", url: "https://www.dbbqb.com/", targets: "_blank", introduce: "表情包搜索", },
 
         ],
       },
