@@ -255,7 +255,7 @@ export default new Vuex.Store({
           { name: "洛谷", url: "https://www.luogu.com.cn/problem/list", targets: "_blank", introduce: "", },
           { name: "PTA", url: "https://pintia.cn/", targets: "_blank", introduce: "", },
 
-          { name: "力扣", url: "https://leetcode-cn.com/", targets: "_blank", introduce: "", },
+          { name: "力扣", url: "https://leetcode.cn/", targets: "_blank", introduce: "", },
           { name: "AcWing", url: "https://www.acwing.com/", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
