@@ -476,7 +476,7 @@ export default new Vuex.Store({
           { name: "稿定抠图", url: "https://koutu.gaoding.com/", targets: "_blank", introduce: "在线AI抠图", },
 
           { name: "草料", url: "https://cli.im/", targets: "_blank", introduce: "草料二维码生成器", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "扒站", url: "https://bazhan.wang/", targets: "_blank", introduce: "在线扒站工具", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
