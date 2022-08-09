@@ -556,6 +556,7 @@ export default new Vuex.Store({
 
           { name: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", targets: "_blank", introduce: "童年的怀旧小游戏", },
           { name: "魔方还原", url: "https://rubiks-cube-solver.com/zh/", targets: "_blank", introduce: "", },
+          { name: "评语生成器", url: "https://class.acagrid.com/pc/comment", targets: "_blank", introduce: "", },
         ],
       },
       {
