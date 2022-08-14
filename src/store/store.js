@@ -167,9 +167,13 @@ export default new Vuex.Store({
           { name: "2048", url: "https://2048game.com/", targets: "_blank", introduce: "", },
           { name: "俄罗斯方块", url: "https://www.goodoldtetris.com/", targets: "_blank", introduce: "", },
 
-          { name: "谷歌小恐龙", url: "chrome://dino/", targets: "_blank", introduce: "", },
-          { name: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", targets: "_blank", introduce: "", },
+          { name: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", targets: "_blank", introduce: "童年的怀旧小游戏", },
+          { name: "三阶魔方", url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html", targets: "_blank", introduce: "", },
           { name: "魔方还原", url: "https://rubiks-cube-solver.com/zh/", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "评语生成器", url: "https://class.acagrid.com/pc/comment", targets: "_blank", introduce: "", },
         ],
@@ -558,9 +562,13 @@ export default new Vuex.Store({
           { name: "2048", url: "https://2048game.com/", targets: "_blank", introduce: "", },
           { name: "俄罗斯方块", url: "https://www.goodoldtetris.com/", targets: "_blank", introduce: "", },
 
-          { name: "谷歌小恐龙", url: "chrome://dino/", targets: "_blank", introduce: "", },
-          { name: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", targets: "_blank", introduce: "童年的怀旧小游戏", },
+          {name: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", targets: "_blank", introduce: "童年的怀旧小游戏", },
+          { name: "三阶魔方", url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html", targets: "_blank", introduce: "", },
           { name: "魔方还原", url: "https://rubiks-cube-solver.com/zh/", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "评语生成器", url: "https://class.acagrid.com/pc/comment", targets: "_blank", introduce: "", },
         ],
