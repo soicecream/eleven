@@ -13,8 +13,6 @@ Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 
-// npm run deploy
-
 router.beforeEach((to, from, next) => {
 
   if(to.path === '/')

@@ -571,6 +571,7 @@ export default new Vuex.Store({
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "评语生成器", url: "https://class.acagrid.com/pc/comment", targets: "_blank", introduce: "", },
+          { name: "字数统计", url: "https://www.eteste.com/", targets: "_blank", introduce: "", },
         ],
       },
       {
