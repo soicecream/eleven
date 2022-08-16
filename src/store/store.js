@@ -133,6 +133,15 @@ export default new Vuex.Store({
 
           { name: "工具4", url: "https://www.toolmao.com/#term-102", targets: "_blank", introduce: "", },
           { name: "工具5", url: "https://ujuji.com/", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "评语生成器", url: "https://class.acagrid.com/pc/comment", targets: "_blank", introduce: "", },
+          { name: "字数统计", url: "https://www.eteste.com/", targets: "_blank", introduce: "", },
+          { name: "魔方还原", url: "https://rubiks-cube-solver.com/zh/", targets: "_blank", introduce: "", },
         ],
       },
       {
@@ -155,6 +164,14 @@ export default new Vuex.Store({
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
+          { name: "漫画", url: "https://www.cnanjie.com/", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
           { name: "打发时间", url: "https://theuselessweb.com/", targets: "_blank", introduce: "一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站", },
           { name: "打字", url: "https://barneyzhao.gitee.io/typing-cn/#/", targets: "_blank", introduce: "", },
           { name: "字符画", url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20", targets: "_blank", introduce: "字母生成字符画", },
@@ -169,13 +186,7 @@ export default new Vuex.Store({
 
           { name: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", targets: "_blank", introduce: "童年的怀旧小游戏", },
           { name: "三阶魔方", url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html", targets: "_blank", introduce: "", },
-          { name: "魔方还原", url: "https://rubiks-cube-solver.com/zh/", targets: "_blank", introduce: "", },
-
           { name: "", url: "", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
-
-          { name: "评语生成器", url: "https://class.acagrid.com/pc/comment", targets: "_blank", introduce: "", },
         ],
       },
       {
@@ -484,8 +495,17 @@ export default new Vuex.Store({
           { name: "稿定抠图", url: "https://koutu.gaoding.com/", targets: "_blank", introduce: "在线AI抠图", },
 
           { name: "草料", url: "https://cli.im/", targets: "_blank", introduce: "草料二维码生成器", },
-          { name: "扒站", url: "https://bazhan.wang/", targets: "_blank", introduce: "在线扒站工具", },
+          { name: "扒网站", url: "https://bazhan.wang/", targets: "_blank", introduce: "在线扒站工具", },
           { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "评语生成器", url: "https://class.acagrid.com/pc/comment", targets: "_blank", introduce: "", },
+          { name: "字数统计", url: "https://www.eteste.com/", targets: "_blank", introduce: "", },
+          { name: "魔方还原", url: "https://rubiks-cube-solver.com/zh/", targets: "_blank", introduce: "", },
+
 
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
@@ -502,7 +522,6 @@ export default new Vuex.Store({
           { name: "清华镜像站", url: "https://mirrors.tuna.tsinghua.edu.cn/", targets: "_blank", introduce: "", },
           { name: "华为镜像站", url: "https://mirrors.huaweicloud.com/home", targets: "_blank", introduce: "", },
           { name: "腾讯镜像站", url: "https://mirrors.cloud.tencent.com/", targets: "_blank", introduce: "", },
-
 
         ],
       },
@@ -550,6 +569,14 @@ export default new Vuex.Store({
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
+          { name: "漫画", url: "https://www.cnanjie.com/", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
           { name: "打发时间", url: "https://theuselessweb.com/", targets: "_blank", introduce: "一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站", },
           { name: "打字", url: "https://barneyzhao.gitee.io/typing-cn/#/", targets: "_blank", introduce: "", },
           { name: "字符画", url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20", targets: "_blank", introduce: "字母生成字符画", },
@@ -564,14 +591,7 @@ export default new Vuex.Store({
 
           {name: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", targets: "_blank", introduce: "童年的怀旧小游戏", },
           { name: "三阶魔方", url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html", targets: "_blank", introduce: "", },
-          { name: "魔方还原", url: "https://rubiks-cube-solver.com/zh/", targets: "_blank", introduce: "", },
-
           { name: "", url: "", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
-
-          { name: "评语生成器", url: "https://class.acagrid.com/pc/comment", targets: "_blank", introduce: "", },
-          { name: "字数统计", url: "https://www.eteste.com/", targets: "_blank", introduce: "", },
         ],
       },
       {
