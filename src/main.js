@@ -39,6 +39,7 @@ router.beforeEach((to, from, next) => {
     // document.getElementsByTagName('head')[0].appendChild(script);
   }
 
+  let res = to.path;
   if(to.path === '/hypnosis' || to.path === '/paper_plane')
   {
     if(to.path === '/paper_plane')
@@ -46,17 +47,19 @@ router.beforeEach((to, from, next) => {
       if(store.state.paper_plane_vie)
       {
         store.state.paper_plane_vie = false
-        next()
         location.reload()
+        // next()
+        router.push('/paper_plane')
       }
       else
         store.state.paper_plane_vie = true
     }
+
     document.body.style.backgroundColor = '#00b8a9'
     store.state.top_header_time_color = '#ffffff'
   }
   else
-    document.body.style.backgroundColor = ''
+    document.body.style.backgroundColor = '#ffffff'
 
 
   document.title = to.name ? to.name : "拾忆哟"

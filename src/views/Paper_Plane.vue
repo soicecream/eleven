@@ -21,6 +21,14 @@ export default {
     }
   },
 
+  // created() {
+  //   if(this.$store.state.paper_plane_vie)
+  //   {
+  //     this.$store.state.paper_plane_vie = false
+  //     // location.reload()
+  //   }
+  // },
+
   mounted() {
     window.addEventListener('mousemove', (e)=>{
       let plane = document.getElementById('PaperPlane_plane')
