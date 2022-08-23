@@ -24,7 +24,6 @@ router.beforeEach((to, from, next) => {
     store.state.top_header_time_color = '#ffffff'
 
     // window.document.body.style.backgroundImage = 'url(' + data[num] + ')'
-
   }
   else
   {
@@ -47,9 +46,9 @@ router.beforeEach((to, from, next) => {
       if(store.state.paper_plane_vie)
       {
         store.state.paper_plane_vie = false
-        location.reload()
-        // next()
-        router.push('/paper_plane')
+        // location.reload()
+        next()
+        // router.push('/paper_plane')
       }
       else
         store.state.paper_plane_vie = true
