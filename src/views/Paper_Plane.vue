@@ -18,31 +18,20 @@ export default {
       vy: 0,
       count: 0,
 
+      draw: null,
+
     }
   },
 
-  // created() {
-  //   if(this.$store.state.paper_plane_vie)
-  //   {
-  //     this.$store.state.paper_plane_vie = false
-  //     // location.reload()
-  //   }
-  // },
-
-  mounted() {
-    window.addEventListener('mousemove', (e)=>{
-      let plane = document.getElementById('PaperPlane_plane')
-      this.ex = e.x - plane.offsetLeft - plane.clientWidth / 2;
-      this.ey = e.y - plane.offsetTop - plane.clientHeight / 2;
-      this.deg = 360 * Math.atan(this.ey / this.ex) / (2 * Math.PI) + 45;
-      if(this.ex < 0) this.deg += 180;
-      this.count = 0;
-    })
-    setInterval(this.draw, 1)
+  // 创建阶段：数据的准备
+  created() {
+    window.addEventListener('mousemove', this.direction)
   },
 
-  methods: {
-    draw() {
+  // 挂载阶段：数据加载到页面
+  mounted () {
+    // 飞机进行移动
+    this.draw = setInterval(() => {
       let plane = document.getElementById('PaperPlane_plane')
       plane.style.transform = 'rotate(' + this.deg + 'deg)';
       if(this.count < 100) {
@@ -52,8 +41,34 @@ export default {
       plane.style.left = this.vx + 'px';
       plane.style.top = this.vy + 'px';
       this.count++;
-    }
+    }, 1);
+
+    // 页面离开时 断掉定时器
+    this.$once('hook:beforeDestroy', () => {
+      clearInterval(this.draw);
+    });
   },
+
+  // 定义函数
+  methods: {
+    // 监听方向
+    direction(event) {
+      let plane = document.getElementById('PaperPlane_plane')
+      this.ex = event.x - plane.offsetLeft - plane.clientWidth / 2;
+      this.ey = event.y - plane.offsetTop - plane.clientHeight / 2;
+      this.deg = 360 * Math.atan(this.ey / this.ex) / (2 * Math.PI) + 45;
+      if(this.ex < 0) this.deg += 180;
+      this.count = 0;
+      // console.log(this.ex + " " + this.ey)
+    },
+  },
+
+  // 页面离开时
+  beforeDestroy() {
+    // console.log("bai")
+    window.removeEventListener('mousemove', this.direction)
+  },
+
 }
 </script>
 

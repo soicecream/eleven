@@ -8,13 +8,15 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 // npm install font-awesome --save
 import 'font-awesome/css/font-awesome.min.css'
+import fr from "element-ui/src/locale/lang/fr";
+import fa from "element-ui/src/locale/lang/fa";
+import form from "element-ui/packages/form";
 
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
-
   if(to.path === '/')
   {
     let num = Math.floor(Math.random() * 30) + 1
@@ -38,31 +40,33 @@ router.beforeEach((to, from, next) => {
     // document.getElementsByTagName('head')[0].appendChild(script);
   }
 
-  let res = to.path;
+
   if(to.path === '/hypnosis' || to.path === '/paper_plane')
   {
-    if(to.path === '/paper_plane')
-    {
-      if(store.state.paper_plane_vie)
-      {
-        store.state.paper_plane_vie = false
-        // location.reload()
-        next()
-        // router.push('/paper_plane')
-      }
-      else
-        store.state.paper_plane_vie = true
-    }
-
     document.body.style.backgroundColor = '#00b8a9'
     store.state.top_header_time_color = '#ffffff'
   }
   else
     document.body.style.backgroundColor = '#ffffff'
 
-
   document.title = to.name ? to.name : "拾忆哟"
   next()
+
+});
+
+router.afterEach((to, from) => {
+  // if(to.path == '/paper_plane' && store.state.paper_plane_vie)
+  // {
+  //   store.state.paper_plane_vie = false
+  //   location.reload();
+  // }
+  // else if(from.path == '/paper_plane')
+  // {
+  //   store.state.paper_plane_vie = true
+  //   location.reload();
+  // }
+  // else
+  //   store.state.paper_plane_vie = true
 
 });
 
@@ -70,4 +74,4 @@ new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');
