@@ -20,6 +20,7 @@ export default {
       // 文本
       text_title: "",
       text_all: "",
+
       // 要显示的文本信息
       text: "", // 文本
       text_count: -2, // 字数
