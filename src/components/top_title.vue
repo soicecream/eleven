@@ -6,10 +6,10 @@
     <span class="title_span_to_to"> <router-link to="/quiet"> M </router-link> </span>
     <span class="title_span_to_to"> <a> E </a> </span>
     <span class="title_span_to_to"> <a @click="$store.state.show_show_top_title_vis = !$store.state.show_show_top_title_vis"> · </a> </span>
-    <span v-show="$store.state.show_show_top_title_vis" class="title_span_to_to"> <router-link title="图库" to="/picture"> 1 </router-link> </span>
+<!--    <span v-show="$store.state.show_show_top_title_vis" class="title_span_to_to"> <router-link title="图库" to="/picture"> 1 </router-link> </span>-->
     <span v-show="$store.state.show_show_top_title_vis" class="title_span_to_to"> <router-link title="日志" to="/journal"> 2 </router-link> </span>
     <span v-show="$store.state.show_show_top_title_vis" class="title_span_to_to"> <router-link title="绕口令" to="/tongue_twister"> 3 </router-link> </span>
-    <span v-show="$store.state.show_show_top_title_vis" class="title_span_to_to"> <router-link title="水波" to=""> 4 </router-link> </span>
+<!--    <span v-show="$store.state.show_show_top_title_vis" class="title_span_to_to"> <router-link title="水波" to=""> 4 </router-link> </span>-->
     <span v-show="$store.state.show_show_top_title_vis" class="title_span_to_to"> <router-link title="脉冲波纹催眠" to="/hypnosis"> 5 </router-link> </span>
     <span v-show="$store.state.show_show_top_title_vis" class="title_span_to_to"> <router-link title="纸飞机" to="/paper_plane"> 6 </router-link> </span>
     <span v-show="$store.state.show_show_top_title_vis" class="title_span_to_to"> <a title="拾忆" href="https://soicecream.github.io/soicecream.github.io/"> 7 </a> </span>
