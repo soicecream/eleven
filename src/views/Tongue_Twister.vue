@@ -7,7 +7,7 @@
 
     <div>
       <ul>
-        <li v-for="(index, i) in tongue_twister_text_title" :key="i"
+        <li v-for="(index, i) in text" :key="i"
             :style="{'border-color': index.body_color, }"
             @mouseover="move_upper(i, true)"
             @mouseout="move_upper(i, false)">
@@ -32,7 +32,7 @@ export default {
     return {
       top_picture_top: "",
 
-      tongue_twister_text_title: [],
+      text: [],
 
     }
   },
@@ -45,10 +45,11 @@ export default {
 
   methods: {
     getData() {
-      let data = this.$store.state.text.tongue_twister_text.split("{}{}{}\n")
+      let data = this.$store.state.tongue_twister_text.split("{}{}{}")
       for(let i = 0; i < data.length; i ++)
       {
-        this.tongue_twister_text_title[i] = {
+        data[i] = data[i].substring(data[i].indexOf("\n") + 1);
+        this.text[i] = {
           "title": data[i].substring(0, data[i].indexOf("\n")),
           "content": ("\n" + data[i].substring(data[i].indexOf("\n") + 1)).split("\n"),
           "body_color": '#414141FF',
@@ -66,9 +67,9 @@ export default {
     move_upper(i, vis) {
       this.$forceUpdate();
       if(vis)
-        this.Journal_title[i].body_color = '#ff5252cc'
+        this.text[i].body_color = '#ff5252cc'
       else
-        this.Journal_title[i].body_color = '#414141FF'
+        this.text[i].body_color = '#414141FF'
     }
 
   },

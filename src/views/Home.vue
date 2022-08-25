@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1 class="title_top_title" :data-text="title"> {{title}} </h1>
-    <span class="title_top_title_label" style="font-size: 40px;"> 《{{ Home_title_top_title }}》 </span> <br> <br>
-    <span style="white-space:pre-wrap; "> {{ Home_title_top }} </span>
+    <span class="title_top_title_label" style="font-size: 40px;"> 《{{ text_title }}》 </span> <br> <br>
+    <span style="white-space:pre-wrap; "> {{ text }} </span>
     <span aria-hidden="true" class="blink">|</span>
   </div>
 
@@ -17,12 +17,17 @@ export default {
     return {
       title: "水木加贝",
 
-      Home_title_top_all: "",
-      Home_title_top_title: "",
-      Home_title_top: "",
-      Home_title_top_time: -1,
-      Home_title_top_k: 1,
-      Home_title_top_step: 0,
+      // 文本
+      text_title: "",
+      text_all: "",
+      // 要显示的文本信息
+      text: "", // 文本
+      text_count: -2, // 字数
+      text_k: 1, // 增加文字还是减少文字
+      text_step: 0, // 修改文字的速度
+
+      // 计时器的名称
+      set_text: null,
 
     }
   },
@@ -30,36 +35,49 @@ export default {
   created() {
     this.getData()
 
-    this.set_title_top()
+  },
+
+  mounted() {
+    this.set_text = setTimeout(this.set_title_top, this.text_step)
 
   },
 
   methods: {
+    // 获取数据
     getData() {
-      let data = this.$store.state.text.tongue_twister_text.split("{}{}{}\n")
+      let data = this.$store.state.tongue_twister_text.split("{}{}{}")
 
       let num = Math.floor(Math.random() * data.length)
-      // let num = 0
-      this.Home_title_top_title = data[num].substring(0, data[num].indexOf("\n"))
-      this.Home_title_top_all = data[num].substring(data[num].indexOf("\n") + 1)
+      num = 0
+
+      let title = data[num].substring(data[num].indexOf("\n") + 1);
+      this.text_title = title.substring(0, title.indexOf("\n"))
+      this.text_all = title.substring(title.indexOf("\n") + 1)
     },
 
+    // 设置标题文本
     set_title_top() {
-      if (this.Home_title_top === this.Home_title_top_all)
-        this.Home_title_top_k = -1;
-      else if (this.Home_title_top.length == 0)
-        this.Home_title_top_k = 1;
-      this.Home_title_top_step = 200 + this.Home_title_top_k * 100
+      if (this.text === this.text_all)
+        this.text_k = -1;
+      else if (this.text.length == 0)
+        this.text_k = 1;
+      this.text_step = 200 + this.text_k * 100
 
-      this.Home_title_top_time = (this.Home_title_top_time + this.Home_title_top_k) % this.Home_title_top_all.length;
-      this.Home_title_top = this.Home_title_top_all.substring(0, this.Home_title_top_time + 1);
+      this.text_count = (this.text_count + this.text_k) % this.text_all.length;
+      this.text = this.text_all.substring(0, this.text_count + 1);
 
-      setTimeout(this.set_title_top, this.Home_title_top_step);
+      this.set_text = setTimeout(this.set_title_top, this.text_step)
+
+      // console.log(this.text_step)
     },
-
-
 
   },
+
+  beforeDestroy() {
+    // console.log("离开")
+    clearTimeout(this.set_text);
+    this.set_text = null;
+  }
 }
 </script>
 
