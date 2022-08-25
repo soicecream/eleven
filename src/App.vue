@@ -21,13 +21,6 @@ export default {
     top_title,
   },
 
-  mounted () {
-    window.addEventListener('scroll', this.check_roll_show)
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.check_roll_show)
-  },
-
   data() {
     return {
       vis_f: "none",
@@ -37,13 +30,16 @@ export default {
   },
 
   created() {
-    this.$store.state.all_img_text = this.getData('../../txt/BackgroundImg.txt')
-    this.$store.state.Journal_text = this.getData('../../txt/Journal.txt')
-    this.$store.state.tongue_twister_text = this.getData('../../txt/TongueTwister.txt')
+    this.$store.state.all_img_text = this.get_text_data('../../txt/BackgroundImg.txt')
+    this.$store.state.Journal_text = this.get_text_data('../../txt/Journal.txt')
+    this.$store.state.tongue_twister_text = this.get_text_data('../../txt/TongueTwister.txt')
+
+    window.addEventListener('scroll', this.check_roll_show)
   },
 
   methods: {
-    getData(file_url){
+    // 获取文本数据
+    get_text_data(file_url){
       //  更新数据market_id.txt文件接口
       let xhr = new XMLHttpRequest(),
           okStatus = document.location.protocol === "file:" ? 0 : 200;
@@ -54,19 +50,20 @@ export default {
       return xhr.status === okStatus ? xhr.responseText : null;
     },
 
+    // 返回顶部
     go_to_top() {
       // document.body.scrollTop = 0;
       // document.documentElement.scrollTop = 0;
 
       let timer = setInterval(() => {
-        let ispeed = Math.floor(-this.scrollTop / 5)
-        document.documentElement.scrollTop = document.body.scrollTop = this.scrollTop + ispeed
+        let position = Math.floor(-this.scrollTop / 5)
+        document.documentElement.scrollTop = document.body.scrollTop = this.scrollTop + position
         if (this.scrollTop === 0) {
           clearInterval(timer)
         }
       }, 16)
     },
-
+    // 返回顶部是否显示
     check_roll_show() {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
       this.scrollTop = scrollTop
@@ -75,7 +72,13 @@ export default {
       else
         this.vis_f = 'none'
     },
-  }
+
+  },
+
+  destroyed () {
+    window.removeEventListener('scroll', this.check_roll_show)
+
+  },
 
 }
 

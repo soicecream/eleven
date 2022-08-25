@@ -17,7 +17,7 @@ Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
-  if(to.path === '/')
+  if(to.path === '/' || to.path === '/home')
   {
     let num = Math.floor(Math.random() * 30) + 1
     num = num < 10 ? '00' + num : (num < 100 ? '0' + num : num)
