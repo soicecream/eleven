@@ -51,7 +51,7 @@ export default {
         data[i] = data[i].substring(data[i].indexOf("\n") + 1);
         this.text[i] = {
           "title": data[i].substring(0, data[i].indexOf("\n")),
-          "content": ("\n" + data[i].substring(data[i].indexOf("\n") + 1)).split("\n"),
+          "content": data[i].substring(data[i].indexOf("\n") + 1).split("\n"),
           "body_color": '#414141FF',
         }
       }
@@ -132,6 +132,10 @@ li {
   left: 0;
   padding: 2px 14px 2px 10px;
   color: #ffffff;
+}
+
+.content_list {
+  margin-top: 20px;
 }
 
 .content_list > span {
