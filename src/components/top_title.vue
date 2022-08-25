@@ -2,7 +2,7 @@
   <div class="title_logo">
     <span class="title_span_to"> <router-link to="/eleven"> Y </router-link> </span>
     <span class="title_span_to_to"> <a> U </a> </span>
-    <span class="title_span_to"> <router-link to="/"> H </router-link> </span>
+    <span class="title_span_to"> <router-link to="/home"> H </router-link> </span>
     <span class="title_span_to_to"> <router-link to="/quiet"> M </router-link> </span>
     <span class="title_span_to_to"> <a> E </a> </span>
     <span class="title_span_to_to"> <a @click="$store.state.show_show_top_title_vis = !$store.state.show_show_top_title_vis"> · </a> </span>

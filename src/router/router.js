@@ -5,6 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', name: '首页', component: () => import('../views/Home'), },
+  { path: '/home', name: '首页', component: () => import('../views/Home'), },
   { path: '/eleven', name: '拾忆', component: () => import('../views/ShiYiEleven'), children: [ ], },
   { path: '/quiet', name: '水木加贝', component: () => import('../views/IWant'), },
   { path: '/picture', name: '图库', component: () => import('../views/Picture_list'), },
