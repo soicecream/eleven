@@ -21,6 +21,7 @@ export default {
     top_title,
   },
 
+  // 数据
   data() {
     return {
       vis_f: "none",
@@ -29,14 +30,17 @@ export default {
     }
   },
 
+  // 创建阶段：数据的准备
   created() {
     this.$store.state.all_img_text = this.get_text_data('../../txt/BackgroundImg.txt')
     this.$store.state.Journal_text = this.get_text_data('../../txt/Journal.txt')
     this.$store.state.tongue_twister_text = this.get_text_data('../../txt/TongueTwister.txt')
 
     window.addEventListener('scroll', this.check_roll_show)
+
   },
 
+  // 定义函数
   methods: {
     // 获取文本数据
     get_text_data(file_url){
@@ -75,8 +79,13 @@ export default {
 
   },
 
+  // 页面离开时销毁侦听时间
   destroyed () {
     window.removeEventListener('scroll', this.check_roll_show)
+
+  },
+  // 也差不多
+  beforeDestroy () {
 
   },
 
