@@ -49,7 +49,7 @@ export default {
       let data = this.$store.state.tongue_twister_text.split("{}{}{}")
 
       let num = Math.floor(Math.random() * data.length)
-      num = 0
+      // num = 0
 
       let title = data[num].substring(data[num].indexOf("\n") + 1);
       this.text_title = title.substring(0, title.indexOf("\n"))
