@@ -3,8 +3,8 @@
     <top_title class="top_title" v-if="this.$store.state.navigation_bar"/>
     <router-view v-if="vis_top_top" />
     <router-view v-else />
-    <div class="to_top">
-      <img class="to_top_img" src="./assets/img/imgs/gotop.png" @click="go_to_top" :style="{'display': vis_f}">
+    <div class="to_top" v-if="vis_f">
+      <img class="to_top_img" src="./assets/img/imgs/gotop.png" @click="go_to_top">
     </div>
   </div>
 </template>
@@ -15,6 +15,18 @@ import top_title from "@/components/top_title";
 
 export default {
   name: 'App',
+
+  // 返回
+  // 1.$router.back()
+  // 2.$router.go()
+  // go(-1) // 原页面表单中的内容会丢失
+  // this.$router.go(-1) // 后退+刷新
+  // this.$router.go(0) // 刷新
+  // this.$router.go(1) // 前进
+  // back() //原页表表单中的内容会保留
+  // this.$router.back() //后退
+  // this.$router.back(0) //刷新
+  // this.$router.back(1) //前进
 
   // 相当于注册  也就是定义
   components: {

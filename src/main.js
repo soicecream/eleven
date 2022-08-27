@@ -19,6 +19,9 @@ Vue.config.productionTip = false
 router.beforeEach((to, from, next) => {
   if(to.path === '/404')
   {
+    document.body.style.backgroundImage = 'url(' + require("@/assets/img/background/000.jpg") + ')'
+    document.body.style.backgroundSize = 'cover';
+
     store.state.navigation_bar = false
     next()
   }
