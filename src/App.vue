@@ -1,6 +1,6 @@
 <template>
   <div id="app" >
-    <top_title class="top_title"/>
+    <top_title class="top_title" v-if="this.$store.state.navigation_bar"/>
     <router-view v-if="vis_top_top" />
     <router-view v-else />
     <div class="to_top">
@@ -46,7 +46,7 @@ export default {
       xhr.overrideMimeType("text/html;charset=utf-8") //默认为utf-8
       xhr.send(null)
       // console.log(xhr.responseText) //文本的内容
-      return xhr.status === okStatus ? xhr.responseText : null
+      return xhr.status === okStatus ? xhr.responseText : ""
     },
 
     // 返回顶部
@@ -72,6 +72,19 @@ export default {
         this.vis_f = 'none'
     },
 
+    // 判断当天是否为圣诞节
+    check_Christmas_day() {
+      let data = new Date();
+      let month = data.getMonth() + 1;
+      let day = data.getDate();
+
+      if(month == 12 && day == 25)
+        this.$store.state.top_title_span_url[0].show = true
+      else
+        this.$store.state.top_title_span_url[0].show = false
+      // this.$store.state.top_title_span_url[0].show = true
+    },
+
   },
 
   // 侦听器
@@ -89,9 +102,11 @@ export default {
 
   // 在实例创建完成后被立即同步调用。  创建阶段：数据的准备
   created() {
-    this.$store.state.all_img_text = this.get_text_data('../../txt/BackgroundImg.txt')
-    this.$store.state.Journal_text = this.get_text_data('../../txt/Journal.txt')
-    this.$store.state.tongue_twister_text = this.get_text_data('../../txt/TongueTwister.txt')
+    this.$store.state.all_img_text = this.get_text_data('./txt/BackgroundImg.txt')
+    this.$store.state.Journal_text = this.get_text_data('./txt/Journal.txt')
+    this.$store.state.tongue_twister_text = this.get_text_data('./txt/TongueTwister.txt')
+
+    this.check_Christmas_day()
 
     window.addEventListener('scroll', this.check_roll_show)
 

@@ -15,14 +15,32 @@ export default new Vuex.Store({
     // 绕口令的文本
     tongue_twister_text: "",
 
+
+    // 导航栏是否显示
+    navigation_bar: true,
+
     // 标题上日期的颜色
-    top_header_time_color: "",
+    navigation_bar_time_color: "",
+
+    // 页头的显示多页面
+    navigation_bar_title_vis: false,
 
     // 是否进入到了追踪纸飞机页面
     paper_plane_vie: false,
 
-    // 页头的显示多页面
-    show_show_top_title_vis: false,
+
+    // 导航栏的所有内容
+    top_title_span_url: [
+      { id: 0, title: "圣诞树", type: 1, url: "/christmas_tree", show: false, },
+      { id: 1, title: "图库", type: 1, url: "/picture", show: false, },
+      { id: 2, title: "日志", type: 1, url: "/journal", show: true, },
+      { id: 3, title: "绕口令", type: 1, url: "/tongue_twister", show: true, },
+      { id: 4, title: "水波", type: 1, url: "/", show: false, },
+      { id: 5, title: "脉冲波纹催眠", type: 1, url: "/hypnosis", show: true, },
+      { id: 6, title: "纸飞机", type: 1, url: "/paper_plane", show: true, },
+      { id: 7, title: "拾忆", type: 2, url: "https://soicecream.github.io/soicecream.github.io/", show: true, },
+      { id: 8, title: "水木加贝", type: 2, url: "https://soicecream.github.io/soicecreams.github.io/", show: true, },
+    ],
 
     // 拾忆的url
     ShiYi_eleven_url: [
