@@ -118,6 +118,10 @@ export default {
     this.$store.state.Journal_text = this.get_text_data('./txt/Journal.txt')
     this.$store.state.tongue_twister_text = this.get_text_data('./txt/TongueTwister.txt')
 
+    // this.$store.state.all_img_text = this.get_text_data('../../txt/BackgroundImg.txt')
+    // this.$store.state.Journal_text = this.get_text_data('../../txt/Journal.txt')
+    // this.$store.state.tongue_twister_text = this.get_text_data('../../txt/TongueTwister.txt')
+
     this.check_Christmas_day()
 
     window.addEventListener('scroll', this.check_roll_show)
