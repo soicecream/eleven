@@ -30,6 +30,7 @@ export default new Vuex.Store({
 
 
     // 导航栏的所有内容
+    // npm run deploy
     top_title_span_url: [
       { id: 0, title: "圣诞树", type: 1, url: "/christmas_tree", show: false, },
       { id: 1, title: "图库", type: 1, url: "/picture", show: false, },
@@ -471,7 +472,7 @@ export default new Vuex.Store({
 
           { name: "菜鸟正则测试", url: "https://c.runoob.com/front-end/854", targets: "_blank", introduce: "", },
           { name: "流程图", url: "https://app.diagrams.net/", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "cron", url: "https://cron.qqe2.com/", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },

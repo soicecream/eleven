@@ -22,7 +22,6 @@
 
 <script>
 export default {
-  // npm run deploy
   name: "top_title",
 
   data() {
