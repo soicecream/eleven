@@ -495,7 +495,7 @@ export default new Vuex.Store({
           { name: "Remix Icon", url: "http://www.remixicon.com/", targets: "_blank", introduce: "Remix Icon 图标库", },
 
           { name: "WebGradients", url: "https://webgradients.com/", targets: "_blank", introduce: "css渐变色", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "JetBrains", url: "https://crustwebsites.net/ipfs/bafybeiatyghkzrrtodzt3stm652rkrjxndg4hq2ublfdmifk7plg5k5brq/", targets: "_blank", introduce: "JetBrains的激活码", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
