@@ -642,7 +642,7 @@ export default new Vuex.Store({
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
-          { name: "微信公众号测试", url: "https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login", targets: "_blank", introduce: "", },
+          { name: "公众号测试", url: "https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login", targets: "_blank", introduce: "", },
           { name: "企业微信", url: "https://work.weixin.qq.com/wework_admin/loginpage_wx?redirect_uri=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe#index", targets: "_blank", introduce: "", },
           { name: "微信官网", url: "https://weixin.qq.com/", targets: "_blank", introduce: "", },
 
