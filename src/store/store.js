@@ -636,8 +636,19 @@ export default new Vuex.Store({
 
           { name: "Vue资源精选", url: "http://vue.awesometiny.com/", targets: "_blank", introduce: "前端组件库资源", },
           { name: "wordpress", url: "https://cn.wordpress.org/", targets: "_blank", introduce: "WordPress是一款能让您建立出色网站、博客或应用程序的开源软件", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
 
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
 
+          { name: "微信公众号测试", url: "https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login", targets: "_blank", introduce: "", },
+          { name: "企业微信", url: "https://work.weixin.qq.com/wework_admin/loginpage_wx?redirect_uri=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe#index", targets: "_blank", introduce: "", },
+          { name: "微信官网", url: "https://weixin.qq.com/", targets: "_blank", introduce: "", },
+
+          { name: "微信网页版", url: "https://wx.qq.com/", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
         ]
       },
     ],
