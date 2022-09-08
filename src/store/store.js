@@ -54,7 +54,7 @@ export default new Vuex.Store({
           { name: "知乎", url: "https://www.zhihu.com/", targets: "_blank", introduce: "中文互联网高质量的问答社区和创作者聚集的原创内容平台", },
 
           { name: "B站", url: "https://www.bilibili.com/", targets: "_blank", introduce: "哔哩哔哩 (゜-゜)つロ 干杯~", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "知网", url: "https://www.cnki.net/", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
@@ -242,7 +242,7 @@ export default new Vuex.Store({
           { name: "知乎", url: "https://www.zhihu.com/", targets: "_blank", introduce: "中文互联网高质量的问答社区和创作者聚集的原创内容平台", },
 
           { name: "B站", url: "https://www.bilibili.com/", targets: "_blank", introduce: "哔哩哔哩 (゜-゜)つロ 干杯~", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "知网", url: "https://www.cnki.net/", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
