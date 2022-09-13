@@ -327,8 +327,16 @@ export default new Vuex.Store({
           { name: "AtCoder", url: "https://www.codechef.com/", targets: "_blank", introduce: "", },
 
           { name: "VJudge", url: "https://vjudge.net/", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
           { name: "做题统计", url: "https://ojhunt.com/", targets: "_blank", introduce: "", },
           { name: "CFTracker", url: "https://cftracker.netlify.app/contests", targets: "_blank", introduce: "", },
+          { name: "atc Problems", url: "https://kenkoooo.com/atcoder/#/table/", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
