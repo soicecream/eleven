@@ -40,7 +40,7 @@ export default new Vuex.Store({
       { id: 5, title: "脉冲波纹催眠", type: 1, url: "/hypnosis", show: true, },
       { id: 6, title: "纸飞机", type: 1, url: "/paper_plane", show: true, },
       { id: 7, title: "拾忆", type: 2, url: "https://soicecream.github.io/soicecream.github.io/", show: true, },
-      { id: 8, title: "水木加贝", type: 2, url: "https://soicecream.github.io/soicecreams.github.io/", show: true, },
+      { id: 8, title: "水木加贝", type: 2, url: "https://soicecream.github.io/IWant/", show: true, },
     ],
 
     // 拾忆的url
