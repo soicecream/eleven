@@ -376,6 +376,7 @@ export default new Vuex.Store({
 
           { name: "北京化工", url: "https://buctcoder.com/", targets: "_blank", introduce: "", },
           { name: "华南理工", url: "https://scut.online/", targets: "_blank", introduce: "", },
+          { name: "青岛", url: "https://qduoj.com/", targets: "_blank", introduce: "", },
 
         ],
       },
