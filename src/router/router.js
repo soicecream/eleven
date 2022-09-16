@@ -13,9 +13,8 @@ const routes = [
   { path: '/tongue_twister', name: '绕口令', component: () => import('../views/Tongue_Twister'), },
   { path: '/hypnosis', name: '脉冲波纹催眠', component: () => import('../views/Hypnosis'), },
   { path: '/paper_plane', name: '纸飞机', component: () => import('../views/Paper_Plane'), },
-  { path: '/HomeView', name: 'HomeView', component: () => import('../views/HomeView'), },
   { path: '/404', name: '404', component: () => import('../views/not_find_404'), },
-  { path: '/about', name: 'about', component: () => import('../views/AboutView'), },
+  { path: '/about', name: 'about', component: () => import('../views/about'), },
 ]
 
 const router = new VueRouter({
