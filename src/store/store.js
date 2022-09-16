@@ -408,20 +408,20 @@ export default new Vuex.Store({
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
+          { name: "vue3", url: "https://vue3js.cn/", targets: "_blank", introduce: "", },
           { name: "Vue.js", url: "https://cn.vuejs.org/index.html", targets: "_blank", introduce: "", },
           { name: "MyBatis-P", url: "https://baomidou.com/", targets: "_blank", introduce: "Spring Boot", },
-          { name: "VuePress", url: "https://www.vuepress.cn/", targets: "_blank", introduce: "Vue 驱动的静态网站生成器", },
 
+          { name: "VuePress", url: "https://www.vuepress.cn/", targets: "_blank", introduce: "Vue 驱动的静态网站生成器", },
           { name: "Element-ui2", url: "https://element.eleme.io/#/zh-CN", targets: "_blank", introduce: "基于 Vue2 的 UI 组件库和前端解决方案", },
           { name: "Element-ui3", url: "https://element-plus.gitee.io/zh-CN/", targets: "_blank", introduce: "基于 Vue3 的 UI 组件库和前端解决方案", },
+
           { name: "Ant Design", url: "https://2x.antdv.com/components/overview-cn", targets: "_blank", introduce: "蚂蚁金服UI组件库", },
-
           { name: "View Design", url: "https://www.iviewui.com/", targets: "_blank", introduce: "基于 Vue3 的 UI 组件库和前端解决方案", },
-
           { name: "typecho", url: "http://typecho.org/", targets: "_blank", introduce: "", },
+
           { name: "Gridea", url: "https://gridea.dev/", targets: "_blank", introduce: "Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。", },
           { name: "zblogcn", url: "https://www.zblogcn.com/", targets: "_blank", introduce: "", },
-
           { name: "hugo", url: "https://gohugo.io/", targets: "_blank", introduce: "Hugo 是最流行的开源静态站点生成器之一", },
         ],
       },
