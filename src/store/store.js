@@ -441,6 +441,16 @@ export default new Vuex.Store({
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
+          { name: "有道云笔记", url: "https://note.youdao.com/", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          {name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+
+
           { name: "写代码1", url: "https://paste.ubuntu.com/", targets: "_blank", introduce: "", },
           { name: "写代码2", url: "https://ideone.com/", targets: "_blank", introduce: "", },
           { name: "写代码3", url: "https://paste.centos.org/", targets: "_blank", introduce: "", },
