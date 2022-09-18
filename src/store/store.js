@@ -30,6 +30,7 @@ export default new Vuex.Store({
 
 
     // 导航栏的所有内容
+    //
     // npm run deploy
     top_title_span_url: [
       { id: 0, title: "圣诞树", type: 1, url: "/christmas_tree", show: false, },
