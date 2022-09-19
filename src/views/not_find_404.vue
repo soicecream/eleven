@@ -2,7 +2,7 @@
   <div class="stars">
     <div class="central-body" >
       <!--404-->
-      <img src="../assets/img/svg/404.svg" width="300px">
+      <img src="../assets/img/svg/404.svg" style="width: 300px;">
       <!--返回-->
       <div class="btn-go">
         <a style="float:left;" class="btn-go-home" @click="go_back">GO BACK</a>

@@ -463,6 +463,10 @@ export default new Vuex.Store({
           { name: "函数画图", url: "https://www.desmos.com/calculator?lang=zh-CN", targets: "_blank", introduce: "", },
           { name: "图论画图", url: "https://csacademy.com/app/graph_editor/", targets: "_blank", introduce: "", },
 
+          { name: "wolframalpha", url: "https://www.wolframalpha.com/", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
