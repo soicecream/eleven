@@ -30,7 +30,7 @@ export default new Vuex.Store({
 
 
     // 导航栏的所有内容
-    // npm run deploy 
+    // npm run deploy
     top_title_span_url: [
       { id: 0, title: "圣诞树", type: 1, url: "/christmas_tree", show: false, },
       { id: 1, title: "图库", type: 1, url: "/picture", show: false, },
@@ -133,6 +133,14 @@ export default new Vuex.Store({
 
           { name: "搜狗翻译", url: "https://fanyi.sogou.com/text", targets: "_blank", introduce: "", },
           { name: "DeepL", url: "https://www.deepl.com/translator", targets: "_blank", introduce: "全世界最准确的翻译", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "", url: "", targets: "_blank", introduce: "", },
+
+          { name: "有道云笔记", url: "https://note.youdao.com/", targets: "_blank", introduce: "记笔记", },
+          { name: "拷贝兔", url: "https://cp.anyknew.com/", targets: "_blank", introduce: "小文件的不同电脑传输下载", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           { name: "", url: "", targets: "_blank", introduce: "", },
@@ -441,8 +449,8 @@ export default new Vuex.Store({
           { name: "", url: "", targets: "_blank", introduce: "", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
-          { name: "有道云笔记", url: "https://note.youdao.com/", targets: "_blank", introduce: "", },
-          { name: "", url: "", targets: "_blank", introduce: "", },
+          { name: "有道云笔记", url: "https://note.youdao.com/", targets: "_blank", introduce: "记笔记", },
+          { name: "拷贝兔", url: "https://cp.anyknew.com/", targets: "_blank", introduce: "小文件的不同电脑传输下载", },
           { name: "", url: "", targets: "_blank", introduce: "", },
 
           {name: "", url: "", targets: "_blank", introduce: "", },
