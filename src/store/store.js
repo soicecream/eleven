@@ -582,12 +582,7 @@ export default new Vuex.Store({
                     {name: "谷歌翻译", url: "https://translate.google.cn/", targets: "_blank", introduce: "",},
 
                     {name: "搜狗翻译", url: "https://fanyi.sogou.com/text", targets: "_blank", introduce: "",},
-                    {
-                        name: "DeepL",
-                        url: "https://www.deepl.com/translator",
-                        targets: "_blank",
-                        introduce: "全世界最准确的翻译",
-                    },
+                    {name: "DeepL", url: "https://www.deepl.com/translator", targets: "_blank", introduce: "全世界最准确的翻译",},
                     {name: "可视化正则", url: "https://regexr.com/", targets: "_blank", introduce: "可视化验证正则表达式",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -612,12 +607,7 @@ export default new Vuex.Store({
                     {name: "代码对比3", url: "https://csacademy.com/app/diffing_tool/", targets: "_blank", introduce: "",},
 
                     {name: "数列", url: "http://oeis.org/hints.html", targets: "_blank", introduce: "",},
-                    {
-                        name: "函数画图",
-                        url: "https://www.desmos.com/calculator?lang=zh-CN",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "函数画图", url: "https://www.desmos.com/calculator?lang=zh-CN", targets: "_blank", introduce: "",},
                     {name: "图论画图", url: "https://csacademy.com/app/graph_editor/", targets: "_blank", introduce: "",},
 
                     {name: "wolframalpha", url: "https://www.wolframalpha.com/", targets: "_blank", introduce: "",},
@@ -646,18 +636,8 @@ export default new Vuex.Store({
                     {name: "wallhaven", url: "https://wallhaven.cc/", targets: "_blank", introduce: "",},
                     {name: "矢量图", url: "https://www.iconfont.cn/", targets: "_blank", introduce: "阿里的矢量图图库",},
 
-                    {
-                        name: "FontAwesome",
-                        url: "https://fontawesome.com/",
-                        targets: "_blank",
-                        introduce: "Font Awesome 图标库",
-                    },
-                    {
-                        name: "IconPark",
-                        url: "https://iconpark.oceanengine.com/official",
-                        targets: "_blank",
-                        introduce: "字节跳动官方图标库",
-                    },
+                    {name: "FontAwesome", url: "https://fontawesome.com/", targets: "_blank", introduce: "Font Awesome 图标库",},
+                    {name: "IconPark", url: "https://iconpark.oceanengine.com/official", targets: "_blank", introduce: "字节跳动官方图标库",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -672,47 +652,35 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "PPT模板",
-                        url: "https://ppt.sotary.com/web/wxapp/index.html",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "PPT模板", url: "https://ppt.sotary.com/web/wxapp/index.html", targets: "_blank", introduce: "",},
                     {name: "PDF转换", url: "https://www.pdfpai.com/", targets: "_blank", introduce: "",},
                     {name: "秘塔写作猫", url: "https://xiezuocat.com/#/", targets: "_blank", introduce: "论文降重",},
 
-                    {name: "颜色选取", url: "https://color.uisdc.com/pick.html", targets: "_blank", introduce: "",},
                     {name: "调音", url: "https://vocalremover.org/ch/", targets: "_blank", introduce: "对声音的一些处理",},
                     {name: "在线PS", url: "https://www.uupoop.com/#/", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "aconvert",
-                        url: "https://www.aconvert.com/cn/",
-                        targets: "_blank",
-                        introduce: "多种文件格式相互转换",
-                    },
+                    {name: "aconvert", url: "https://www.aconvert.com/cn/", targets: "_blank", introduce: "多种文件格式相互转换",},
                     {name: "Iconfont", url: "https://www.iconfont.cn/", targets: "_blank", introduce: "阿里巴巴矢量图标库",},
-                    {
-                        name: "Remix Icon",
-                        url: "http://www.remixicon.com/",
-                        targets: "_blank",
-                        introduce: "Remix Icon 图标库",
-                    },
+                    {name: "Remix Icon", url: "http://www.remixicon.com/", targets: "_blank", introduce: "Remix Icon 图标库",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
 
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "颜色选取", url: "https://color.uisdc.com/pick.html", targets: "_blank", introduce: "",},
                     {name: "WebGradients", url: "https://webgradients.com/", targets: "_blank", introduce: "css渐变色",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "coolors", url: "https://coolors.co/", targets: "_blank", introduce: "",},
+
+                    {name: "colorhunt", url: "https://colorhunt.co/", targets: "_blank", introduce: "",},
+                    {name: "中国色", url: "http://zhongguose.com/", targets: "_blank", introduce: "",},
+                    {name: "中国色彩网", url: "https://www.cncolor.cn/", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "JetBrains",
-                        url: "https://crustwebsites.net/ipfs/bafybeiatyghkzrrtodzt3stm652rkrjxndg4hq2ublfdmifk7plg5k5brq/",
-                        targets: "_blank",
-                        introduce: "JetBrains的激活码",
-                    },
+                    {name: "JetBrains", url: "https://crustwebsites.net/ipfs/bafybeiatyghkzrrtodzt3stm652rkrjxndg4hq2ublfdmifk7plg5k5brq/", targets: "_blank", introduce: "JetBrains的激活码",},
                     {name: "爱激活", url: "https://www.ajihuo.com/", targets: "_blank", introduce: "",},
                     {name: "积微成著", url: "https://www.jiweichengzhu.com/", targets: "_blank", introduce: "",},
 
@@ -831,19 +799,9 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "打发时间",
-                        url: "https://theuselessweb.com/",
-                        targets: "_blank",
-                        introduce: "一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站",
-                    },
+                    {name: "打发时间", url: "https://theuselessweb.com/", targets: "_blank", introduce: "一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站",},
                     {name: "打字", url: "https://barneyzhao.gitee.io/typing-cn/#/", targets: "_blank", introduce: "",},
-                    {
-                        name: "字符画",
-                        url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20",
-                        targets: "_blank",
-                        introduce: "字母生成字符画",
-                    },
+                    {name: "字符画", url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20", targets: "_blank", introduce: "字母生成字符画",},
 
                     {name: "摸鱼神器", url: "https://fakeupdate.net/", targets: "_blank", introduce: "假装windows升级界面",},
                     {name: "小霸王游戏机", url: "https://www.yikm.net/", targets: "_blank", introduce: "童年的怀旧小游戏",},
@@ -853,18 +811,8 @@ export default new Vuex.Store({
                     {name: "2048", url: "https://2048game.com/", targets: "_blank", introduce: "",},
                     {name: "俄罗斯方块", url: "https://www.goodoldtetris.com/", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "表情包制作",
-                        url: "https://sorry.xuty.tk/wangjingze/",
-                        targets: "_blank",
-                        introduce: "童年的怀旧小游戏",
-                    },
-                    {
-                        name: "三阶魔方",
-                        url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", targets: "_blank", introduce: "童年的怀旧小游戏",},
+                    {name: "三阶魔方", url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                 ],
             },
@@ -877,30 +825,23 @@ export default new Vuex.Store({
                     {name: "hexo", url: "https://hexo.io/zh-cn/", targets: "_blank", introduce: "快速、简洁且高效的博客框架",},
 
                     {name: "Vue资源精选", url: "http://vue.awesometiny.com/", targets: "_blank", introduce: "前端组件库资源",},
-                    {
-                        name: "wordpress",
-                        url: "https://cn.wordpress.org/",
-                        targets: "_blank",
-                        introduce: "WordPress是一款能让您建立出色网站、博客或应用程序的开源软件",
-                    },
+                    {name: "wordpress", url: "https://cn.wordpress.org/", targets: "_blank", introduce: "WordPress是一款能让您建立出色网站、博客或应用程序的开源软件",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "公众号测试",
-                        url: "https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login",
-                        targets: "_blank",
-                        introduce: "",
-                    },
-                    {
-                        name: "企业微信",
-                        url: "https://work.weixin.qq.com/wework_admin/loginpage_wx?redirect_uri=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe#index",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "花瓣", url: "https://huaban.com/", targets: "_blank", introduce: "",},
+                    {name: "站酷", url: "https://www.zcool.com.cn/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "公众号测试", url: "https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login", targets: "_blank", introduce: "",},
+                    {name: "企业微信", url: "https://work.weixin.qq.com/wework_admin/loginpage_wx?redirect_uri=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe#index", targets: "_blank", introduce: "",},
                     {name: "微信官网", url: "https://weixin.qq.com/", targets: "_blank", introduce: "",},
 
                     {name: "微信网页版", url: "https://wx.qq.com/", targets: "_blank", introduce: "",},
