@@ -476,6 +476,10 @@ export default new Vuex.Store({
                     {name: "华南理工", url: "https://scut.online/", targets: "_blank", introduce: "",},
                     {name: "青岛", url: "https://qduoj.com/", targets: "_blank", introduce: "",},
 
+                    {name: "浙江财经", url: "http://acm.ocrosoft.com/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
                 ],
             },
             {
