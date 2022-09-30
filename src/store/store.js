@@ -594,8 +594,8 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "有道云笔记", url: "https://note.youdao.com/", targets: "_blank", introduce: "记笔记",},
+                    {name: "腾讯文档", url: "https://docs.qq.com/desktop/", targets: "_blank", introduce: "",},
                     {name: "拷贝兔", url: "https://cp.anyknew.com/", targets: "_blank", introduce: "小文件的不同电脑传输下载",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
