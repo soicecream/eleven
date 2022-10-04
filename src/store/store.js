@@ -851,6 +851,14 @@ export default new Vuex.Store({
                     {name: "微信网页版", url: "https://wx.qq.com/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "hydro", url: "hydro.js.org", targets: "_blank", introduce: "",},
+                    {name: "青岛", url: "https://opensource.qduoj.com/#/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
                 ]
             },
         ],
