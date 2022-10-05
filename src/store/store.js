@@ -858,7 +858,7 @@ export default new Vuex.Store({
 
                     {name: "hydro", url: "https://hydro.js.org/", targets: "_blank", introduce: "",},
                     {name: "青岛", url: "https://opensource.qduoj.com/#/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "若依", url: "http://doc.ruoyi.vip/ruoyi/", targets: "_blank", introduce: "",},
                 ]
             },
         ],
