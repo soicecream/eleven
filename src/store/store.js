@@ -432,11 +432,15 @@ export default new Vuex.Store({
 
                     {name: "ZIME2020", url: "https://acm.521207.xyz/", targets: "_blank", introduce: "",},
                     {name: "ZIME2021", url: "http://106.53.134.113/loginpage.php", targets: "_blank", introduce: "",},
-                    {name: "乐清", url: "http://51xinao.com/loginpage.php", targets: "_blank", introduce: "",},
+                    {name: "ZIME2022", url: "https://2022.acm.521207.xyz/", targets: "_blank", introduce: "",},
 
+                    {name: "乐清", url: "http://51xinao.com/loginpage.php", targets: "_blank", introduce: "",},
                     {name: "信奥", url: "http://ybt.ssoier.cn:8088/index.php", targets: "_blank", introduce: "",},
                     {name: "USACO", url: "http://www.usaco.org/index.php", targets: "_blank", introduce: "",},
+
                     {name: "OpenJudge", url: "http://openjudge.cn/", targets: "_blank", introduce: "北大的",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
