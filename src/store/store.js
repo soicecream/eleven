@@ -688,6 +688,10 @@ export default new Vuex.Store({
                     {name: "爱激活", url: "https://www.ajihuo.com/", targets: "_blank", introduce: "",},
                     {name: "积微成著", url: "https://www.jiweichengzhu.com/", targets: "_blank", introduce: "",},
 
+                    {name: "异常教程", url: "https://exception.site/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
