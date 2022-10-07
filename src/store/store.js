@@ -846,7 +846,7 @@ export default new Vuex.Store({
 
                     {name: "花瓣", url: "https://huaban.com/", targets: "_blank", introduce: "",},
                     {name: "站酷", url: "https://www.zcool.com.cn/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "osrc", url: "https://docs.osrc.com/", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
