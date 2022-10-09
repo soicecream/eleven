@@ -870,6 +870,14 @@ export default new Vuex.Store({
                     {name: "青岛", url: "https://opensource.qduoj.com/#/", targets: "_blank", introduce: "",},
                     {name: "hoj", url: "https://docs.hdoi.cn/", targets: "_blank", introduce: "",},
 
+                    {name: "hustoj", url: "https://zhblue.github.io/hustoj/#/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
                     {name: "若依", url: "http://doc.ruoyi.vip/ruoyi/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
