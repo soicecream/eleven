@@ -644,7 +644,15 @@ export default new Vuex.Store({
                     {name: "腾讯云", url: "https://cloud.tencent.com/", targets: "_blank", introduce: "",},
 
                     {name: "百度智能云", url: "https://cloud.baidu.com/", targets: "_blank", introduce: "",},
-                    {name: "https://cn.bluehost.com/", url: "https://cn.bluehost.com/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "bluehost", url: "https://cn.bluehost.com/", targets: "_blank", introduce: "",},
+                    {name: "lightnode", url: "https://www.lightnode.com/zh-CN/home", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "xshell", url: "https://www.xshell.com/zh/free-for-home-school/", targets: "_blank", introduce: "",},
