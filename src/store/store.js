@@ -201,7 +201,9 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "评语生成器", url: "https://class.acagrid.com/pc/comment", targets: "_blank", introduce: "",},
+                    {name: "参考文献格式", url: "http://youkud.com/tool/referance/index.html", targets: "_blank", introduce: "参考文献格式生成器",},
                     {name: "字数统计", url: "https://www.eteste.com/", targets: "_blank", introduce: "",},
+
                     {name: "魔方还原", url: "https://rubiks-cube-solver.com/zh/", targets: "_blank", introduce: "",},
                 ],
             },
@@ -619,7 +621,7 @@ export default new Vuex.Store({
                     {name: "图论画图", url: "https://csacademy.com/app/graph_editor/", targets: "_blank", introduce: "",},
 
                     {name: "wolframalpha", url: "https://www.wolframalpha.com/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "参考文献格式", url: "http://youkud.com/tool/referance/index.html", targets: "_blank", introduce: "参考文献格式生成器",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
