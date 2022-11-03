@@ -39,8 +39,6 @@ export default new Vuex.Store({
             {id: 4, title: "水波", type: 1, url: "/", show: false,},
             {id: 5, title: "脉冲波纹催眠", type: 1, url: "/hypnosis", show: true,},
             {id: 6, title: "纸飞机", type: 1, url: "/paper_plane", show: true,},
-            {id: 7, title: "拾忆", type: 2, url: "https://soicecream.github.io/soicecream.github.io/", show: true,},
-            {id: 8, title: "水木加贝", type: 2, url: "https://soicecream.github.io/IWant/", show: true,},
         ],
 
         // 拾忆的url
@@ -666,7 +664,7 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "xshell", url: "https://www.xshell.com/zh/free-for-home-school/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "百度统计", url: "https://tongji.baidu.com/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -680,7 +678,6 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
-
 
                     {name: "图片素材", url: "https://pixabay.com/zh/", targets: "_blank", introduce: "",},
                     {name: "wallhaven", url: "https://wallhaven.cc/", targets: "_blank", introduce: "",},
@@ -717,8 +714,6 @@ export default new Vuex.Store({
                     {name: "音乐解锁", url: "https://demo.unlock-music.dev/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
-
-
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -783,6 +778,14 @@ export default new Vuex.Store({
 
                     {name: "梯子", url: "https://arr003.network/download/", targets: "_blank", introduce: "",},
                     {name: "梯子", url: "https://ayden.lanzouw.com/iHfh30967kud", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "github加速器", url: "https://github.com/dotnetcore/FastGithub", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
