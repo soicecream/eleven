@@ -402,7 +402,7 @@ export default new Vuex.Store({
 
                     {name: "Codeforces", url: "https://codeforces.com/", targets: "_blank", introduce: "",},
                     {name: "CodeChef", url: "https://www.codechef.com/", targets: "_blank", introduce: "",},
-                    {name: "AtCoder", url: "https://www.codechef.com/", targets: "_blank", introduce: "",},
+                    {name: "AtCoder", url: "https://atcoder.jp/", targets: "_blank", introduce: "",},
 
                     {name: "VJudge", url: "https://vjudge.net/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
