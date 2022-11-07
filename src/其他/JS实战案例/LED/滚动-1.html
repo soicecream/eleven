@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <title>javaScript实现文字滚动</title>
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body onload="init()">
+  <div id="wrapper" class="wrapper">
+    <div id="inner" class="inner">
+      <p id="txt" class="txt" onmouseover="stop()" onmouseout="restart()">欢迎学习JavaScript！</p>
+    </div>
+  </div>
+  <marquee class="hscroll">javaScript实现文字水平滚动</marquee>
+<script language="javascript">
+  var wrapperObj = document.getElementById('wrapper');
+  var innerObj = document.getElementById('inner');
+  var txtObj = document.getElementById('txt');
+
+  var wrapperWidth = wrapperObj.offsetWidth;
+  var txtWidth = txtObj.offsetWidth;
+
+  var scroll_v = 30;
+
+  // setInterval(函数名, 时间);   //定义（开始）定时器
+  // clearInterval(定时器对象);   //清除（停止）定时器
+
+  var clock = setInterval(moveleft, scroll_v);
+
+  function init()
+  {
+    if(wrapperWidth > txtWidth)
+      return false;
+    else
+    {
+      innerObj.innerHTML += innerObj.innerHTML;
+
+      clock();
+    }
+  }
+
+  function moveleft()
+  {
+    if(txtWidth > wrapperObj.scrollLeft)
+    {
+      wrapperObj.scrollLeft++;
+
+      clock();
+    }
+    else
+    {
+      wrapperObj.scrollLeft = 0;
+
+      clock();
+    }
+  }
+
+  function stop()
+  {
+    clearInterval(clock);
+  }
+
+  function restart()
+  {
+    clock = setInterval(moveleft, scroll_v);
+  }
+</script>
+</body>
+</html>
