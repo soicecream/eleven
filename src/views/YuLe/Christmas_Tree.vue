@@ -58,7 +58,7 @@ export default {
 /* 鼠标移入小星星， 星星变成图片 */
 .star:hover{
   /* 设置背景图片 不平铺 */
-  background: url("../assets/img/imgs/Christmas_snow.jpg") no-repeat;
+  background: url("../../assets/img/imgs/Christmas_snow.jpg") no-repeat;
   /* 保持原有比例尺寸， 裁剪长边 */
   background-size: cover;
   background-position: center;

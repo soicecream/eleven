@@ -2,7 +2,7 @@
   <div class="stars">
     <div class="central-body" >
       <!--404-->
-      <img src="../assets/img/svg/404.svg" style="width: 300px;">
+      <img src="../../assets/img/svg/404.svg" style="width: 300px;">
       <!--返回-->
       <div class="btn-go">
         <a style="float:left;" class="btn-go-home" @click="go_back">GO BACK</a>
@@ -12,18 +12,18 @@
 
     <div>
       <!-- 火箭 -->
-      <img class="rocket" src="../assets/img/svg/rocket.svg" width="40px">
+      <img class="rocket" src="../../assets/img/svg/rocket.svg" width="40px">
 
       <div class="earth-moon">
         <!--地球-->
-        <img class="earth" src="../assets/img/svg/earth.svg" width="100px">
+        <img class="earth" src="../../assets/img/svg/earth.svg" width="100px">
         <!-- 月亮 -->
-        <img class="moon" src="../assets/img/svg/moon.svg" width="80px">
+        <img class="moon" src="../../assets/img/svg/moon.svg" width="80px">
       </div>
 
       <div class="astronaut_box">
         <!--宇航员-->
-        <img class="astronaut" src="../assets/img/svg/astronaut.svg" width="140px">
+        <img class="astronaut" src="../../assets/img/svg/astronaut.svg" width="140px">
       </div>
     </div>
 
@@ -151,7 +151,7 @@ export default {
 
 /*小星星*/
 .stars {
-  background: url('../assets/img/svg/overlay_stars.svg') repeat left top;
+  background: url('../../assets/img/svg/overlay_stars.svg') repeat left top;
 }
 
 /*小星星的框*/

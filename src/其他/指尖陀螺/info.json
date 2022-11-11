@@ -1,0 +1,110 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.wang/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "https://ffffidget.com/",
+            "path": "index.html",
+            "saved": true,
+            "size": 2144,
+            "children": [
+                {
+                    "url": "https://ffffidget.com/img/spinner.png",
+                    "path": "img/spinner.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://ffffidget.com/js/bundle.js",
+                    "path": "js/bundle.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://ffffidget.com/styles.css",
+                    "path": "css/styles.css",
+                    "saved": true,
+                    "size": 1582,
+                    "children": []
+                },
+                {
+                    "url": "https://ffffidget.com/favicon.ico",
+                    "path": "favicon.ico",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://ffffidget.com/img/share.png",
+                    "path": "img/share.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                }
+            ]
+        }
+    ],
+    "alias": "ffffidget-com-zla62z4l",
+    "info": {
+        "remark": [],
+        "title": "FFFFidget",
+        "domain": "ffffidget.com",
+        "origin": "https://ffffidget.com",
+        "ip": "151.101.1.195",
+        "main": "index.html",
+        "url": "https://ffffidget.com/",
+        "totalSize": "3.73 kB",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "https://ffffidget.com/",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.wang/"
+            }
+        },
+        "response": {
+            "responseUrl": "https://ffffidget.com/",
+            "redirects": [],
+            "statusCode": 200,
+            "headers": {
+                "connection": "close",
+                "content-length": "2106",
+                "cache-control": "max-age=3600",
+                "content-type": "text/html; charset=utf-8",
+                "etag": "\"6e88bd003d647ebfb058639cc416258ff75d6b79c15a1c8729d0dbac8cf8837c\"",
+                "last-modified": "Sat, 23 May 2020 19:16:20 GMT",
+                "strict-transport-security": "max-age=31556926",
+                "accept-ranges": "bytes",
+                "date": "Thu, 10 Nov 2022 08:48:00 GMT",
+                "x-served-by": "cache-hnd18726-HND",
+                "x-cache": "HIT",
+                "x-cache-hits": "1",
+                "x-timer": "S1668070081.521683,VS0,VE1",
+                "vary": "x-fh-requested-host, accept-encoding",
+                "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400"
+            }
+        },
+        "time": {
+            "start": "2022-11-10T08:48:00.418Z",
+            "end": "2022-11-10T08:48:02.739Z"
+        }
+    },
+    "options": {
+        "url": "https://ffffidget.com/",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "formatter": [],
+        "filenameGenerator": "byType"
+    }
+}
