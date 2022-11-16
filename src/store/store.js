@@ -715,7 +715,7 @@ export default new Vuex.Store({
                     {name: "aconvert", url: "https://www.aconvert.com/cn/", targets: "_blank", introduce: "多种文件格式相互转换",},
 
                     {name: "音乐解锁", url: "https://demo.unlock-music.dev/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "在线svg", url: "http://www.zuohaotu.com/svg/", targets: "_blank", introduce: "在线svg制作",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
