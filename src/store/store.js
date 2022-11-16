@@ -39,6 +39,7 @@ export default new Vuex.Store({
             {id: 4, title: "水波", type: 1, url: "/", show: false,},
             {id: 5, title: "脉冲波纹催眠", type: 1, url: "/hypnosis", show: true,},
             {id: 6, title: "纸飞机", type: 1, url: "/paper_plane", show: true,},
+            {id: 7, title: "指尖陀螺", type: 1, url: "/fingertip_gyroscope", show: true,},
 
             {id: 999, title: "百度地图", type: 1, url: "/map", show: false,},
             {id: 1000, title: "text", type: 1, url: "/text", show: false,},
