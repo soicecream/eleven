@@ -64,7 +64,6 @@ export default {
       this.deg = 360 * Math.atan(this.ey / this.ex) / (2 * Math.PI) + 45
       if(this.ex < 0) this.deg += 180
       this.count = 0
-      // console.log(this.ex + " " + this.ey)
     },
   },
 

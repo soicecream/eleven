@@ -71,7 +71,6 @@ li {
 
 .content_list {
   margin-top: 10px;
-  flex-flow: wrap;
   height: 250px;
   overflow: auto;
   position: relative;

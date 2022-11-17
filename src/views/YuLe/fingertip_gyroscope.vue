@@ -10,25 +10,28 @@
 </template>
 
 <script>
+
 export default {
   name: "fingertip_gyroscope",
 
   mounted() {
+    const name = "body-fingertip-gyroscope"
+
     const js = document.createElement("script")
     js.type = "text/javascript"
     js.src = "../js/YuLe/fingertip_gyroscope/fingertip_gyroscope.js"
-    js.title = "fingertip_gyroscope"
-    document.getElementsByTagName('head')[0].appendChild(js);
-
+    js.id = name
+    document.body.appendChild(js);
+    this.$once('hook:beforeDestroy', () => {
+      document.getElementById(name).remove()
+      // this.$forceUpdate()
+      // const res = this.$store.state.navigation_bar_title_vis
+      // this.$router.go(0);
+      // window.location.reload();
+      // this.$store.state.navigation_bar_title_vis = res
+    });
   },
 
-  destroyed() {
-    var allsuspects = document.getElementsByTagName("script")
-    for (var i = allsuspects.length; i >= 0; i--) {
-      if (allsuspects[i] && allsuspects[i].getAttribute("src") != null && allsuspects[i].getAttribute("src").indexOf("fingertip_gyroscope") != -1)
-        allsuspects[i].parentNode.removeChild(allsuspects[i])
-    }
-  },
 }
 </script>
 
