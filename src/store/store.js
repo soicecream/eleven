@@ -186,6 +186,10 @@ export default new Vuex.Store({
                     {name: "音乐解锁", url: "https://demo.unlock-music.dev/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
+                    {name: "简历", url: "https://www.51386.com/", targets: "_blank", introduce: "简历模板",},
+                    {name: "简历", url: "https://www.gerenjianli.com/", targets: "_blank", introduce: "简历模板",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -921,6 +925,14 @@ export default new Vuex.Store({
 
                     {name: "若依", url: "http://doc.ruoyi.vip/ruoyi/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "简历", url: "https://www.51386.com/", targets: "_blank", introduce: "简历模板",},
+                    {name: "简历", url: "https://www.gerenjianli.com/", targets: "_blank", introduce: "简历模板",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                 ]
             },
