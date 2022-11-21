@@ -53,12 +53,7 @@ export default new Vuex.Store({
                 content: [
                     {name: "百度", url: "https://www.baidu.com/", targets: "_blank", introduce: "百度一下,你就知道",},
                     {name: "微博", url: "https://www.weibo.com/", targets: "_blank", introduce: "随时随地发现新鲜事",},
-                    {
-                        name: "知乎",
-                        url: "https://www.zhihu.com/",
-                        targets: "_blank",
-                        introduce: "中文互联网高质量的问答社区和创作者聚集的原创内容平台",
-                    },
+                    {name: "知乎", url: "https://www.zhihu.com/", targets: "_blank", introduce: "中文互联网高质量的问答社区和创作者聚集的原创内容平台",},
 
                     {name: "B站", url: "https://www.bilibili.com/", targets: "_blank", introduce: "哔哩哔哩 (゜-゜)つロ 干杯~",},
                     {name: "知网", url: "https://www.cnki.net/", targets: "_blank", introduce: "",},
@@ -118,18 +113,8 @@ export default new Vuex.Store({
                 title: "学习",
                 url_body_color: "#414141",
                 content: [
-                    {
-                        name: "学习通",
-                        url: "https://passport2.chaoxing.com/login?fid=&newversion=true&refer=https%3A%2F%2Fi.chaoxing.com",
-                        targets: "_blank",
-                        introduce: "",
-                    },
-                    {
-                        name: "懒人Excel",
-                        url: "https://www.lanrenexcel.com/",
-                        targets: "_blank",
-                        introduce: "学习Excel 我也不知道好还是不好",
-                    },
+                    {name: "学习通", url: "https://passport2.chaoxing.com/login?fid=&newversion=true&refer=https%3A%2F%2Fi.chaoxing.com", targets: "_blank", introduce: "",},
+                    {name: "懒人Excel", url: "https://www.lanrenexcel.com/", targets: "_blank", introduce: "学习Excel 我也不知道好还是不好",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -149,12 +134,7 @@ export default new Vuex.Store({
                     {name: "谷歌翻译", url: "https://translate.google.cn/", targets: "_blank", introduce: "",},
 
                     {name: "搜狗翻译", url: "https://fanyi.sogou.com/text", targets: "_blank", introduce: "",},
-                    {
-                        name: "DeepL",
-                        url: "https://www.deepl.com/translator",
-                        targets: "_blank",
-                        introduce: "全世界最准确的翻译",
-                    },
+                    {name: "DeepL", url: "https://www.deepl.com/translator", targets: "_blank", introduce: "全世界最准确的翻译",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -169,12 +149,7 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "PPT模板",
-                        url: "https://ppt.sotary.com/web/wxapp/index.html",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "PPT模板", url: "https://ppt.sotary.com/web/wxapp/index.html", targets: "_blank", introduce: "",},
                     {name: "PDF转换", url: "https://www.pdfpai.com/", targets: "_blank", introduce: "",},
                     {name: "调音", url: "https://vocalremover.org/ch/", targets: "_blank", introduce: "对声音的一些处理",},
 
@@ -241,19 +216,9 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "打发时间",
-                        url: "https://theuselessweb.com/",
-                        targets: "_blank",
-                        introduce: "一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站",
-                    },
+                    {name: "打发时间", url: "https://theuselessweb.com/", targets: "_blank", introduce: "一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站",},
                     {name: "打字", url: "https://barneyzhao.gitee.io/typing-cn/#/", targets: "_blank", introduce: "",},
-                    {
-                        name: "字符画",
-                        url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20",
-                        targets: "_blank",
-                        introduce: "字母生成字符画",
-                    },
+                    {name: "字符画", url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20", targets: "_blank", introduce: "字母生成字符画",},
 
                     {name: "摸鱼神器", url: "https://fakeupdate.net/", targets: "_blank", introduce: "假装windows升级界面",},
                     {name: "小霸王游戏机", url: "https://www.yikm.net/", targets: "_blank", introduce: "童年的怀旧小游戏",},
@@ -263,18 +228,8 @@ export default new Vuex.Store({
                     {name: "2048", url: "https://2048game.com/", targets: "_blank", introduce: "",},
                     {name: "俄罗斯方块", url: "https://www.goodoldtetris.com/", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "表情包制作",
-                        url: "https://sorry.xuty.tk/wangjingze/",
-                        targets: "_blank",
-                        introduce: "童年的怀旧小游戏",
-                    },
-                    {
-                        name: "三阶魔方",
-                        url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", targets: "_blank", introduce: "童年的怀旧小游戏",},
+                    {name: "三阶魔方", url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                 ],
             },
@@ -286,18 +241,8 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "视频会员1",
-                        url: "https://greasyfork.org/zh-CN/scripts/418804-%E8%A7%A3%E9%94%81b%E7%AB%99%E5%A4%A7%E4%BC%9A%E5%91%98%E7%95%AA%E5%89%A7-b%E7%AB%99%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E4%B8%8B%E8%BD%BD-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A-%E5%85%A8%E7%BD%91%E9%9F%B3%E4%B9%90%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD-%E6%B2%B9%E7%AE%A1-facebook%E7%AD%89%E5%9B%BD%E5%A4%96%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E4%B8%8B%E8%BD%BD-%E7%BD%91%E7%9B%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%A0%B4%E8%A7%A3%E6%97%A0%E9%99%90%E4%B8%8B%E8%BD%BD%E7%AD%89",
-                        targets: "_blank",
-                        introduce: "",
-                    },
-                    {
-                        name: "视频会员2",
-                        url: "https://greasyfork.org/zh-CN/scripts/370634-%E6%87%92%E4%BA%BA%E4%B8%93%E7%94%A8-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A-%E5%85%A8%E7%BD%91%E9%9F%B3%E4%B9%90%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD-%E7%9F%A5%E4%B9%8E%E5%A2%9E%E5%BC%BA-%E7%9F%AD%E8%A7%86%E9%A2%91%E6%97%A0%E6%B0%B4%E5%8D%B0%E4%B8%8B%E8%BD%BD-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%E7%AD%89%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%B7%A5%E5%85%B7%E7%AE%B1-%E5%8A%9F%E8%83%BD%E5%8F%AF%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%85%B3-%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0-%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8-v5-4",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "视频会员1", url: "https://greasyfork.org/zh-CN/scripts/418804-%E8%A7%A3%E9%94%81b%E7%AB%99%E5%A4%A7%E4%BC%9A%E5%91%98%E7%95%AA%E5%89%A7-b%E7%AB%99%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E4%B8%8B%E8%BD%BD-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A-%E5%85%A8%E7%BD%91%E9%9F%B3%E4%B9%90%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD-%E6%B2%B9%E7%AE%A1-facebook%E7%AD%89%E5%9B%BD%E5%A4%96%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E4%B8%8B%E8%BD%BD-%E7%BD%91%E7%9B%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%A0%B4%E8%A7%A3%E6%97%A0%E9%99%90%E4%B8%8B%E8%BD%BD%E7%AD%89", targets: "_blank", introduce: "",},
+                    {name: "视频会员2", url: "https://greasyfork.org/zh-CN/scripts/370634-%E6%87%92%E4%BA%BA%E4%B8%93%E7%94%A8-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A-%E5%85%A8%E7%BD%91%E9%9F%B3%E4%B9%90%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD-%E7%9F%A5%E4%B9%8E%E5%A2%9E%E5%BC%BA-%E7%9F%AD%E8%A7%86%E9%A2%91%E6%97%A0%E6%B0%B4%E5%8D%B0%E4%B8%8B%E8%BD%BD-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%E7%AD%89%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%B7%A5%E5%85%B7%E7%AE%B1-%E5%8A%9F%E8%83%BD%E5%8F%AF%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%85%B3-%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0-%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8-v5-4", targets: "_blank", introduce: "",},
                 ]
             },
         ],
@@ -310,12 +255,7 @@ export default new Vuex.Store({
                 content: [
                     {name: "百度", url: "https://www.baidu.com/", targets: "_blank", introduce: "百度一下,你就知道",},
                     {name: "微博", url: "https://www.weibo.com/", targets: "_blank", introduce: "随时随地发现新鲜事",},
-                    {
-                        name: "知乎",
-                        url: "https://www.zhihu.com/",
-                        targets: "_blank",
-                        introduce: "中文互联网高质量的问答社区和创作者聚集的原创内容平台",
-                    },
+                    {name: "知乎", url: "https://www.zhihu.com/", targets: "_blank", introduce: "中文互联网高质量的问答社区和创作者聚集的原创内容平台",},
 
                     {name: "B站", url: "https://www.bilibili.com/", targets: "_blank", introduce: "哔哩哔哩 (゜-゜)つロ 干杯~",},
                     {name: "知网", url: "https://www.cnki.net/", targets: "_blank", introduce: "",},
@@ -349,19 +289,9 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "LaTeX公式",
-                        url: "https://www.cnblogs.com/1024th/p/11623258.html",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "LaTeX公式", url: "https://www.cnblogs.com/1024th/p/11623258.html", targets: "_blank", introduce: "",},
                     {name: "在线LaTeX", url: "https://www.latexlive.com/", targets: "_blank", introduce: "",},
-                    {
-                        name: "VPN",
-                        url: "https://newvpn.zime.edu.cn/login/login.html",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "VPN", url: "https://newvpn.zime.edu.cn/login/login.html", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -421,18 +351,8 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "做题统计", url: "https://ojhunt.com/", targets: "_blank", introduce: "",},
-                    {
-                        name: "CFTracker",
-                        url: "https://cftracker.netlify.app/contests",
-                        targets: "_blank",
-                        introduce: "",
-                    },
-                    {
-                        name: "atc Problems",
-                        url: "https://kenkoooo.com/atcoder/#/table/",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "CFTracker", url: "https://cftracker.netlify.app/contests", targets: "_blank", introduce: "cf的题目统计",},
+                    {name: "atc Problems", url: "https://kenkoooo.com/atcoder/#/table/", targets: "_blank", introduce: "abc的题目统计",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -458,21 +378,11 @@ export default new Vuex.Store({
                     {name: "东方博宜", url: "https://oj.czos.cn/", targets: "_blank", introduce: "",},
                     {name: "51nod", url: "https://www.51nod.com/", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "N诺",
-                        url: "https://noobdream.com/DreamJudge/Contest/index_judge/",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "N诺", url: "https://noobdream.com/DreamJudge/Contest/index_judge/", targets: "_blank", introduce: "",},
                     {name: "NOI", url: "http://noi-test.zzstep.com/", targets: "_blank", introduce: "",},
                     {name: "吉首", url: "http://www.jsuacm.cn/", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "台州学院",
-                        url: "http://www.tzcoder.cn/acmhome/welcome.do?method=index",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "台州学院", url: "http://www.tzcoder.cn/acmhome/welcome.do?method=index", targets: "_blank", introduce: "",},
                     {name: "Libre OJ", url: "https://loj.ac/", targets: "_blank", introduce: "",},
                     {name: "华东师范", url: "https://acm.ecnu.edu.cn/", targets: "_blank", introduce: "",},
 
@@ -498,18 +408,8 @@ export default new Vuex.Store({
                 title: "学习",
                 url_body_color: "#414141",
                 content: [
-                    {
-                        name: "学习通",
-                        url: "https://passport2.chaoxing.com/login?fid=&newversion=true&refer=https%3A%2F%2Fi.chaoxing.com",
-                        targets: "_blank",
-                        introduce: "",
-                    },
-                    {
-                        name: "懒人Excel",
-                        url: "https://www.lanrenexcel.com/",
-                        targets: "_blank",
-                        introduce: "学习Excel 我也不知道好还是不好",
-                    },
+                    {name: "学习通", url: "https://passport2.chaoxing.com/login?fid=&newversion=true&refer=https%3A%2F%2Fi.chaoxing.com", targets: "_blank", introduce: "",},
+                    {name: "懒人Excel", url: "https://www.lanrenexcel.com/", targets: "_blank", introduce: "学习Excel 我也不知道好还是不好",},
                     {name: "OI Wiki", url: "https://oi-wiki.org/", targets: "_blank", introduce: "编程知识整合站点",},
 
                     {name: "律法", url: "https://flk.npc.gov.cn/", targets: "_blank", introduce: "国家法律法规",},
@@ -521,22 +421,12 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "可视化编程", url: "https://visualgo.net/zh", targets: "_blank", introduce: "",},
-                    {
-                        name: "希赛",
-                        url: "https://wangxiao.xisaiwang.com/tiku2/list-zt132.html",
-                        targets: "_blank",
-                        introduce: "软考",
-                    },
+                    {name: "希赛", url: "https://wangxiao.xisaiwang.com/tiku2/list-zt132.html", targets: "_blank", introduce: "软考"},
                     {name: "W3school", url: "https://www.w3school.com.cn/", targets: "_blank", introduce: "Web",},
 
                     {name: "Lay-ui", url: "https://www.layuiweb.com/", targets: "_blank", introduce: "开源模块化前端UI框架",},
                     {name: "QuickRef.ME", url: "https://quickref.me/", targets: "_blank", introduce: "",},
-                    {
-                        name: "ECHARTS",
-                        url: "https://echarts.apache.org/zh/index.html",
-                        targets: "_blank",
-                        introduce: "一个基于 JavaScript 的开源可视化图表库",
-                    },
+                    {name: "ECHARTS", url: "https://echarts.apache.org/zh/index.html", targets: "_blank", introduce: "一个基于 JavaScript 的开源可视化图表库",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -546,47 +436,25 @@ export default new Vuex.Store({
                     {name: "Vue.js", url: "https://cn.vuejs.org/index.html", targets: "_blank", introduce: "",},
                     {name: "MyBatis-P", url: "https://baomidou.com/", targets: "_blank", introduce: "Spring Boot",},
 
-                    {
-                        name: "VuePress",
-                        url: "https://www.vuepress.cn/",
-                        targets: "_blank",
-                        introduce: "Vue 驱动的静态网站生成器",
-                    },
-                    {
-                        name: "Element-ui2",
-                        url: "https://element.eleme.io/#/zh-CN",
-                        targets: "_blank",
-                        introduce: "基于 Vue2 的 UI 组件库和前端解决方案",
-                    },
-                    {
-                        name: "Element-ui3",
-                        url: "https://element-plus.gitee.io/zh-CN/",
-                        targets: "_blank",
-                        introduce: "基于 Vue3 的 UI 组件库和前端解决方案",
-                    },
+                    {name: "VuePress", url: "https://www.vuepress.cn/", targets: "_blank", introduce: "Vue 驱动的静态网站生成器",},
+                    {name: "Element-ui", url: "https://element.eleme.io/#/zh-CN", targets: "_blank", introduce: "基于 Vue2 的 UI 组件库和前端解决方案",},
+                    {name: "Element+", url: "https://element-plus.gitee.io/zh-CN/", targets: "_blank", introduce: "基于 Vue3 的 UI 组件库和前端解决方案",},
 
-                    {
-                        name: "Ant Design",
-                        url: "https://2x.antdv.com/components/overview-cn",
-                        targets: "_blank",
-                        introduce: "蚂蚁金服UI组件库",
-                    },
-                    {
-                        name: "View Design",
-                        url: "https://www.iviewui.com/",
-                        targets: "_blank",
-                        introduce: "基于 Vue3 的 UI 组件库和前端解决方案",
-                    },
+                    {name: "Ant Design", url: "https://2x.antdv.com/components/overview-cn", targets: "_blank", introduce: "蚂蚁金服UI组件库",},
+                    {name: "View Design", url: "https://www.iviewui.com/", targets: "_blank", introduce: "基于 Vue3 的 UI 组件库和前端解决方案",},
                     {name: "typecho", url: "http://typecho.org/", targets: "_blank", introduce: "",},
 
-                    {
-                        name: "Gridea",
-                        url: "https://gridea.dev/",
-                        targets: "_blank",
-                        introduce: "Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。",
-                    },
+                    {name: "Gridea", url: "https://gridea.dev/", targets: "_blank", introduce: "Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。",},
                     {name: "zblogcn", url: "https://www.zblogcn.com/", targets: "_blank", introduce: "",},
                     {name: "hugo", url: "https://gohugo.io/", targets: "_blank", introduce: "Hugo 是最流行的开源静态站点生成器之一",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "爱课堂", url: "https://www.icourses.cn/home/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
                 ],
             },
             {
