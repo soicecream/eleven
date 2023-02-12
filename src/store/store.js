@@ -32,14 +32,14 @@ export default new Vuex.Store({
         // 导航栏的所有内容
         // npm run deploy
         top_title_span_url: [
-            {id: 0, title: "圣诞树", type: 1, url: "/christmas_tree", show: false,},
+            {id: 0, title: "圣诞树", type: 1, url: "/christmasTree", show: false,},
             {id: 1, title: "图库", type: 1, url: "/picture", show: false,},
             {id: 2, title: "日志", type: 1, url: "/journal", show: true,},
-            {id: 3, title: "绕口令", type: 1, url: "/tongue_twister", show: true,},
+            {id: 3, title: "绕口令", type: 1, url: "/tongueTwister", show: true,},
             {id: 4, title: "水波", type: 1, url: "/", show: false,},
             {id: 5, title: "脉冲波纹催眠", type: 1, url: "/hypnosis", show: true,},
-            {id: 6, title: "纸飞机", type: 1, url: "/paper_plane", show: true,},
-            {id: 7, title: "指尖陀螺", type: 1, url: "/fingertip_gyroscope", show: true,},
+            {id: 6, title: "纸飞机", type: 1, url: "/paperPlane", show: true,},
+            {id: 7, title: "指尖陀螺", type: 1, url: "/fingertipGyroscope", show: true,},
 
             {id: 999, title: "百度地图", type: 1, url: "/map", show: false,},
             {id: 1000, title: "text", type: 1, url: "/text", show: false,},
@@ -306,7 +306,21 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {name: "逗逼拯救世界", url: "https://www.dbbqb.com/", targets: "_blank", introduce: "表情包搜索",},
+                    {name: "dbbqb", url: "https://www.dbbqb.com/", targets: "_blank", introduce: "表情包搜索",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "chatGPT", url: "https://chat.openai.com/auth/login", targets: "_blank", introduce: "ai回答",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "好多素教育", url: "https://school.haoduo.vip/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
 
                 ],
             },
@@ -437,7 +451,7 @@ export default new Vuex.Store({
                     {name: "MyBatis-P", url: "https://baomidou.com/", targets: "_blank", introduce: "Spring Boot",},
 
                     {name: "VuePress", url: "https://www.vuepress.cn/", targets: "_blank", introduce: "Vue 驱动的静态网站生成器",},
-                    {name: "Element-ui", url: "https://element.eleme.io/#/zh-CN", targets: "_blank", introduce: "基于 Vue2 的 UI 组件库和前端解决方案",},
+                    {name: "Element-ui", url: "https://element.eleme.cn/#/zh-CN", targets: "_blank", introduce: "基于 Vue2 的 UI 组件库和前端解决方案",},
                     {name: "Element+", url: "https://element-plus.gitee.io/zh-CN/", targets: "_blank", introduce: "基于 Vue3 的 UI 组件库和前端解决方案",},
 
                     {name: "Ant Design", url: "https://2x.antdv.com/components/overview-cn", targets: "_blank", introduce: "蚂蚁金服UI组件库",},
@@ -454,6 +468,34 @@ export default new Vuex.Store({
 
                     {name: "爱课堂", url: "https://www.icourses.cn/home/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "qwerty", url: "https://qwerty.liumingye.cn/", targets: "_blank", introduce: "被单词",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "码市", url: "https://www.codemart.com/", targets: "_blank", introduce: "",},
+                    {name: "猿急送", url: "https://www.yuanjisong.com/", targets: "_blank", introduce: "",},
+                    {name: "解放号", url: "https://www.jfh.com/", targets: "_blank", introduce: "",},
+
+                    {name: "圆领", url: "https://www.yuanling.com/home", targets: "_blank", introduce: "",},
+                    {name: "外包大师", url: "http://www.waibaodashi.com/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "自考", url: "https://www.exam100.net/", targets: "_blank", introduce: "自考",},
+                    {name: "专升本数学", url: "http://video.kaola100.com/book_list/5142", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                 ],
             },
@@ -496,6 +538,14 @@ export default new Vuex.Store({
 
                     {name: "wolframalpha", url: "https://www.wolframalpha.com/", targets: "_blank", introduce: "",},
                     {name: "参考文献格式", url: "http://youkud.com/tool/referance/index.html", targets: "_blank", introduce: "参考文献格式生成器",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "代码可视化", url: "https://pythontutor.com/", targets: "_blank", introduce: "代码可视化",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -802,6 +852,14 @@ export default new Vuex.Store({
                     {name: "简历", url: "https://www.51386.com/", targets: "_blank", introduce: "简历模板",},
                     {name: "简历", url: "https://www.gerenjianli.com/", targets: "_blank", introduce: "简历模板",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "navnav", url: "https://navnav.co/", targets: "_blank", introduce: "css动画布局",},
+                    {name: "animxyz", url: "https://animxyz.com/", targets: "_blank", introduce: "css动画布局",},
+                    {name: "100天css", url: "https://100dayscss.com/", targets: "_blank", introduce: "",},
                 ]
             },
         ],

@@ -17,6 +17,15 @@ Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
+    {
+        let dateTime = new Date()
+        let month = dateTime.getMonth() + 1, day = dateTime.getDate()
+        store.state.top_title_span_url[0].show = false
+        if (month == 1 && day == 2) {
+            store.state.top_title_span_url[0].show = true
+        }
+    }
+
     if (to.path === '/404') {
         document.body.style.backgroundImage = 'url(' + require("@/assets/img/background/000.jpg") + ')'
         document.body.style.backgroundSize = 'cover';
@@ -24,9 +33,9 @@ router.beforeEach((to, from, next) => {
         store.state.navigation_bar = false
         next()
     } else {
-        if (to.matched.length === 0)
+        if (to.matched.length === 0) {
             next('/404')
-        else {
+        } else {
             let show_page = to.path == '/' || to.path == '/eleven' || to.path == '/quiet'
 
             if (!show_page) {
@@ -53,10 +62,11 @@ router.beforeEach((to, from, next) => {
                     store.state.navigation_bar_time_color = '#ffffff'
 
                 } else {
-                    if (to.path === '/hypnosis' || to.path === '/paper_plane')
+                    if (to.path === '/hypnosis' || to.path === '/paperPlane') {
                         store.state.navigation_bar_time_color = '#ffffff'
-                    else
+                    } else {
                         store.state.navigation_bar_time_color = '#414141'
+                    }
 
                     document.body.style.backgroundImage = 'url()'
 
@@ -64,16 +74,17 @@ router.beforeEach((to, from, next) => {
 
 
                 // 设置背景颜色
-                if (to.path === '/hypnosis' || to.path === '/paper_plane')
+                if (to.path === '/hypnosis' || to.path === '/paperPlane') {
                     document.body.style.backgroundColor = '#00b8a9'
-                else if (to.path === '/christmas_tree')
+                } else if (to.path === '/christmasTree') {
                     document.body.style.backgroundColor = '#333333'
-                else if (to.path === '/fingertip_gyroscope') {
+                } else if (to.path === '/fingertipGyroscope') {
                     document.body.style.background = '-moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 100%)'
                     document.body.style.background = '-webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 100%)'
                     document.body.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 100%)'
-                } else
+                } else {
                     document.body.style.backgroundColor = '#ffffff'
+                }
 
                 document.title = to.name ? to.name : "拾忆哟"
                 next()
@@ -84,7 +95,5 @@ router.beforeEach((to, from, next) => {
 });
 
 new Vue({
-    router,
-    store,
-    render: h => h(App)
+    router, store, render: h => h(App)
 }).$mount('#app');

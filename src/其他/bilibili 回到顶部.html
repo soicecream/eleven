@@ -4,32 +4,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .to_top_img {
+        .back-to-top {
             background-image: url("../assets/img/imgs/bilibili rocket.png");
-            position: fixed;
-            transform: translateY(0);
             width: 62px;
-            height: 85px;
-            cursor: pointer;
-            background-position: -40px -44px;
+            height: 88px;
         }
 
-        .to_top_img:hover {
-            animation: to-top-fly 0.4s steps(1) infinite;
+        .back-to-top:hover {
+            animation: to-top-fly .4s steps(1) infinite;
         }
 
         @keyframes to-top-fly {
-            0% { background-position-x: -142.5px; }
-            16.5% { background-position-x: -284.5px; }
-            33% { background-position-x: -429.5px; }
-            49.5% { background-position-x: -570.5px; }
-            66% { background-position-x: -714.5px; }
-            82.5% { background-position-x: -856.5px; }
-            100% { background-position-x: 0px; }
+            0% {background-position-x: -142.5px;}
+            16.5% {background-position-x: -284.5px;}
+            33% {background-position-x: -429.5px;}
+            49.5% {background-position-x: -570.5px;}
+            66% {background-position-x: -714.5px;}
+            82.5% {background-position-x: -856.5px;}
+            100% {background-position-x: 0px;}
         }
+
     </style>
 </head>
 <body>
-    <div class="to_top_img"></div>
+<div class="back-to-top"></div>
 </body>
 </html>

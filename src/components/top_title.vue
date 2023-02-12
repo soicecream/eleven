@@ -4,12 +4,10 @@
     <span class="title_span_to_to"> <a> U </a> </span>
     <span class="title_span_to"> <router-link to="/"> H </router-link> </span>
     <span class="title_span_to_to"> <router-link to="/quiet"> M </router-link> </span>
-    <span class="title_span_to_to"> <a> E </a> </span>
+    <span class="title_span_to_to"> <router-link to="/links"> E </router-link> </span>
     <span class="title_span_to_to"> <a @click="$store.state.navigation_bar_title_vis = !$store.state.navigation_bar_title_vis"> · </a> </span>
-    <span v-for="(index, i) in span_url" :key="i"
-          v-show="$store.state.navigation_bar_title_vis && index.show" class="title_span_to_to" >
-      <router-link v-if="index.type == 1" :to="index.url"> {{index.id}} </router-link>
-      <a v-else :title="index.title" :href="index.url"> {{index.id}} </a>
+    <span v-for="(index, i) in span_url" :key="i" v-show="$store.state.navigation_bar_title_vis && index.show" class="title_span_to_to">
+      <router-link :to="index.url" :title="index.title"> {{ index.id }} </router-link>
     </span>
 
     <div style="float: right; text-align: center">
@@ -31,41 +29,36 @@ export default {
       ShowNowTime: "",
       weeks: ["天", "一", "二", "三", "四", "五", "六"],
 
-      span_url: [],
+      span_url: this.$store.state.top_title_span_url,
 
     }
   },
 
   created() {
-    this.get_top_title()
     this.getTime()
 
   },
 
   methods: {
-    get_top_title() {
-      this.span_url = this.$store.state.top_title_span_url
-    },
 
     getTime() {
-      let data = new Date();
-      let year = data.getFullYear();
-      let month = data.getMonth() + 1;
-      let day = data.getDate();
+      let dateTime = new Date();
+      let year = dateTime.getFullYear();
+      let month = dateTime.getMonth() + 1;
+      let day = dateTime.getDate();
 
-      let hour = data.getHours();
+      let hour = dateTime.getHours();
       hour = hour < 10 ? '0' + hour : hour;
-      let minute = data.getMinutes();
+      let minute = dateTime.getMinutes();
       minute = minute < 10 ? '0' + minute : minute;
-      let seconds = data.getSeconds();
+      let seconds = dateTime.getSeconds();
       seconds = seconds < 10 ? '0' + seconds : seconds;
 
-      this.ShowNowDate = year + "年" + month + "月" + day + "日" + " " + "星期" + this.weeks[data.getDay()];
+      this.ShowNowDate = year + "年" + month + "月" + day + "日" + " " + "星期" + this.weeks[dateTime.getDay()];
       this.ShowNowTime = hour + "时" + minute + "分" + seconds + "秒";
 
       setTimeout(this.getTime, 1000);
     },
-
 
 
   },

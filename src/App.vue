@@ -1,8 +1,8 @@
 <template>
-  <div id="app" >
+  <div id="app">
     <top_title class="top_title" v-if="this.$store.state.navigation_bar"/>
-    <router-view v-if="vis_top_top" />
-    <router-view v-else />
+    <router-view v-if="vis_top_top"/>
+    <router-view v-else/>
     <div class="to_top" v-if="vis_f">
       <img class="to_top_img" src="./assets/img/imgs/gotop.png" @click="go_to_top">
     </div>
@@ -43,14 +43,12 @@ export default {
   },
 
   // 计算属性
-  computed: {
-
-  },
+  computed: {},
 
   // 定义函数  事件处理器
   methods: {
     // 获取文本数据
-    get_text_data(file_url){
+    get_text_data(file_url) {
       //  更新数据market_id.txt文件接口
       let xhr = new XMLHttpRequest()
       let okStatus = document.location.protocol === "file:" ? 0 : 200
@@ -62,7 +60,7 @@ export default {
     },
 
     // 返回顶部
-    go_to_top () {
+    go_to_top() {
       // document.body.scrollTop = 0;
       // document.documentElement.scrollTop = 0;
 
@@ -75,7 +73,7 @@ export default {
       }, 16)
     },
     // 返回顶部是否显示
-    check_roll_show () {
+    check_roll_show() {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
       this.scrollTop = scrollTop
       if (this.scrollTop > 0)
@@ -84,25 +82,10 @@ export default {
         this.vis_f = 'none'
     },
 
-    // 判断当天是否为圣诞节
-    check_Christmas_day() {
-      let data = new Date();
-      let month = data.getMonth() + 1;
-      let day = data.getDate();
-
-      if(month == 12 && day == 25)
-        this.$store.state.top_title_span_url[0].show = true
-      else
-        this.$store.state.top_title_span_url[0].show = false
-      // this.$store.state.top_title_span_url[0].show = true
-    },
-
   },
 
   // 侦听器
-  watch: {
-
-  },
+  watch: {},
 
 
   // 下面都是 生命周期钩子
@@ -122,50 +105,48 @@ export default {
     // this.$store.state.Journal_text = this.get_text_data('../../txt/Journal.txt')
     // this.$store.state.tongue_twister_text = this.get_text_data('../../txt/TongueTwister.txt')
 
-    this.check_Christmas_day()
-
     window.addEventListener('scroll', this.check_roll_show)
 
   },
 
   // 实例被挂载后调用  挂载阶段：数据加载到页面
-  mounted () {
+  mounted() {
 
   },
 
   // 在数据发生改变后，DOM 被更新之前被调用。
-  beforeUpdate () {
+  beforeUpdate() {
 
   },
 
   // 在数据更改导致的虚拟 DOM 重新渲染和更新完毕之后被调用。   数据更新后调用
   // 该钩子在服务器端渲染期间不被调用。
-  updated () {
+  updated() {
 
   },
 
   // 被 keep-alive 缓存的组件激活时调用。
   // 该钩子在服务器端渲染期间不被调用。
-  activated () {
+  activated() {
 
   },
 
   // 被 keep-alive 缓存的组件失活时调用。
   // 该钩子在服务器端渲染期间不被调用。
-  deactivated () {
+  deactivated() {
 
   },
 
   // 实例销毁之前调用。在这一步，实例仍然完全可用。
   // 该钩子在服务器端渲染期间不被调用。
-  beforeDestroy () {
+  beforeDestroy() {
 
   },
 
   // 实例销毁后调用。
   //  该钩子被调用后，对应Vue实例的所有指令都被解绑，所有的事件监听器被移除，所有的子实例也都被销毁。
   // 该钩子在服务器端渲染期间不被调用。
-  destroyed () {
+  destroyed() {
     window.removeEventListener('scroll', this.check_roll_show)
 
   },
@@ -183,13 +164,13 @@ export default {
   color: #2c3e50;
 }
 
-.top_title{
+.top_title {
   z-index: 9999;
   position: sticky;
   top: unset;
 }
 
-.to_top_img{
+.to_top_img {
   display: none;
   position: fixed;
   bottom: 20px;

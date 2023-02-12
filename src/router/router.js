@@ -4,18 +4,20 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', name: '首页', component: () => import('../views/share/Home'), },
+  { path: '/', name: '首页', component: () => import('../views/share/home'), },
   { path: '/eleven', name: '拾忆', component: () => import('../views/webPage/ShiYiEleven'), children: [ ], },
   { path: '/quiet', name: '水木加贝', component: () => import('../views/webPage/IWant'), },
 
+  { path: '/links', name: '友链', component: () => import('../views/share/friendly_chain'), },
+
   { path: '/picture', name: '图库', component: () => import('../views/text/Picture_list'), },
   { path: '/journal', name: '日志', component: () => import('../views/text/Journal'), },
-  { path: '/tongue_twister', name: '绕口令', component: () => import('../views/text/Tongue_Twister'), },
+  { path: '/tongueTwister', name: '绕口令', component: () => import('../views/text/Tongue_Twister'), },
 
-  { path: '/christmas_tree', name: '圣诞树', component: () => import('../views/YuLe/Christmas_Tree'), },
+  { path: '/christmasTree', name: '圣诞树', component: () => import('../views/YuLe/Christmas_Tree'), },
   { path: '/hypnosis', name: '脉冲波纹催眠', component: () => import('../views/YuLe/Hypnosis'), },
-  { path: '/paper_plane', name: '纸飞机', component: () => import('../views/YuLe/Paper_Plane'), },
-  { path: '/fingertip_gyroscope', name: '指尖陀螺', component: () => import('../views/YuLe/fingertip_gyroscope'), },
+  { path: '/paperPlane', name: '纸飞机', component: () => import('../views/YuLe/Paper_Plane'), },
+  { path: '/fingertipGyroscope', name: '指尖陀螺', component: () => import('../views/YuLe/fingertip_gyroscope'), },
 
 
   { path: '/map', name: '地图', component: () => import('../views/share/map'), },
