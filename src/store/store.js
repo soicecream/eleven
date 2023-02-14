@@ -625,6 +625,10 @@ export default new Vuex.Store({
                     {name: "中国色", url: "http://zhongguose.com/", targets: "_blank", introduce: "",},
                     {name: "中国色彩网", url: "https://www.cncolor.cn/", targets: "_blank", introduce: "",},
 
+                    {name: "mycolor", url: "https://mycolor.space/", targets: "_blank", introduce: "选取颜色的三色编码",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -834,6 +838,10 @@ export default new Vuex.Store({
                     {name: "hoj", url: "https://docs.hdoi.cn/", targets: "_blank", introduce: "",},
 
                     {name: "hustoj", url: "https://zhblue.github.io/hustoj/#/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "bmrs", url: "https://www.bmrs.top/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
