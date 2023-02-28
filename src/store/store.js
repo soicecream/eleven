@@ -281,9 +281,9 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {name: "qq邮箱", url: "https://mail.qq.com/", targets: "_blank", introduce: "",},
+                    {name: "QQ邮箱", url: "https://mail.qq.com/", targets: "_blank", introduce: "",},
                     {name: "网易邮箱", url: "https://mail.163.com/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "谷歌邮箱", url: "https://mail.google.com/mail/u/0/#inbox", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -318,9 +318,9 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {name: "好多素教育", url: "https://school.haoduo.vip/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "coding", url: "https://renyikeji.coding.net/", targets: "_blank", introduce: "人亦科技的coding",},
+                    {name: "slack", url: "https://slack.com/", targets: "_blank", introduce: "人亦科技的slack",},
+                    {name: "Eolink Apikit", url: "https://space-renyikeji.w.eolink.com/home", targets: "_blank", introduce: "人亦科技的apikit",},
 
                 ],
             },
@@ -462,8 +462,8 @@ export default new Vuex.Store({
                     {name: "zblogcn", url: "https://www.zblogcn.com/", targets: "_blank", introduce: "",},
                     {name: "hugo", url: "https://gohugo.io/", targets: "_blank", introduce: "Hugo 是最流行的开源静态站点生成器之一",},
 
-                    {name: "", url: "", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "sa-token", url: "https://sa-token.cc/", targets: "_blank", introduce: "一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！",},
+                    {name: "ruoyi", url: "http://doc.ruoyi.vip/", targets: "_blank", introduce: "快速构建web应用程序",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "爱课堂", url: "https://www.icourses.cn/home/", targets: "_blank", introduce: "",},
@@ -545,6 +545,14 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "代码可视化", url: "https://pythontutor.com/", targets: "_blank", introduce: "代码可视化",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "aixcoder", url: "https://codesearch.aixcoder.com/#/", targets: "_blank", introduce: "一个ai的代码生成器",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
@@ -842,14 +850,6 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "bmrs", url: "https://www.bmrs.top/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
-
-                    {name: "", url: "", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
-
-                    {name: "若依", url: "http://doc.ruoyi.vip/ruoyi/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
