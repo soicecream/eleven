@@ -154,7 +154,7 @@ export default new Vuex.Store({
                     {name: "调音", url: "https://vocalremover.org/ch/", targets: "_blank", introduce: "对声音的一些处理",},
 
                     {name: "流程图", url: "https://app.diagrams.net/", targets: "_blank", introduce: "",},
-                    {name: "论文降重", url: "https://xiezuocat.com/#/", targets: "_blank", introduce: "",},
+                    {name: "秘塔写作猫", url: "https://xiezuocat.com/#/", targets: "_blank", introduce: "论文降重",},
                     {name: "矢量图", url: "https://www.iconfont.cn/", targets: "_blank", introduce: "阿里的矢量图图库",},
 
                     {name: "在线PS", url: "https://www.uupoop.com/#/", targets: "_blank", introduce: "",},
@@ -310,9 +310,9 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {name: "chatGPT", url: "https://chat.openai.com/auth/login", targets: "_blank", introduce: "ai回答",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "chatGPT", url: "https://chat.openai.com/chat", targets: "_blank", introduce: "ai回答",},
+                    {name: "chathub", url: "https://chrome.google.com/webstore/detail/chathub-all-in-one-chatbo/iaakpnchhognanibcahlpcplchdfmgma/related", targets: "_blank", introduce: "ai回答",},
+                    {name: "poe", url: "https://poe.com/", targets: "_blank", introduce: "ai回答",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -462,9 +462,9 @@ export default new Vuex.Store({
                     {name: "zblogcn", url: "https://www.zblogcn.com/", targets: "_blank", introduce: "",},
                     {name: "hugo", url: "https://gohugo.io/", targets: "_blank", introduce: "Hugo 是最流行的开源静态站点生成器之一",},
 
+                    {name: "undraw", url: "https://undraw.gitee.io/", targets: "_blank", introduce: "基于vue3的评论组件",},
                     {name: "sa-token", url: "https://sa-token.cc/", targets: "_blank", introduce: "一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！",},
                     {name: "ruoyi", url: "http://doc.ruoyi.vip/", targets: "_blank", introduce: "快速构建web应用程序",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "爱课堂", url: "https://www.icourses.cn/home/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -518,6 +518,10 @@ export default new Vuex.Store({
                     {name: "有道云笔记", url: "https://note.youdao.com/", targets: "_blank", introduce: "记笔记",},
                     {name: "腾讯文档", url: "https://docs.qq.com/desktop/", targets: "_blank", introduce: "",},
                     {name: "拷贝兔", url: "https://cp.anyknew.com/", targets: "_blank", introduce: "小文件的不同电脑传输下载",},
+
+                    {name: "notion", url: "https://www.notion.so/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -651,7 +655,7 @@ export default new Vuex.Store({
 
                     {name: "音乐解锁", url: "https://demo.unlock-music.dev/", targets: "_blank", introduce: "",},
                     {name: "在线svg", url: "http://www.zuohaotu.com/svg/", targets: "_blank", introduce: "在线svg制作",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "自动剪辑", url: "https://autocut.video/", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -850,7 +854,7 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "bmrs", url: "https://www.bmrs.top/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "soybean", url: "https://docs.soybean.pro/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -868,6 +872,10 @@ export default new Vuex.Store({
                     {name: "navnav", url: "https://navnav.co/", targets: "_blank", introduce: "css动画布局",},
                     {name: "animxyz", url: "https://animxyz.com/", targets: "_blank", introduce: "css动画布局",},
                     {name: "100天css", url: "https://100dayscss.com/", targets: "_blank", introduce: "",},
+
+                    {name: "pixijs", url: "https://pixijs.com/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
                 ]
             },
         ],
