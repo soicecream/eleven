@@ -1,0 +1,256 @@
+* {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecefff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "微软雅黑";
+}
+
+/* 阿里logo */
+.logo {
+  width: 216px;
+  margin-bottom: 60px;
+  margin-top: 140px;
+}
+
+/* 登录外边框 */
+.login-app {
+  width: 348px;
+  /* 修改外边框圆角 */
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  /* 子元素超出部分隐藏 */
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* 登录头部 */
+.login-header {
+  display: flex;
+}
+
+/* 登录头部单选框样式 */
+.login-header input[type="radio"] {
+  display: none;
+}
+
+/* 登录头部label样式 */
+.login-header label {
+  color: rgba(37, 38, 43, 0.36);
+  background: #f5f5f6;
+  font-size: 18px;
+  flex: 1;
+  padding: 14px 16px;
+  line-height: 28px;
+}
+
+/* 由外边框控制并隐藏子元素超出部分,
+ * 所以这里注释
+ */
+/* .login-header .m-btn {
+  border-top-left-radius: 12px;
+}
+.login-header .q-btn {
+  border-top-right-radius: 12px;
+} */
+
+/* 登录头部label选中状态样式 */
+#message:checked + .m-btn,
+#username:checked + .u-btn,
+#qrcode:checked + .q-btn {
+  background-color: #fff;
+  color: #25262b;
+  /* 默认指针,官网样式(意义不明) */
+  cursor: default;
+}
+
+/* 表单主体部分 */
+.login-body {
+  background-color: #fff;
+}
+
+/* 设置3个表单布局 */
+.login-body #form-bar {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 登录表单部分 */
+.login-body form {
+  padding: 22px;
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* 登录表单input标签样式 */
+.login-body input {
+  outline: none;
+  width: 100%;
+  height: 46px;
+  margin-bottom: 16px;
+  background-color: rgba(39, 39, 41, 0.04);
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding-left: 12px;
+  /* font-size: 14px; */
+  color: #25262b;
+  line-height: 150%;
+}
+
+/* 设置input标签的预提示样式 */
+/* 不设置了 闲得蛋疼 */
+/* .login-body input::placeholder {
+} */
+
+/* input标签得到焦点后改变样式 */
+.login-body input:focus {
+  border: 1px solid #b4c1ff;
+  background-color: #fff;
+}
+
+/* 登录表单获取验证码按钮样式 */
+.m-form .vercode-btn {
+  padding: 4px 12px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  font-size: 14px;
+  color: #637dff;
+  border: 1px solid #d4daf9;
+  background-color: transparent;
+  position: absolute;
+  right: 36px;
+  /* top: 96px; */
+  margin: 8px 0;
+  font-family: "微软雅黑";
+  display: inline-block;
+}
+
+/* 登录按钮 */
+.login-body .login-btn {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: linear-gradient(
+    129.12deg,
+    #446dff 0%,
+    rgba(99, 125, 255, 0.75) 100%
+  );
+  color: #fff;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+/* 表单协议信息复选框标签 */
+.m-form #sure {
+  display: none;
+}
+/* 登陆协议样式与定位 */
+.m-form label {
+  position: absolute;
+  border: 2px solid rgba(132, 133, 141, 0.2);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  left: 22px;
+  bottom: 45px;
+}
+/* 登陆协议复选框样式 */
+#sure:checked + .tobesure {
+  background-color: #637dff;
+}
+/* 登陆协议复选框小勾 */
+.m-form .tobesure::after {
+  content: "";
+  position: absolute;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 6px;
+  height: 3px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  left: 50%;
+}
+/* 登陆协议复选框与登陆按钮联动 */
+#sure:not(:checked) ~ .login-btn {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 登陆协议超链接p标签 */
+.m-form label p {
+  margin-left: 20px;
+  width: 280px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(37, 38, 43, 0.36);
+  /* 为了与label对齐 */
+  position: relative;
+  bottom: 3px;
+  font-family: "微软雅黑";
+}
+/* 登陆协议超链接样式 */
+.m-form label p a {
+  text-decoration: none;
+  color: #637dff;
+  padding: 0 5px;
+}
+/* 二维码表单样式 */
+.q-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.qrcode {
+  width: 128px;
+}
+.qrcode img {
+  width: 100%;
+  box-shadow: 0px 0px 2px 2px rgb(28 28 32 / 5%),
+    0px 8px 24px rgb(28 28 32 / 12%);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

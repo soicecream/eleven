@@ -1,0 +1,299 @@
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 "FiraCode NF";
+  color: #000;
+  background-color: #f2f2f2;
+  /* 隐藏水平滚动条 */
+  overflow-x: hidden;
+  /* webkit-tap-highlight-color:该特性是非标准的，请尽量不要在生产环境中使用它！ */
+  -webkit-tap-highlight-color: transparent;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+div {
+  /* border-box 设置的边框和内边距的值是包含在width内 */
+  box-sizing: border-box;
+}
+/* 搜索模块 */
+.search-index {
+  max-width: 540px;
+  min-width: 320px;
+  /* 固定定位以屏幕为准 */
+  position: fixed;
+  /* background-color: pink; */
+  background-color: #f6f6f6;
+  /* border: 1px 0px solid #ccc; */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  left: 50%;
+  top: 0%;
+  height: 44px;
+  /* transform 允许旋转，缩放，倾斜或平移给定元素 */
+  /* 兼容webkit内核浏览器 */
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: flex;
+}
+.search {
+  position: relative;
+  height: 26px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 7px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  padding-left: 25px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #666;
+}
+.search::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: url(../images/sprite.png) no-repeat -59px -279px;
+  background-size: 104px auto;
+}
+.user {
+  width: 44px;
+  height: 44px;
+  /* background-color: purple; */
+  font-size: 12px;
+  color: #2eaae0;
+  text-align: center;
+  /* 字体加粗 */
+  font-weight: bold;
+}
+.user::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url(../images/sprite.png) no-repeat -59px -194px;
+  background-size: 104px auto;
+  margin: 4px auto 0;
+}
+
+/* focus */
+.focus {
+  padding-top: 44px;
+}
+.focus img {
+  width: 100%;
+}
+
+/* 局部导航栏 */
+.local-nav {
+  height: 64px;
+  margin: 3px 4px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+}
+
+.local-nav li {
+  flex: 1;
+}
+
+.local-nav a {
+  display: flex;
+  /* 上下排列 设置y轴为主轴 */
+  flex-direction: column;
+  /* 侧轴居中(实际效果为水平居中) */
+  align-items: center;
+  font-size: 12px;
+}
+/* 利用属性选择器批量选中 */
+.local-nav li [class^="local-nav-icon"] {
+  width: 32px;
+  height: 32px;
+  margin-top: 8px;
+  background: url(../images/localnav_bg.png) no-repeat 0 0;
+  background-size: 32px auto;
+}
+.local-nav li .local-nav-icon-n2 {
+  background-position:  0 -32px;
+}
+.local-nav li .local-nav-icon-n3 {
+  background-position:  0 -64px;
+}
+.local-nav li .local-nav-icon-n4 {
+  background-position:  0 -96px;
+}
+.local-nav li .local-nav-icon-n5 {
+  background-position:  0 -128px;
+}
+
+/* 主导航栏 */
+nav{
+  margin: 0 4px 3px;
+  border-radius: 8px;
+  /* 隐藏超出父元素的内容(实际效果:方便显示圆角) */
+  overflow: hidden;
+}
+/* 主导航栏-横向三层div */
+.nav-common{
+  height: 88px;
+  /* background-color: pink; */
+  display: flex;
+}
+/* 主导航栏-横向分割线 */
+.nav-common:nth-child(2){
+  margin: 3px 0;
+}
+.nav-item{
+  flex: 1;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+/* -n+2 选中前两个元素 */
+.nav-item:nth-child(-n+2){
+  border-right: 1px solid #fff;
+}
+/* 主导航栏-超链接文字 */
+.nav-item a{
+  flex:1;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+  font-size: 14px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+.nav-item a:nth-child(1){
+  border-bottom: 1px solid white;
+}
+.nav-item:nth-child(1) a{
+  border: none;
+  /* background: url(../images/sprite.png) no-repeat 50px -235px; */
+}
+/* 主导航栏-酒店图片 */
+.nav-common:nth-child(1) .nav-item:nth-child(1) a{
+  background: url(../images/sprite.png) no-repeat 50px -260px;
+  background-size: 220px auto;
+}
+/* 主导航栏-机票图片 */
+.nav-common:nth-child(2) .nav-item:nth-child(1) a{
+  background: url(../images/sprite.png) no-repeat 50px -600px;
+  background-size: 220px auto;
+}
+/* 主导航栏-旅游图片 */
+.nav-common:nth-child(3) .nav-item:nth-child(1) a{
+  background: url(../images/sprite.png) no-repeat 50px -490px;
+  background-size: 220px auto;
+}
+
+.nav-common:nth-child(1){
+  background: -webkit-linear-gradient(left,#fa5b56,#fca965);
+}
+.nav-common:nth-child(2){
+  background: -webkit-linear-gradient(left,#4b90ed,#53bbed);
+}
+.nav-common:nth-child(3){
+  background: -webkit-linear-gradient(left,#35c2a8,#6bd458);
+}
+
+/* 侧导航栏 */
+.subnav-entry{
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  margin: 0 4px;
+  
+}
+
+.subnav-entry li{
+  padding-top: 3px;
+  /* flex站位可以用 % */
+  flex:20%;
+}
+.subnav-entry li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+/* 侧导航栏-wifi电话卡 */
+.subnav-entry li a .subnav-entry-wifi{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 0 4px;
+  background-size: 28px auto;
+}
+/* 侧导航栏-保险•签证 */
+.subnav-entry li a .subnav-entry-visa{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 3px -28px;
+  background-size: 28px auto;
+}
+/* 侧导航栏-外币兑换 */
+.subnav-entry li a .subnav-entry-exchange{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 4px -60px;
+  background-size: 28px auto;
+}
+/* 侧导航栏-购物 */
+.subnav-entry li a .subnav-entry-shopping{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 0 -318px;
+  background-size: 28px auto;
+}
+/* 侧导航栏-当地向导 */
+.subnav-entry li a .subnav-entry-guide{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 0 -96px;
+  background-size: 28px auto;
+}
+/* 侧导航栏-自由行 */
+.subnav-entry li a .subnav-entry-freego{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 4px -162px;
+  background-size: 28px auto;
+}
+/* 侧导航栏-境外玩乐 */
+.subnav-entry li a .subnav-entry-outplay{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 0 -197px;
+  background-size: 28px auto;
+}
+/* 侧导航栏-礼品卡 */
+.subnav-entry li a .subnav-entry-giftcard{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 3px -130px;
+  background-size: 28px auto;
+}
+/* 侧导航栏-信用卡 */
+.subnav-entry li a .subnav-entry-creditcard{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 0 -228px;
+  background-size: 28px auto;
+}
+/* 侧导航栏-更多 */
+.subnav-entry li a .subnav-entry-more{
+  width: 28px;
+  height: 28px;
+  background: url(../images/subnav-bg.png) no-repeat 3px -286px;
+  background-size: 28px auto;
+}

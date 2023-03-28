@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Drop Login Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="drop">
+        <div class="content">
+            <h2>Sign In</h2>
+            <form action="/user/login" method="post" id="loginForm">
+                <div class="inputBox">
+                    <label>
+                        <input type="text" id="user_name" name="user_name" placeholder="Username">
+                    </label>
+                </div>
+                <div class="inputBox">
+                    <label>
+                        <input type="password" id="pass_word" name="user_pwd" placeholder="Password">
+                    </label>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+    <a href="#" class="btns">Forget Password</a>
+    <a href="#" class="btns signup">Signup</a>
+</div>
+<!--在表单提交时进行加密-->
+<script type="text/javascript" src="./js/md5.min.js"></script>
+<script type="text/javascript">
+    // 监听表单的 submit 事件
+    document.getElementById('loginForm').addEventListener('submit', (event) => {
+        // 阻止表单默认的提交
+        event.preventDefault();
+        // 获取密码输入框的值
+        const password = document.getElementById('pass_word').value;
+        // 获取用户名输入框的值
+        const username = document.getElementById('user_name').value;
+        debugger;
+        // 对密码进行加盐
+        const saltPassword = password + username;
+        // 对加盐后的密码进行 MD5 加密
+        let md5SaltPassword = md5(saltPassword);
+        console.log(md5SaltPassword)
+        const form = document.getElementById('loginForm');
+        // 将加密后的密码赋值给表单的密码字段
+        document.getElementById('pass_word').value = md5SaltPassword;
+        // 提交表单
+        form.submit();
+    });
+</script>
+</body>
+</html>

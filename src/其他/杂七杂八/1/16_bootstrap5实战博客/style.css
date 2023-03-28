@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+  .new-input {
+    width: 50%;
+  }
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 50px;
+}

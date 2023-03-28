@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-size: "微软雅黑";
+}
+
+#content {
+  width: 500px;
+  margin: 50px auto 0;
+}
+#th {
+  width: 500px;
+  margin-bottom: 5px;
+}
+label {
+  background-color: #38b0de;
+  margin-right: 5px;
+  width: 120px;
+  display: inline-block;
+}
+input {
+  width: 120px;
+  margin-right: 5px;
+}

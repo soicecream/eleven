@@ -1,0 +1,56 @@
+.main {
+  display: grid;
+  /* 每一列4个100px大小的子元素 */
+  /* grid-template-columns: 100px 100px 100px 100px; */
+
+  /* 在未知容器宽高的情况下自动分配子元素个数 */
+  /* grid-template-columns: repeat(auto-fill, 100px); */
+
+  /* 宽度平均分为4分 */
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* 等价于 */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* 改变比例 */
+  /* grid-template-columns: 1fr 2fr 3fr 1fr; */
+  /* 设置最小和最大宽度 */
+  /* grid-template-columns: 1fr minmax(150px, 1fr); */
+  /* auto 自适应宽度 */
+  /* grid-template-columns: 100px auto 100px; */
+  /* 定义网格线名称，方便后面引用 */
+  grid-template-columns: [c1] 100px [c2] auto [c3] 100px [c4];
+  grid-template-rows: [r1] 100px [r2] 100px [r3] 100px [r4] 100px;
+}
+.item {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.item-1 {
+  background-color: #ec5d3d;
+}
+.item-2 {
+  background-color: #f1a145;
+}
+.item-3 {
+  background-color: #64a256;
+}
+.item-4 {
+  background-color: #3478c6;
+}
+.item-5 {
+  background-color: #c18eb5;
+}
+.item-6 {
+  background-color: #f6daab;
+}
+.item-7 {
+  background-color: #beb08c;
+}
+.item-8 {
+  background-color: #d7e3b5;
+}
+.item-9 {
+  background-color: #6ec2ec;
+}
+.item-10 {
+  background-color: #e84f70;
+}

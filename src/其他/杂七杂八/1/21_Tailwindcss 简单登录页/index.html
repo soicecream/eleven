@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/transition-style" />
+    <title>TailWindCss 登录页</title>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-cyan-900 select-none">
+    <div class="w-96 h-[500px] bg-cyan-800 rounded-lg shadow-2xl text-slate-200 flex-col relative">
+      <div class="relative z-10">
+        <h1 class="text-6xl text-center m-16">Login</h1>
+        <input
+          type="text"
+          class="mx-auto mb-8 pb-2 w-60 outline-none border-b-2 bg-transparent block placeholder-slate-100"
+          placeholder="账户"
+        />
+        <input
+          type="password"
+          class="mx-auto mb-8 pb-2 w-60 outline-none border-b-2 bg-transparent block placeholder-slate-100"
+          placeholder="密码"
+        />
+        <button class="mx-auto w-56 p-1.5 border text-xl border-slate-300 rounded-full block" id="submit">登录</button>
+      </div>
+      <div class="mask absolute rounded-lg bg-orange-300 top-0 left-0 w-full h-full hidden" id="mask"></div>
+    </div>
+    <script>
+      const mask = document.querySelector('#mask')
+      const btn = document.querySelector('#submit')
+      btn.onclick = function () {
+        mask.classList.remove('hidden')
+        mask.setAttribute('transition-style', 'in:circle:hesitate')
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.box1 {
+  width: 500px;
+  height: 600px;
+  overflow: auto;
+  background-image: linear-gradient(
+    to top,
+    #fdcbf1 0%,
+    #fdcbf1 1%,
+    #e6dee9 100%
+  );
+  margin: 100px auto 0;
+}
+li {
+  height: 100px;
+  list-style: none;
+}
+.box2 {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.bg {
+  width: 450px;
+  height: 200px;
+  background: url("../img/背景图片.png") no-repeat;
+  background-size: 450px;
+  border: 1px solid wheat;
+  position: absolute;
+  /* left: 10px; */
+}
+.zz {
+  width: 500px;
+  height: 500px;
+  background: url("../img/白色褶皱.jpg");
+  position: absolute;
+  border-radius: 50%;
+  top: -350px;
+  left: -250px;
+  transition: all 0.8s;
+}

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // 滚动条平滑移动
+  scroll-behavior: smooth;
+}
+
+.container {
+  a {
+    position: sticky;
+    top: -374px;
+    // top: 900px;
+    margin-top: -174px;
+    float: right;
+    width: 150px;
+    height: 174px;
+    background: url("../assets/img/back.png") no-repeat;
+    background-position: -600px 0;
+    z-index: 999;
+    transform: translateY(calc(100vh + 200px));
+    &:hover {
+      // 5张图片 steps走5步
+      animation: back 0.5s steps(5) infinite;
+    }
+  }
+  @keyframes back {
+    from {
+      background-position: 0, 0;
+    }
+    to {
+      background-position: -750px, 0;
+    }
+  }
+  h1 {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .musicList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+      width: 200px;
+      padding: 10px;
+      .img {
+        overflow: hidden;
+        position: relative;
+        // width: 100%;
+        cursor: pointer;
+        img {
+          width: 100%;
+        }
+        .mask {
+          position: absolute;
+          // background-color: #000;
+          top: 0;
+          left: 0;
+          width: 180px;
+          height: 180px;
+          img {
+            position: absolute;
+            width: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+          }
+        }
+        &:hover {
+          > img {
+            transform: scale(1.07);
+            transition: transform 0.5s ease-out;
+          }
+          .mask {
+            background-color: rgba(0, 0, 0, 0.2);
+            transform: scale(1.07);
+            transition: all 0.5s ease-out;
+
+            img {
+              transform: translate(-50%, -50%) scale(1.07);
+              transition: all 0.5s ease-out;
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .title {
+        margin: 10px 0 5px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.5s linear;
+        overflow: hidden;
+        // text-overflow 与 white-space 配合使用为佳
+        text-overflow: ellipsis;
+        white-space: pre;
+        &:hover {
+          color: #31c27c;
+        }
+      }
+      .playCount {
+        color: #999;
+        font-size: 13px;
+      }
+    }
+  }
+}

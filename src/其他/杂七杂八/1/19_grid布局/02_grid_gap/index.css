@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: grid;
+  border: #41d5f6 10px solid;
+  grid-template-columns: [c1] 100px [c2] 100px [c3] 100px [c4];
+  grid-template-rows: [r1] 100px [r2] 100px [r3] 100px [r4] ;
+  /* 子元素间隔 */
+  row-gap: 20px;
+  column-gap: 30px;
+  /* 等价于 */
+  gap: 20px 30px;
+  /* 自定义网格区域 */
+  grid-template-areas: 'a a a' 'b a b' 'b b b';
+  /* 设置网格默认顺序 */
+  /* grid-auto-flow: column; */
+  /* 设置项目的位置状态 */
+  /* place-items: center center; */
+  /* 设置整体项目的位置状态 */
+  /* place-content: center center; */
+  grid-auto-rows: 50px;
+
+
+}
+.item {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.item-1 {
+  background-color: #ec5d3d;
+}
+.item-2 {
+  background-color: #f1a145;
+}
+.item-3 {
+  background-color: #64a256;
+}
+.item-4 {
+  background-color: #3478c6;
+}
+.item-5 {
+  background-color: #c18eb5;
+}
+.item-6 {
+  background-color: #f6daab;
+}
+.item-7 {
+  background-color: #beb08c;
+}
+.item-8 {
+  background-color: #d7e3b5;
+}
+.item-9 {
+  background-color: #6ec2ec;
+}
+.item-10 {
+  background-color: #e84f70;
+}

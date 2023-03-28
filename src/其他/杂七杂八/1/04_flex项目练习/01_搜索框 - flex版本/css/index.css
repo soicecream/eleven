@@ -1,0 +1,59 @@
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 "FiraCode NF";
+  color: #000;
+  background-color: #f2f2f2;
+  /* 隐藏水平滚动条 */
+  overflow-x: hidden;
+  /* webkit-tap-highlight-color:该特性是非标准的，请尽量不要在生产环境中使用它！ */
+  -webkit-tap-highlight-color: transparent;
+}
+a{
+  text-decoration: none;
+}
+div{
+  box-sizing: border-box;
+}
+.search-index {
+  max-width: 540px;
+  min-width: 320px;
+  /* 固定定位以屏幕为准 */
+  position: fixed;
+  /* background-color: pink; */
+  width: 100%;
+  left: 50%;
+  top: 0%;
+  height: 44px;
+  /* transform 允许旋转，缩放，倾斜或平移给定元素 */
+  /* 兼容webkit内核浏览器 */
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.left_search{
+  flex: 1;
+  border: 1px solid #ccc;
+  margin: 7px 10px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.left_search .search{
+  color: #666;
+}
+.right_search .user{
+  color:#2eaae0;
+  font-size: 12px;
+}
+.user::before{
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url(../images/sprite.png) no-repeat -59px -194px;
+  background-size: 104px auto;
+  margin: 4px auto 0;
+}

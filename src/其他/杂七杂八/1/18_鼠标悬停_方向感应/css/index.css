@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../image/bg.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  min-width: 1000px;
+  display: flex;
+  /* 设置3d变化 */
+  transform-style: preserve-3d;
+  /* 添加透视效果 */
+  perspective: 900px;
+}
+.container .box {
+  position: relative;
+  width: 245px;
+  height: 301px;
+  transition: 0.3s;
+  margin: 20px;
+  overflow: hidden;
+  transform: rotateY(0);
+  transition-delay: 0.1s;
+  border-radius: 5px;
+  border: 5px #ccc solid;
+}
+.container .box .images img {
+  width: 100%;
+}
+/* 鼠标在此区间，所有图像翻转20度 */
+.container:hover .box {
+  transform: rotateY(20deg);
+}
+/* 鼠标在此区间，当前图像不翻转并缩放1.25倍 */
+.container .box:hover {
+  transform: rotateY(0) scale(1.25);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+/* 当鼠标在此区间，后面的图像逆翻转20度 */
+.container .box:hover ~ .box {
+  transform: rotateY(-20deg);
+}
+
+.container .box .content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 15px;
+}
+/* 图片标题 */
+.container .box .content h2 {
+  transition: 0.3s;
+  transform: translateY(-50px);
+}
+
+.container .box:hover .content h2 {
+  transform: translateY(-15px);
+}
+/* 图片说明 */
+.container .box .content p {
+  transition: 0.3s;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(320px);
+}
+
+.container .box:hover .content p {
+  transform: translateY(180px);
+}

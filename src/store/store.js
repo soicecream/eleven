@@ -646,29 +646,23 @@ export default new Vuex.Store({
                     {name: "View Design", url: "https://www.iviewui.com/", targets: "_blank", introduce: "基于 Vue3 的 UI 组件库和前端解决方案",},
                     {name: "typecho", url: "http://typecho.org/", targets: "_blank", introduce: "",},
 
+                    {name: "vite", url: "https://www.vitejs.net/", targets: "_blank", introduce: "",},
+                    {name: "typescript", url: "https://www.tslang.cn/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
                     {name: "Gridea", url: "https://gridea.dev/", targets: "_blank", introduce: "Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。",},
                     {name: "zblogcn", url: "https://www.zblogcn.com/", targets: "_blank", introduce: "",},
                     {name: "hugo", url: "https://gohugo.io/", targets: "_blank", introduce: "Hugo 是最流行的开源静态站点生成器之一",},
 
-                    {
-                        name: "undraw",
-                        url: "https://undraw.gitee.io/",
-                        targets: "_blank",
-                        introduce: "基于vue3的评论组件",
-                    },
-                    {
-                        name: "sa-token",
-                        url: "https://sa-token.cc/",
-                        targets: "_blank",
-                        introduce: "一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！",
-                    },
-                    {name: "ruoyi", url: "http://doc.ruoyi.vip/", targets: "_blank", introduce: "快速构建web应用程序",},
-
+                    {name: "undraw", url: "https://undraw.gitee.io/", targets: "_blank", introduce: "基于vue3的评论组件",},
+                    {name: "sa-token", url: "https://sa-token.cc/", targets: "_blank", introduce: "一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！",},
                     {name: "爱课堂", url: "https://www.icourses.cn/home/", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "ruoyi", url: "http://doc.ruoyi.vip/", targets: "_blank", introduce: "快速构建web应用程序",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
@@ -693,12 +687,7 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "自考", url: "https://www.exam100.net/", targets: "_blank", introduce: "自考",},
-                    {
-                        name: "专升本数学",
-                        url: "http://video.kaola100.com/book_list/5142",
-                        targets: "_blank",
-                        introduce: "",
-                    },
+                    {name: "专升本数学", url: "http://video.kaola100.com/book_list/5142", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                 ],
             },
@@ -1149,7 +1138,6 @@ export default new Vuex.Store({
         ],
 
     },
-
 
     getters: {},
 

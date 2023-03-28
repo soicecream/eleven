@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+div{
+    width: 800px;
+    height: 300px;
+    background-color:pink;
+    /* 此时div为flex布局中的父级元素 */
+    display: flex;
+    /* 默认x轴从左到右排序 */
+    /* flex-direction: row; */
+    /* x轴从右到左 */
+    /* flex-direction:row-reverse; */
+    /* y轴从上到下 */
+    /* flex-direction: column; */
+    /* y轴从下到上 */
+    /* flex-direction: column-reverse; */
+    
+}
+
+div span{
+    width: 150px;
+    height: 100px;
+    background-color:aqua;
+}

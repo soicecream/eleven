@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url('https://fonts.font.im/css?family=Black+Ops+One');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#clock p {
+  color: #fff;
+  font-family: 'Black Ops One';
+  font-size: 6em;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+#clock p::before,
+#clock p::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#clock p::before {
+  left: 2px;
+  text-shadow: -3px 0 0 #27c0c8;
+  animation: glitch-1 2s ease infinite;
+}
+
+#clock p::after {
+  left: -2px;
+  text-shadow: -3px 0 0 #ea41b6;
+  animation: glitch-2 2s ease infinite;
+}
+
+footer {
+  position: absolute;
+  bottom: 1.25rem;
+  text-align: center;
+  color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* @for 指令可以在限制的范围内重复输出格式，每次按要求（变量的值）对输出结果做出变动。
+
+这个指令包含两种格式：@for $var from <start> through <end>，或者 @for $var from <start> to <end>，区别在于 through 与 to 的含义：
+
+当使用 through 时，条件范围包含 <start> 与 <end> 的值，而使用 to 时条件范围只包含 <start> 的值不包含 <end> 的值。
+
+另外，$var 可以是任何变量，比如 $i；<start> 和 <end> 必须是整数值。 */
+@keyframes glitch-1 {
+  0% {
+    clip: rect(4px, 500px, 42px, 0);
+  }
+  5% {
+    clip: rect(61px, 500px, 35px, 0);
+  }
+  10% {
+    clip: rect(58px, 500px, 32px, 0);
+  }
+  15% {
+    clip: rect(95px, 500px, 56px, 0);
+  }
+  20% {
+    clip: rect(53px, 500px, 47px, 0);
+  }
+  25% {
+    clip: rect(8px, 500px, 63px, 0);
+  }
+  30% {
+    clip: rect(79px, 500px, 61px, 0);
+  }
+  35% {
+    clip: rect(79px, 500px, 98px, 0);
+  }
+  40% {
+    clip: rect(73px, 500px, 42px, 0);
+  }
+  45% {
+    clip: rect(33px, 500px, 39px, 0);
+  }
+  50% {
+    clip: rect(41px, 500px, 56px, 0);
+  }
+  55% {
+    clip: rect(99px, 500px, 88px, 0);
+  }
+  60% {
+    clip: rect(33px, 500px, 71px, 0);
+  }
+  65% {
+    clip: rect(90px, 500px, 94px, 0);
+  }
+  70% {
+    clip: rect(38px, 500px, 52px, 0);
+  }
+  75% {
+    clip: rect(11px, 500px, 59px, 0);
+  }
+  80% {
+    clip: rect(95px, 500px, 28px, 0);
+  }
+  85% {
+    clip: rect(55px, 500px, 7px, 0);
+  }
+  90% {
+    clip: rect(78px, 500px, 33px, 0);
+  }
+  95% {
+    clip: rect(20px, 500px, 88px, 0);
+  }
+  100% {
+    clip: rect(45px, 500px, 71px, 0);
+  }
+}
+
+@keyframes glitch-2 {
+  0% {
+    clip: rect(91px, 500px, 39px, 0);
+  }
+  5% {
+    clip: rect(44px, 500px, 12px, 0);
+  }
+  10% {
+    clip: rect(10px, 500px, 57px, 0);
+  }
+  15% {
+    clip: rect(8px, 500px, 59px, 0);
+  }
+  20% {
+    clip: rect(94px, 500px, 12px, 0);
+  }
+  25% {
+    clip: rect(14px, 500px, 65px, 0);
+  }
+  30% {
+    clip: rect(88px, 500px, 25px, 0);
+  }
+  35% {
+    clip: rect(43px, 500px, 33px, 0);
+  }
+  40% {
+    clip: rect(83px, 500px, 90px, 0);
+  }
+  45% {
+    clip: rect(56px, 500px, 54px, 0);
+  }
+  50% {
+    clip: rect(85px, 500px, 61px, 0);
+  }
+  55% {
+    clip: rect(25px, 500px, 85px, 0);
+  }
+  60% {
+    clip: rect(89px, 500px, 52px, 0);
+  }
+  65% {
+    clip: rect(23px, 500px, 3px, 0);
+  }
+  70% {
+    clip: rect(54px, 500px, 77px, 0);
+  }
+  75% {
+    clip: rect(77px, 500px, 28px, 0);
+  }
+  80% {
+    clip: rect(8px, 500px, 17px, 0);
+  }
+  85% {
+    clip: rect(51px, 500px, 45px, 0);
+  }
+  90% {
+    clip: rect(11px, 500px, 79px, 0);
+  }
+  95% {
+    clip: rect(35px, 500px, 61px, 0);
+  }
+  100% {
+    clip: rect(95px, 500px, 44px, 0);
+  }
+}

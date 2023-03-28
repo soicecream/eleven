@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 修改默认的标签样式 */
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+}
+
+/* 修改组件样式 */
+@layer components {
+  .btn-blue {
+    @apply bg-blue-500 px-4 py-2 rounded-lg text-white hover:shadow-blue-400 hover:shadow-lg hover:bg-blue-700 transition duration-500;
+  }
+}
+.content-area {
+  @apply bg-green-200 text-slate-500;
+  height: theme('spacing.128');
+}
+
+@media screen(md) {
+  body {
+    @apply bg-slate-700 text-slate-300 transition-colors duration-500;
+  }
+}

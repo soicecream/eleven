@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    width: 800px;
+    height: 300px;
+    background-color: pink;
+    display: flex;
+    /* 默认值;子元素靠左对齐 */
+    /* justify-content: flex-start; */
+    /* 子元素靠右对齐 */
+    /* justify-content: flex-end; */
+    /* 子元素居中对齐 */
+    /* justify-content: center; */
+    /* 平均分配剩余空间(靠两边元素外间距为内部元素间距的一半) */
+    /* justify-content:space-around; */
+    /* 两边贴边,中间空间平均分配 */
+    /* justify-content: space-between; */
+    /* 完全平均分配元素 */
+    justify-content: space-evenly;
+
+}
+
+div span{
+    width: 150px;
+    height: 100px;
+    background-color:aqua;
+}

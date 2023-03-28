@@ -1,0 +1,63 @@
+@import url("https://fonts.font.im/css?family=Black+Ops+One");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#clock p {
+  color: #fff;
+  font-family: "Black Ops One";
+  font-size: 6em;
+  // 设置字符之间的空白。
+  letter-spacing: 2px;
+  position: relative;
+}
+#clock p::before,
+#clock p::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#clock p::before {
+  // left使数字左右位移
+  left: 2px;
+  text-shadow: -3px 0 0 #27c0c8;
+  animation: glitch-1 2s ease infinite;
+}
+#clock p::after {
+  // left使数字左右位移
+  left: -2px;
+  text-shadow: -3px 0 0 #ea41b6;
+  animation: glitch-2 2s ease infinite;
+}
+/* @for 指令可以在限制的范围内重复输出格式，每次按要求（变量的值）对输出结果做出变动。
+
+这个指令包含两种格式：@for $var from <start> through <end>，或者 @for $var from <start> to <end>，区别在于 through 与 to 的含义：
+
+当使用 through 时，条件范围包含 <start> 与 <end> 的值，而使用 to 时条件范围只包含 <start> 的值不包含 <end> 的值。
+
+另外，$var 可以是任何变量，比如 $i；<start> 和 <end> 必须是整数值。 */
+@keyframes glitch-1 {
+  @for $i from 0 through 20 {
+    #{percentage($i*(1/20))} {
+      clip: rect(random(100) + px, 500px, random(100) + px, 0);
+    }
+  }
+}
+
+@keyframes glitch-2 {
+  @for $i from 0 through 20 {
+    #{percentage($i*(1/20))} {
+      clip: rect(random(100) + px, 500px, random(100) + px, 0);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    width: 800px;
+    height: 600px;
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    /* 多行垂直居中 */
+    align-content: center;
+    /* 水平居中 */
+    justify-content: center;
+
+}
+
+div span{
+    margin: 10px;
+    width: 150px;
+    height: 100px;
+    background-color:aqua;
+}
