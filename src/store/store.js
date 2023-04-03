@@ -1133,6 +1133,14 @@ export default new Vuex.Store({
                     {name: "pixijs", url: "https://pixijs.com/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "chatguide", url: "https://chatguide.plexpt.com/", targets: "_blank", introduce: "调教chatGPT",},
+                    {name: "ai-bot", url: "https://ai-bot.cn/", targets: "_blank", introduce: "ai工具集",},
+                    {name: "cursor", url: "https://www.cursor.so/", targets: "_blank", introduce: "内置ai的编辑器",},
                 ]
             },
         ],
