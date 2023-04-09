@@ -486,6 +486,14 @@ export default new Vuex.Store({
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
+                    {name: "youtube", url: "https://www.youtube.com/", targets: "_blank", introduce: "",},
+                    {name: "twitter", url: "https://twitter.com/", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "", url: "", targets: "_blank", introduce: "",},
+
                     {name: "软考", url: "https://www.ruankao.org.cn/", targets: "_blank", introduce: "软考报名",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
