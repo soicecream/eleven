@@ -2,12 +2,12 @@
   <div class="muyu-page">
     <div class="muyu-container" ref="muyuContainer" @click="clickMuYu">
       <img id="wf" src="@/assets/img/imgs/muyubai.png">
+      <transition-group name="fade">
+        <span v-for="item in animationItems" :key="item.id" class="animation-text">{{ item.text }}</span>
+      </transition-group>
     </div>
     <p>您的功德：<span>{{ count }}</span></p>
     <audio id="audio" src="@/assets/mp3/muyu.mp3"></audio>
-    <transition name="fade">
-      <div v-show="showAnimation" class="animation-text">功德+1</div>
-    </transition>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       count: 0,
-      showAnimation: false,
+      animationItems: [],
       animationTimeout: null
     };
   },
@@ -42,10 +42,16 @@ export default {
 
       this.count++;
 
-      this.showAnimation = true;
+      const newItem = {
+        id: Date.now(),
+        text: "功德+1"
+      };
+
+      this.animationItems.push(newItem);
+
       clearTimeout(this.animationTimeout);
       this.animationTimeout = setTimeout(() => {
-        this.showAnimation = false;
+        this.animationItems.shift();
       }, 2000);
     }
   }
@@ -79,33 +85,30 @@ export default {
   transition: opacity 0.5s;
 }
 
-.fade-enter,
-.fade-leave-to {
+.fade-enter, .fade-leave-to {
   opacity: 0;
   transform: translateY(0);
 }
 
-.fade-enter-to,
-.fade-leave {
+.fade-enter-to, .fade-leave {
   opacity: 1;
   transform: translateY(-50px);
 }
 
 .animation-text {
   position: absolute;
-  top: 0;
+  top: -50%;
   left: 50%;
   transform: translate(-50%, -100%);
   color: #fff;
   font-size: 24px;
-  animation: move-up 2s;
+  animation: move-up 2s forwards;
   will-change: transform;
 }
 
 @keyframes move-up {
   0% {top: 0;}
-  30% {top: -10px;}
-  100% {top: -30px; opacity: 0;}
+  100% {top: -100px;opacity: 0;}
 }
 
 p {
