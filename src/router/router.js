@@ -18,6 +18,7 @@ const routes = [
   { path: '/hypnosis', name: '脉冲波纹催眠', component: () => import('../views/YuLe/Hypnosis'), },
   { path: '/paperPlane', name: '纸飞机', component: () => import('../views/YuLe/Paper_Plane'), },
   { path: '/fingertipGyroscope', name: '指尖陀螺', component: () => import('../views/YuLe/fingertip_gyroscope'), },
+  { path: '/woodenFish', name: '木鱼', component: () => import('../views/YuLe/muyu'), },
 
 
   { path: '/map', name: '地图', component: () => import('../views/share/map'), },

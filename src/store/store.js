@@ -40,6 +40,7 @@ export default new Vuex.Store({
             {id: 5, title: "脉冲波纹催眠", type: 1, url: "/hypnosis", show: true,},
             {id: 6, title: "纸飞机", type: 1, url: "/paperPlane", show: true,},
             {id: 7, title: "指尖陀螺", type: 1, url: "/fingertipGyroscope", show: true,},
+            {id: 8, title: "木鱼", type: 1, url: "/woodenFish", show: true,},
 
             {id: 999, title: "百度地图", type: 1, url: "/map", show: false,},
             {id: 1000, title: "text", type: 1, url: "/text", show: false,},
@@ -720,7 +721,7 @@ export default new Vuex.Store({
                     {name: "拷贝兔", url: "https://cp.anyknew.com/", targets: "_blank", introduce: "小文件的不同电脑传输下载",},
 
                     {name: "notion", url: "https://www.notion.so/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "微信文件传输", url: "https://szfilehelper.weixin.qq.com/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
@@ -866,7 +867,7 @@ export default new Vuex.Store({
                     {name: "积微成著", url: "https://www.jiweichengzhu.com/", targets: "_blank", introduce: "",},
 
                     {name: "异常教程", url: "https://exception.site/", targets: "_blank", introduce: "",},
-                    {name: "", url: "", targets: "_blank", introduce: "",},
+                    {name: "蜻蜓工具", url: "https://33tool.com/", targets: "_blank", introduce: "",},
                     {name: "", url: "", targets: "_blank", introduce: "",},
 
                     {name: "", url: "", targets: "_blank", introduce: "",},
