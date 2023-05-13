@@ -10,8 +10,20 @@
 </template>
 
 <script>
+import store from "@/store/store";
+
 export default {
-  name: "Hypnosis"
+  name: "Hypnosis",
+
+  mounted() {
+    document.body.style.backgroundColor = '#00b8a9'
+    store.state.navigation_bar_time_color = '#ffffff'
+  },
+
+  destroyed() {
+    document.body.style.backgroundColor = ''
+    store.state.navigation_bar_time_color = '#414141'
+  },
 }
 </script>
 

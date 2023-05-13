@@ -5,8 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', name: '首页', component: () => import('../views/share/home'), },
-  { path: '/eleven', name: '拾忆', component: () => import('../views/webPage/ShiYiEleven'), children: [ ], },
-  { path: '/quiet', name: '水木加贝', component: () => import('../views/webPage/IWant'), },
+  { path: '/shuimujiabei', name: '水木加贝', component: () => import('../views/webPage/shuimujiabei.vue'), },
 
   { path: '/links', name: '友链', component: () => import('../views/share/friendly_chain'), },
 
@@ -18,7 +17,8 @@ const routes = [
   { path: '/hypnosis', name: '脉冲波纹催眠', component: () => import('../views/YuLe/Hypnosis'), },
   { path: '/paperPlane', name: '纸飞机', component: () => import('../views/YuLe/Paper_Plane'), },
   { path: '/fingertipGyroscope', name: '指尖陀螺', component: () => import('../views/YuLe/fingertip_gyroscope'), },
-  { path: '/woodenFish', name: '木鱼', component: () => import('../views/YuLe/muyu'), },
+  { path: '/woodenFish', name: '木鱼', component: () => import('../views/YuLe/woodenFish.vue'), },
+  { path: '/RandomFifteen', name: '随机食物', component: () => import('../views/YuLe/RandomFifteen'), },
 
 
   { path: '/map', name: '地图', component: () => import('../views/share/map'), },

@@ -6,6 +6,8 @@
 
 <script>
 
+import store from "@/store/store";
+
 export default {
   name: "PaperPlane",
 
@@ -34,6 +36,9 @@ export default {
 
   // 挂载阶段：数据加载到页面
   mounted () {
+    document.body.style.backgroundColor = '#00b8a9'
+    store.state.navigation_bar_time_color = '#ffffff'
+
     // 飞机进行移动
     this.draw = setInterval(() => {
       let plane = document.getElementById('PaperPlane_plane')
@@ -52,6 +57,11 @@ export default {
       this.draw = null
     });
 
+  },
+
+  destroyed() {
+    document.body.style.backgroundColor = ''
+    store.state.navigation_bar_time_color = '#414141'
   },
 
   // 定义函数

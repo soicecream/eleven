@@ -10,6 +10,8 @@
 
 <script>
 
+import store from "@/store/store";
+
 export default {
   name: "Home",
 
@@ -39,6 +41,12 @@ export default {
   },
 
   mounted() {
+    let num = Math.floor(Math.random() * 30) + 1
+    num = num < 10 ? '00' + num : (num < 100 ? '0' + num : num)
+    let path = require("@/assets/img/background/" + num + ".jpg")
+    document.body.style.backgroundImage = 'url(' + path + ')'
+    store.state.navigation_bar_time_color = '#ffffff'
+
     this.set_text = setTimeout(this.set_title_top, this.text_step)
 
   },
@@ -74,10 +82,16 @@ export default {
 
   },
 
+  destroyed() {
+    document.body.style.backgroundImage = ''
+
+    clearTimeout(this.set_text)
+    this.set_text = null;
+  },
+
   beforeDestroy() {
     // console.log("离开")
-    clearTimeout(this.set_text);
-    this.set_text = null;
+
   }
 }
 </script>

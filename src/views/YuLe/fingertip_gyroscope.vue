@@ -11,10 +11,16 @@
 
 <script>
 
+import store from "@/store/store";
+
 export default {
   name: "fingertip_gyroscope",
 
   mounted() {
+    document.body.style.background = '-moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 100%)'
+    document.body.style.background = '-webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 100%)'
+    document.body.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 100%)'
+
     const name = "body-fingertip-gyroscope"
 
     const js = document.createElement("script")
@@ -23,13 +29,15 @@ export default {
     js.id = name
     document.body.appendChild(js);
     this.$once('hook:beforeDestroy', () => {
-      document.getElementById(name).remove()
-      // this.$forceUpdate()
-      // const res = this.$store.state.navigation_bar_title_vis
-      // this.$router.go(0);
-      // window.location.reload();
-      // this.$store.state.navigation_bar_title_vis = res
+      const scriptElement = document.getElementById(name);
+      if (scriptElement) {
+        scriptElement.remove();
+      }
     });
+    document.body.style.backgroundColor = ''
+  },
+
+  beforeDestroy() {
   },
 
 }
@@ -71,7 +79,6 @@ export default {
 }
 
 @media screen and (min-width: 500px) {
-
   .holder, .spinner {
     width: 500px;
     height: 500px;

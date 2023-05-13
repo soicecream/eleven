@@ -39,8 +39,22 @@
 </template>
 
 <script>
+import store from "@/store/store";
+
 export default {
   name: "not_find_404",
+
+  mounted() {
+    document.body.style.backgroundImage = 'url(' + require("@/assets/img/background/000.jpg") + ')'
+    document.body.style.backgroundSize = 'cover';
+
+    store.state.navigation_bar = false
+  },
+
+  destroyed() {
+    document.body.style.background = ""
+    store.state.navigation_bar = true
+  },
 
   methods: {
     go_back() {

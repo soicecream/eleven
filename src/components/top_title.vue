@@ -1,9 +1,9 @@
 <template>
   <div class="title_logo">
-    <span class="title_span_to"> <router-link to="/eleven"> Y </router-link> </span>
+    <span class="title_span_to"> <router-link to=""> Y </router-link> </span>
     <span class="title_span_to_to"> <a> U </a> </span>
     <span class="title_span_to"> <router-link to="/"> H </router-link> </span>
-    <span class="title_span_to_to"> <router-link to="/quiet"> M </router-link> </span>
+    <span class="title_span_to_to"> <router-link to="/shuimujiabei"> M </router-link> </span>
     <span class="title_span_to_to"> <router-link to="/links"> E </router-link> </span>
     <span class="title_span_to_to"> <a @click="$store.state.navigation_bar_title_vis = !$store.state.navigation_bar_title_vis"> · </a> </span>
     <span v-for="(index, i) in span_url" :key="i" v-show="$store.state.navigation_bar_title_vis && index.show" class="title_span_to_to">

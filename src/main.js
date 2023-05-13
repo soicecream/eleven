@@ -27,10 +27,6 @@ router.beforeEach((to, from, next) => {
     }
 
     if (to.path === '/404') {
-        document.body.style.backgroundImage = 'url(' + require("@/assets/img/background/000.jpg") + ')'
-        document.body.style.backgroundSize = 'cover';
-
-        store.state.navigation_bar = false
         next()
     } else {
         if (to.matched.length === 0) {
@@ -53,40 +49,9 @@ router.beforeEach((to, from, next) => {
             }
 
             if (show_page) {
-                // 设置背景图片 以及 设置导航栏上时间的颜色
-                if (to.path === '/') {
-                    let num = Math.floor(Math.random() * 30) + 1
-                    num = num < 10 ? '00' + num : (num < 100 ? '0' + num : num)
-                    let path = require("@/assets/img/background/" + num + ".jpg")
-                    document.body.style.backgroundImage = 'url(' + path + ')'
-                    store.state.navigation_bar_time_color = '#ffffff'
-
-                } else {
-                    if (to.path === '/hypnosis' || to.path === '/paperPlane') {
-                        store.state.navigation_bar_time_color = '#ffffff'
-                    } else {
-                        store.state.navigation_bar_time_color = '#414141'
-                    }
-
-                    document.body.style.backgroundImage = 'url()'
-
-                }
-
-
                 // 设置背景颜色
-                if (to.path === '/hypnosis' || to.path === '/paperPlane') {
-                    document.body.style.backgroundColor = '#00b8a9'
-                } else if (to.path === '/christmasTree') {
-                    document.body.style.backgroundColor = '#333333'
-                } else if (to.path === '/fingertipGyroscope') {
-                    document.body.style.background = '-moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 100%)'
-                    document.body.style.background = '-webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 100%)'
-                    document.body.style.background = 'linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 100%)'
-                } else {
-                    document.body.style.backgroundColor = '#ffffff'
-                }
 
-                document.title = to.name ? to.name : "拾忆哟"
+                document.title = to.name ? to.name : "水木加贝"
                 next()
             }
         }
