@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkshiyi"]=self["webpackChunkshiyi"]||[]).push([[527],{4527:function(e,n,u){u.r(n),u.d(n,{default:function(){return l}});var i=function(){var e=this,n=e._self._c;return n("div")},t=[],s={name:"RandomFifteen"},r=s,a=u(1001),f=(0,a.Z)(r,i,t,!1,null,"099daee5",null),l=f.exports}}]);
-//# sourceMappingURL=527.e36c5905.js.map
