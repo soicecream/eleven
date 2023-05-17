@@ -36,6 +36,8 @@ export default {
       }
     },
     start() {
+      this.title = '待会吃什么，吃什么？';
+
       this.running = true;
       const heading = this.$refs.food;
       heading.innerHTML = '';
@@ -72,6 +74,7 @@ export default {
     stop() {
       this.running = false;
       clearInterval(this.timer);
+
       this.title = '待会吃什么，吃这个！';
     }
   }

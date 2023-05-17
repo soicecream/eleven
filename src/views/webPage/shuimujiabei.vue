@@ -9,12 +9,29 @@
           <div :style="{'background': index.url_body_color }" class="top_label"> {{ index.title }}</div>
           <div class="content_list">
             <span v-for="(res, j) in index.content" :key="j">
-              <a :href="res.url" :target="res.targets" :title="res.introduce"> {{ res.name }} </a>
+              <a :href="res.url" :target="res.targets" :title="res.introduce"> {{ res.title }} </a>
             </span>
           </div>
         </div>
       </li>
     </ul>
+
+    <el-dialog :visible.sync="dialog.show" title="搜索" width="30%">
+      <el-form label-width="50px">
+        <el-form-item label="信息">
+          <el-input v-model="dialog.message" clearable/>
+        </el-form-item>
+      </el-form>
+
+      <template #footer>
+      <span class="dialog-footer">
+        <el-button @click="dialog.message = ''; dialog.show = false;">取消</el-button>
+        <el-button @click="dialog.message = ''">重置</el-button>
+        <el-button type="primary" @click="select_website">搜索</el-button>
+      </span>
+      </template>
+    </el-dialog>
+
   </div>
 </template>
 
@@ -25,9 +42,77 @@ export default {
 
   data() {
     return {
-      url: this.$store.state.eleven_url,
+      all_url: [],
+
+      url: [],
+
+      lastKeypressTime: 0,
+
+      dialog: {
+        show: false,
+        message: '',
+
+      }
+
     }
   },
+
+  mounted() {
+    this.all_url = Object.assign(this.$store.state.shuimujiabei_url, [])
+    this.url = Object.assign(this.all_url, [])
+
+    window.addEventListener('keydown', this.handleKeyDown)
+  },
+
+  methods: {
+    handleKeyDown(event) {
+      if (!this.dialog.show && event.key === 'Enter' && !event.repeat) {
+        const currentTime = new Date().getTime()
+        if (currentTime - this.lastKeypressTime < 200) {
+          this.dialog.show = true
+          this.dialog.message = ''
+        }
+        this.lastKeypressTime = currentTime
+      }
+    },
+
+    select_website() {
+      const message = this.dialog.message;
+
+      if (!message) {
+        this.url = JSON.parse(JSON.stringify(this.all_url));
+        return;
+      }
+
+      const filteredData = this.all_url.map(item => {
+        const filteredWebsites = (item.content || []).filter(
+            website =>
+                (website.title && website.title.toLowerCase().includes(message.toLowerCase())) ||
+                (website.url && website.url.toLowerCase().includes(message.toLowerCase())) ||
+                (website.introduce && website.introduce.toLowerCase().includes(message.toLowerCase()))
+        );
+
+        if (filteredWebsites.length > 0) {
+          return {
+            ...item,
+            content: filteredWebsites
+          };
+        }
+
+        return null;
+      }).filter(item => item !== null);
+
+      this.url = JSON.parse(JSON.stringify(filteredData));
+
+      this.dialog.message = ''
+      this.dialog.show = false
+    }
+
+  },
+
+  destroyed() {
+    window.removeEventListener('keydown', this.handleKeyDown)
+  }
 
 }
 </script>
