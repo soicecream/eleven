@@ -81,6 +81,7 @@ export default {
 
       if (!message) {
         this.url = JSON.parse(JSON.stringify(this.all_url));
+        this.dialog.show = false
         return;
       }
 
