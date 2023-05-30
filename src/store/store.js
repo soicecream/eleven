@@ -480,15 +480,19 @@ export default new Vuex.Store({
 
                     {title: "PPT模板", url: "https://ppt.sotary.com/web/wxapp/index.html", targets: "_blank", introduce: "",},
                     {title: "PDF转换", url: "https://www.pdfpai.com/", targets: "_blank", introduce: "",},
-                    {title: "秘塔写作猫", url: "https://xiezuocat.com/#/", targets: "_blank", introduce: "论文降重",},
+                    {title: "PDF转换", url: "https://www.ilovepdf.com/zh-cn", targets: "_blank", introduce: "",},
 
+                    {title: "秘塔写作猫", url: "https://xiezuocat.com/#/", targets: "_blank", introduce: "论文降重",},
                     {title: "调音", url: "https://vocalremover.org/ch/", targets: "_blank", introduce: "对声音的一些处理",},
                     {title: "在线PS", url: "https://www.uupoop.com/#/", targets: "_blank", introduce: "",},
-                    {title: "aconvert", url: "https://www.aconvert.com/cn/", targets: "_blank", introduce: "多种文件格式相互转换",},
 
+                    {title: "aconvert", url: "https://www.aconvert.com/cn/", targets: "_blank", introduce: "多种文件格式相互转换",},
                     {title: "音乐解锁", url: "https://demo.unlock-music.dev/", targets: "_blank", introduce: "",},
                     {title: "在线svg", url: "http://www.zuohaotu.com/svg/", targets: "_blank", introduce: "在线svg制作",},
+
                     {title: "自动剪辑", url: "https://autocut.video/", targets: "_blank", introduce: "",},
+                    {title: "", url: "", targets: "_blank", introduce: "",},
+                    {title: "", url: "", targets: "_blank", introduce: "",},
 
                     {title: "", url: "", targets: "_blank", introduce: "",},
                     {title: "", url: "", targets: "_blank", introduce: "",},
