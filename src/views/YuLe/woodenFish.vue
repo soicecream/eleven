@@ -6,7 +6,7 @@
         <span v-for="item in animationItems" :key="item.id" class="animation-text">{{ item.text }}</span>
       </transition-group>
     </div>
-    <p>您的功德：<span>{{ count }}</span></p>
+    <p>您的功德：<span>{{ this.$store.state.woodenfish_count }}</span></p>
     <audio id="audio" src="@/assets/mp3/muyu.mp3"></audio>
   </div>
 </template>
@@ -40,7 +40,7 @@ export default {
       music.currentTime = 0;
       music.play();
 
-      this.count++;
+      this.$store.state.woodenfish_count ++
 
       const newItem = {
         id: Date.now(),
