@@ -9,7 +9,7 @@
           <div :style="{'background': index.url_body_color }" class="top_label"> {{ index.title }}</div>
           <div class="content_list">
             <span v-for="(res, j) in index.content" :key="j">
-              <a :href="res.url" :target="res.targets" :title="res.introduce"> {{ res.title }} </a>
+              <a :href="res.url" target="_blank" :title="res.introduce"> {{ res.title }} </a>
             </span>
           </div>
         </div>
