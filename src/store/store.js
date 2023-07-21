@@ -378,7 +378,7 @@ export default new Vuex.Store({
                     {title: "", url: "", introduce: "",},
 
                     {title: "aixcoder", url: "https://codesearch.aixcoder.com/#/", introduce: "一个ai的代码生成器",},
-                    {title: "", url: "", introduce: "",},
+                    {title: "Vega ai", url: "https://rightbrain.art//?from=ai.jb51.cc", introduce: "一个图片的ai生成器",},
                     {title: "", url: "", introduce: "",},
 
                     {title: "", url: "", introduce: "",},
@@ -519,7 +519,7 @@ export default new Vuex.Store({
                     {title: "工具3", url: "https://www.toolfk.com/", introduce: "",},
 
                     {title: "工具4", url: "https://www.toolmao.com/#term-102", introduce: "",},
-                    {title: "工具5", url: "https://ujuji.com/", introduce: "",},
+                    {title: "", url: "", introduce: "",},
                     {title: "", url: "", introduce: "",},
 
                     {title: "", url: "", introduce: "",},
@@ -588,12 +588,12 @@ export default new Vuex.Store({
                     {title: "", url: "", introduce: "",},
 
                     {title: "片库", url: "https://www.btnull.org/", introduce: "",},
-                    {title: "耐看点播", url: "https://www.nkvod.cc", introduce: "",},
+                    {title: "合家影院", url: "https://www.ihejia.com.cn/", introduce: "",},
                     {title: "555电影", url: "http://www.5ying.fun/", introduce: "",},
 
                     {title: "茶杯狐", url: "https://cupfox.app/", introduce: "",},
-                    {title: "低端影视", url: "https://ddrk.me/tag/recommend/", introduce: "",},
-                    {title: "奇粹影视", url: "http://www.blssv.com/", introduce: "",},
+                    {title: "", url: "", introduce: "",},
+                    {title: "", url: "", introduce: "",},
 
                     {title: "", url: "", introduce: "",},
                     {title: "", url: "", introduce: "",},
@@ -615,14 +615,6 @@ export default new Vuex.Store({
                     {title: "", url: "", introduce: "",},
                     {title: "", url: "", introduce: "",},
 
-                    {title: "漫画", url: "https://www.cnanjie.com/", introduce: "",},
-                    {title: "", url: "", introduce: "",},
-                    {title: "", url: "", introduce: "",},
-
-                    {title: "", url: "", introduce: "",},
-                    {title: "", url: "", introduce: "",},
-                    {title: "", url: "", introduce: "",},
-
                     {title: "打发时间", url: "https://theuselessweb.com/", introduce: "一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站",},
                     {title: "打字", url: "https://barneyzhao.gitee.io/typing-cn/#/", introduce: "",},
                     {title: "字符画", url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20", introduce: "字母生成字符画",},
@@ -635,8 +627,8 @@ export default new Vuex.Store({
                     {title: "2048", url: "https://2048game.com/", introduce: "",},
                     {title: "俄罗斯方块", url: "https://www.goodoldtetris.com/", introduce: "",},
 
-                    {title: "表情包制作", url: "https://sorry.xuty.tk/wangjingze/", introduce: "童年的怀旧小游戏",},
                     {title: "三阶魔方", url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html", introduce: "",},
+                    {title: "", url: "", introduce: "",},
                     {title: "", url: "", introduce: "",},
 
                 ],

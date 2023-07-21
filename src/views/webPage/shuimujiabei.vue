@@ -133,7 +133,7 @@ a:hover {
 
 ul {
   list-style: none;
-  margin-left: 5%;
+  margin-left: 1%;
 }
 
 li {
@@ -141,9 +141,10 @@ li {
   position: relative;
   padding: 30px;
   float: left;
-  width: 400px;
+  //width: 400px;
+  width: 25%;
   height: 250px;
-  margin: 1% 2.3%;
+  margin: 1% 2%;
   border: 4px solid;
 }
 
