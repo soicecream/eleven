@@ -1,13 +1,21 @@
 <template>
-  <div class="muyu-page">
-    <div class="muyu-container" ref="muyuContainer" @click="clickMuYu">
-      <img id="wf" src="@/assets/img/imgs/muyubai.png">
-      <transition-group name="fade">
-        <span v-for="item in animationItems" :key="item.id" class="animation-text">{{ item.text }}</span>
-      </transition-group>
+  <div>
+    <el-button @click="changeTitle('功德')">功德</el-button>
+    <el-button @click="changeTitle('财运')">财运</el-button>
+    <el-button @click="changeTitle('桃花')">桃花</el-button>
+    <el-button @click="changeTitle('寿命')">寿命</el-button>
+
+
+    <div class="muyu-page">
+      <div class="muyu-container" ref="muyuContainer" @click="clickMuYu">
+        <img id="wf" src="@/assets/img/imgs/muyubai.png">
+        <transition-group name="fade">
+          <span v-for="item in animationItems" :key="item.id" class="animation-text">{{ item.text }}</span>
+        </transition-group>
+      </div>
+      <p>您的{{ this.$store.state.woodenfish_click_title }}：<span>{{ this.$store.state.woodenfish_count }}</span></p>
+      <audio id="audio" src="@/assets/mp3/muyu.mp3"></audio>
     </div>
-    <p>您的功德：<span>{{ this.$store.state.woodenfish_count }}</span></p>
-    <audio id="audio" src="@/assets/mp3/muyu.mp3"></audio>
   </div>
 </template>
 
@@ -19,7 +27,10 @@ export default {
     return {
       count: 0,
       animationItems: [],
-      animationTimeout: null
+      animationTimeout: null,
+
+      clickTitle: this.$store.state.woodenfish_click_title,
+      clickNumber: this.$store.state.woodenfish_click_number,
     };
   },
 
@@ -34,17 +45,21 @@ export default {
   },
 
   methods: {
+    changeTitle(title) {
+      this.$store.state.woodenfish_click_title = title
+    },
+
     clickMuYu() {
       let music = document.getElementById("audio");
 
       music.currentTime = 0;
       music.play();
 
-      this.$store.state.woodenfish_count ++
+      this.$store.state.woodenfish_count++
 
       const newItem = {
         id: Date.now(),
-        text: "功德+1"
+        text: `${this.$store.state.woodenfish_click_title} + ${this.$store.state.woodenfish_click_number}`
       };
 
       this.animationItems.push(newItem);
@@ -107,8 +122,13 @@ export default {
 }
 
 @keyframes move-up {
-  0% {top: 0;}
-  100% {top: -100px;opacity: 0;}
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100px;
+    opacity: 0;
+  }
 }
 
 p {

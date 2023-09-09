@@ -30,6 +30,8 @@ export default new Vuex.Store({
 
         // 木鱼计数
         woodenfish_count: 0,
+        woodenfish_click_title: '功德',
+        woodenfish_click_number: 1,
 
 
         // 导航栏的所有内容
@@ -114,6 +116,10 @@ export default new Vuex.Store({
                     {title: "chatGPT", url: "https://chat.openai.com/chat", introduce: "ai回答",},
                     {title: "chathub", url: "https://chrome.google.com/webstore/detail/chathub-all-in-one-chatbo/iaakpnchhognanibcahlpcplchdfmgma/related", introduce: "ai回答",},
                     {title: "poe", url: "https://poe.com/", introduce: "ai回答",},
+
+                    {title: "claude ", url: "https://claude.ai/ ", introduce: "ai",},
+                    {title: "文心一言", url: "https://yiyan.baidu.com/", introduce: "ai",},
+                    {title: "", url: "", introduce: "",},
 
                     {title: "", url: "", introduce: "",},
                     {title: "", url: "", introduce: "",},
@@ -266,19 +272,23 @@ export default new Vuex.Store({
 
                     {title: "vue3", url: "https://vue3js.cn/", introduce: "",},
                     {title: "Vue.js", url: "https://cn.vuejs.org/index.html", introduce: "",},
-                    {title: "MyBatis-P", url: "https://baomidou.com/", introduce: "Spring Boot",},
+                    {title: "", url: "", introduce: "",},
+
+                    {title: "MyBatis-P", url: "https://baomidou.com/", introduce: "mybatis-plus",},
+                    {title: "MyBatis-F", url: "https://mybatis-flex.com/", introduce: "MyBatis-Flex",},
+                    {title: "", url: "", introduce: "",},
 
                     {title: "VuePress", url: "https://www.vuepress.cn/", introduce: "Vue 驱动的静态网站生成器",},
                     {title: "Element-ui", url: "https://element.eleme.cn/#/zh-CN/component/installation", introduce: "基于 Vue2 的 UI 组件库和前端解决方案",},
                     {title: "Element+", url: "https://element-plus.org/zh-CN/component/button.html", introduce: "基于 Vue3 的 UI 组件库和前端解决方案",},
 
+                    {title: "华为云组件", url: "https://opentiny.design/", introduce: "华为云 的 UI 组件库和前端解决方案",},
                     {title: "Ant Design", url: "https://2x.antdv.com/components/overview-cn", introduce: "蚂蚁金服UI组件库",},
                     {title: "View Design", url: "https://www.iviewui.com/", introduce: "基于 Vue3 的 UI 组件库和前端解决方案",},
-                    {title: "typecho", url: "http://typecho.org/", introduce: "",},
 
+                    {title: "typecho", url: "http://typecho.org/", introduce: "",},
                     {title: "vite", url: "https://www.vitejs.net/", introduce: "",},
                     {title: "typescript", url: "https://www.tslang.cn/", introduce: "",},
-                    {title: "", url: "", introduce: "",},
 
                     {title: "Gridea", url: "https://gridea.dev/", introduce: "Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。",},
                     {title: "zblogcn", url: "https://www.zblogcn.com/", introduce: "",},
