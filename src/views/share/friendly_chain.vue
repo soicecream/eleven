@@ -4,7 +4,8 @@
       <h2>友链</h2>
       <el-divider></el-divider>
 
-      <el-card v-for="(index, i) in users" :key="i" class="user-card" @click.native="toUrl(index.url)">
+      <el-card v-for="(index, i) in this.$store.state.friendly_chain" :key="i" class="user-card"
+               @click.native="toUrl(index.url)">
         <el-empty :image="index.imgUrl" :image-size="50" :description="index.title"></el-empty>
       </el-card>
 
@@ -18,24 +19,7 @@ export default {
   name: "friendly_chain",
 
   data() {
-    return {
-      users: [
-        {
-          url: "https://googangheim.me/",
-          imgUrl: "https://googangheim.me/favicon.ico",
-          title: "googangheim",
-          description: "",
-        },
-        {
-          url: "https://www.226yzy.com/",
-          imgUrl: "https://226yzy.com/medias/avatar.jpg",
-          title: "星空下的YZY",
-          description: "",
-        }
-
-      ],
-
-    }
+    return {}
   },
 
   created() {
