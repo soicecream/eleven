@@ -54,7 +54,7 @@ export default {
   methods: {
     // 获取数据
     getData() {
-      let data = this.$store.state.tongue_twister_text.split("{}{}{}")
+      let data = this.$store.state.text.tongue_twister_text.split("{}{}{}")
 
       let num = Math.floor(Math.random() * data.length)
       // num = 0

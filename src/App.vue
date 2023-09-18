@@ -97,14 +97,6 @@ export default {
 
   // 在实例创建完成后被立即同步调用。  创建阶段：数据的准备
   created() {
-    this.$store.state.all_img_text = this.get_text_data('./txt/BackgroundImg.txt')
-    this.$store.state.Journal_text = this.get_text_data('./txt/Journal.txt')
-    this.$store.state.tongue_twister_text = this.get_text_data('./txt/TongueTwister.txt')
-
-    // this.$store.state.all_img_text = this.get_text_data('../../txt/BackgroundImg.txt')
-    // this.$store.state.Journal_text = this.get_text_data('../../txt/Journal.txt')
-    // this.$store.state.tongue_twister_text = this.get_text_data('../../txt/TongueTwister.txt')
-
     window.addEventListener('scroll', this.check_roll_show)
 
   },

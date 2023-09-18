@@ -45,7 +45,7 @@ export default {
 
   methods: {
     getData() {
-      let data = this.$store.state.tongue_twister_text.split("{}{}{}")
+      let data = this.$store.state.text.tongue_twister_text.split("{}{}{}")
       for(let i = 0; i < data.length; i ++)
       {
         data[i] = data[i].substring(data[i].indexOf("\n") + 1);
