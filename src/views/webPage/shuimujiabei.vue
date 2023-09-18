@@ -6,10 +6,13 @@
           @mouseover="url[i].url_body_color = '#ff5252cc'"
           @mouseout="url[i].url_body_color = '#414141FF'">
         <div>
-          <div :style="{'background': index.url_body_color }" class="top_label"> {{ index.title }}</div>
+          <div :style="{'background': index.url_body_color }" class="top_label"> {{ index.webClassify }}</div>
           <div class="content_list">
-            <span v-for="(res, j) in index.content" :key="j">
-              <a :href="res.url" target="_blank" :title="res.introduce"> {{ res.title }} </a>
+            <span v-for="(res, j) in index.websiteList" :key="j">
+              <a :href="res.url" target="_blank"
+                 :title="res.description && res.description != '' ? res.description : ''">
+                {{ res.title }}
+              </a>
             </span>
           </div>
         </div>
@@ -141,10 +144,7 @@ li {
   position: relative;
   padding: 30px;
   float: left;
-  //width: 400px;
-  width: 25%;
-  height: 250px;
-  margin: 1% 2%;
+//width: 400px; width: 25%; height: 250px; margin: 1% 2%;
   border: 4px solid;
 }
 
