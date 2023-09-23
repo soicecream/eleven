@@ -194,11 +194,7 @@ export default new Vuex.Store({
                 webClassify: "搜索", url_body_color: "#414141", websiteList: [
                     {title: "百度", url: "https://www.baidu.com/", description: "百度一下,你就知道",},
                     {title: "微博", url: "https://www.weibo.com/", description: "随时随地发现新鲜事",},
-                    {
-                        title: "知乎",
-                        url: "https://www.zhihu.com/",
-                        description: "中文互联网高质量的问答社区和创作者聚集的原创内容平台",
-                    },
+                    {title: "知乎", url: "https://www.zhihu.com/", description: "中文互联网高质量的问答社区和创作者聚集的原创内容平台",},
 
                     {title: "B站", url: "https://www.bilibili.com/", description: "哔哩哔哩 (゜-゜)つロ 干杯~",},
                     {title: "知网", url: "https://www.cnki.net/", description: "",},
@@ -254,11 +250,7 @@ export default new Vuex.Store({
                     {title: "", url: "", description: "",},
 
                     {title: "chatGPT", url: "https://chat.openai.com/chat", description: "ai回答",},
-                    {
-                        title: "chathub",
-                        url: "https://chrome.google.com/webstore/detail/chathub-all-in-one-chatbo/iaakpnchhognanibcahlpcplchdfmgma/related",
-                        description: "ai回答",
-                    },
+                    {title: "chathub", url: "https://chrome.google.com/webstore/detail/chathub-all-in-one-chatbo/iaakpnchhognanibcahlpcplchdfmgma/related", description: "ai回答",},
                     {title: "poe", url: "https://poe.com/", description: "ai回答",},
 
                     {title: "claude ", url: "https://claude.ai/ ", description: "ai",},
@@ -336,11 +328,7 @@ export default new Vuex.Store({
 
                     {title: "做题统计", url: "https://ojhunt.com/", description: "",},
                     {title: "CFTracker", url: "https://cftracker.netlify.app/contests", description: "cf的题目统计",},
-                    {
-                        title: "atc Problems",
-                        url: "https://kenkoooo.com/atcoder/#/table/",
-                        description: "abc的题目统计",
-                    },
+                    {title: "atc Problems", url: "https://kenkoooo.com/atcoder/#/table/", description: "abc的题目统计",},
 
                     {title: "", url: "", description: "",},
                     {title: "", url: "", description: "",},
@@ -394,16 +382,8 @@ export default new Vuex.Store({
             },
             {
                 webClassify: "学习", url_body_color: "#414141", websiteList: [
-                    {
-                        title: "学习通",
-                        url: "https://passport2.chaoxing.com/login?fid=&newversion=true&refer=https%3A%2F%2Fi.chaoxing.com",
-                        description: "",
-                    },
-                    {
-                        title: "懒人Excel",
-                        url: "https://www.lanrenexcel.com/",
-                        description: "学习Excel 我也不知道好还是不好",
-                    },
+                    {title: "学习通", url: "https://passport2.chaoxing.com/login?fid=&newversion=true&refer=https%3A%2F%2Fi.chaoxing.com", description: "",},
+                    {title: "懒人Excel", url: "https://www.lanrenexcel.com/", description: "学习Excel 我也不知道好还是不好",},
                     {title: "OI Wiki", url: "https://oi-wiki.org/", description: "编程知识整合站点",},
 
                     {title: "律法", url: "https://flk.npc.gov.cn/", description: "国家法律法规",},
@@ -419,12 +399,8 @@ export default new Vuex.Store({
                     {title: "W3school", url: "https://www.w3school.com.cn/", description: "Web",},
 
                     {title: "Lay-ui", url: "https://www.layuiweb.com/", description: "开源模块化前端UI框架",},
-                    {title: "QuickRef.ME", url: "https://quickref.me/", description: "",},
-                    {
-                        title: "ECHARTS",
-                        url: "https://echarts.apache.org/zh/index.html",
-                        description: "一个基于 JavaScript 的开源可视化图表库",
-                    },
+                    {title: "QuickRef", url: "https://quickref.me/", description: "",},
+                    {title: "ECHARTS", url: "https://echarts.apache.org/zh/index.html", description: "一个基于 JavaScript 的开源可视化图表库",},
 
                     {title: "", url: "", description: "",},
                     {title: "", url: "", description: "",},
@@ -439,51 +415,23 @@ export default new Vuex.Store({
                     {title: "", url: "", description: "",},
 
                     {title: "VuePress", url: "https://www.vuepress.cn/", description: "Vue 驱动的静态网站生成器",},
-                    {
-                        title: "Element-ui",
-                        url: "https://element.eleme.cn/#/zh-CN/component/installation",
-                        description: "基于 Vue2 的 UI 组件库和前端解决方案",
-                    },
-                    {
-                        title: "Element+",
-                        url: "https://element-plus.org/zh-CN/component/button.html",
-                        description: "基于 Vue3 的 UI 组件库和前端解决方案",
-                    },
+                    {title: "Element-ui", url: "https://element.eleme.cn/#/zh-CN/component/installation", description: "基于 Vue2 的 UI 组件库和前端解决方案",},
+                    {title: "Element-plus", url: "https://element-plus.org/zh-CN/component/button.html", description: "基于 Vue3 的 UI 组件库和前端解决方案",},
 
-                    {
-                        title: "华为云组件",
-                        url: "https://opentiny.design/",
-                        description: "华为云 的 UI 组件库和前端解决方案",
-                    },
-                    {
-                        title: "Ant Design",
-                        url: "https://2x.antdv.com/components/overview-cn",
-                        description: "蚂蚁金服UI组件库",
-                    },
-                    {
-                        title: "View Design",
-                        url: "https://www.iviewui.com/",
-                        description: "基于 Vue3 的 UI 组件库和前端解决方案",
-                    },
+                    {title: "华为云组件", url: "https://opentiny.design/", description: "华为云 的 UI 组件库和前端解决方案",},
+                    {title: "Ant Design", url: "https://2x.antdv.com/components/overview-cn", description: "蚂蚁金服UI组件库",},
+                    {title: "View Design", url: "https://www.iviewui.com/", description: "基于 Vue3 的 UI 组件库和前端解决方案",},
 
                     {title: "typecho", url: "http://typecho.org/", description: "",},
                     {title: "vite", url: "https://www.vitejs.net/", description: "",},
                     {title: "typescript", url: "https://www.tslang.cn/", description: "",},
 
-                    {
-                        title: "Gridea",
-                        url: "https://gridea.dev/",
-                        description: "Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。",
-                    },
+                    {title: "Gridea", url: "https://gridea.dev/", description: "Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。",},
                     {title: "zblogcn", url: "https://www.zblogcn.com/", description: "",},
                     {title: "hugo", url: "https://gohugo.io/", description: "Hugo 是最流行的开源静态站点生成器之一",},
 
                     {title: "undraw", url: "https://undraw.gitee.io/", description: "基于vue3的评论组件",},
-                    {
-                        title: "sa-token",
-                        url: "https://sa-token.cc/",
-                        description: "一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！",
-                    },
+                    {title: "sa-token", url: "https://sa-token.cc/", description: "一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！",},
                     {title: "爱课堂", url: "https://www.icourses.cn/home/", description: "",},
 
                     {title: "", url: "", description: "",},
@@ -560,11 +508,7 @@ export default new Vuex.Store({
                     {title: "图论画图", url: "https://csacademy.com/app/graph_editor/", description: "",},
 
                     {title: "wolframalpha", url: "https://www.wolframalpha.com/", description: "",},
-                    {
-                        title: "参考文献格式",
-                        url: "http://youkud.com/tool/referance/index.html",
-                        description: "参考文献格式生成器",
-                    },
+                    {title: "参考文献格式", url: "http://youkud.com/tool/referance/index.html", description: "参考文献格式生成器",},
                     {title: "", url: "", description: "",},
 
                     {title: "scratch", url: "https://makecode.microbit.org/#", description: "在线scratch",},
@@ -580,11 +524,7 @@ export default new Vuex.Store({
                     {title: "", url: "", description: "",},
 
                     {title: "aixcoder", url: "https://codesearch.aixcoder.com/#/", description: "一个ai的代码生成器",},
-                    {
-                        title: "Vega ai",
-                        url: "https://rightbrain.art//?from=ai.jb51.cc",
-                        description: "一个图片的ai生成器",
-                    },
+                    {title: "Vega ai", url: "https://rightbrain.art//?from=ai.jb51.cc", description: "一个图片的ai生成器",},
                     {title: "", url: "", description: "",},
 
                     {title: "", url: "", description: "",},
@@ -645,16 +585,8 @@ export default new Vuex.Store({
                     {title: "", url: "", description: "",},
 
                     {title: "油猴", url: "https://www.tampermonkey.net/", description: "油猴Tampermonkey",},
-                    {
-                        title: "视频会员1",
-                        url: "https://greasyfork.org/zh-CN/scripts/418804-%E8%A7%A3%E9%94%81b%E7%AB%99%E5%A4%A7%E4%BC%9A%E5%91%98%E7%95%AA%E5%89%A7-b%E7%AB%99%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E4%B8%8B%E8%BD%BD-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A-%E5%85%A8%E7%BD%91%E9%9F%B3%E4%B9%90%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD-%E6%B2%B9%E7%AE%A1-facebook%E7%AD%89%E5%9B%BD%E5%A4%96%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E4%B8%8B%E8%BD%BD-%E7%BD%91%E7%9B%98%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E7%A0%B4%E8%A7%A3%E6%97%A0%E9%99%90%E4%B8%8B%E8%BD%BD%E7%AD%89",
-                        description: "",
-                    },
-                    {
-                        title: "视频会员2",
-                        url: "https://greasyfork.org/zh-CN/scripts/370634-%E6%87%92%E4%BA%BA%E4%B8%93%E7%94%A8-%E5%85%A8%E7%BD%91vip%E8%A7%86%E9%A2%91%E5%85%8D%E8%B4%B9%E7%A0%B4%E8%A7%A3%E5%8E%BB%E5%B9%BF%E5%91%8A-%E5%85%A8%E7%BD%91%E9%9F%B3%E4%B9%90%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD-%E7%9F%A5%E4%B9%8E%E5%A2%9E%E5%BC%BA-%E7%9F%AD%E8%A7%86%E9%A2%91%E6%97%A0%E6%B0%B4%E5%8D%B0%E4%B8%8B%E8%BD%BD-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%E7%AD%89%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%B7%A5%E5%85%B7%E7%AE%B1-%E5%8A%9F%E8%83%BD%E5%8F%AF%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%85%B3-%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0-%E6%94%BE%E5%BF%83%E4%BD%BF%E7%94%A8-v5-4",
-                        description: "",
-                    },
+                    {title: "", url: "", description: "",},
+                    {title: "", url: "", description: "",},
 
                     {title: "", url: "", description: "",},
                     {title: "", url: "", description: "",},
@@ -665,11 +597,7 @@ export default new Vuex.Store({
                     {title: "矢量图", url: "https://www.iconfont.cn/", description: "阿里的矢量图图库",},
 
                     {title: "FontAwesome", url: "https://fontawesome.com/", description: "Font Awesome 图标库",},
-                    {
-                        title: "IconPark",
-                        url: "https://iconpark.oceanengine.com/official",
-                        description: "字节跳动官方图标库",
-                    },
+                    {title: "IconPark", url: "https://iconpark.oceanengine.com/official", description: "字节跳动官方图标库",},
                     {title: "Remix Icon", url: "http://www.remixicon.com/", description: "Remix Icon 图标库",},
 
                     {title: "", url: "", description: "",},
@@ -693,8 +621,8 @@ export default new Vuex.Store({
                     {title: "", url: "", description: "",},
 
                     {title: "PPT模板", url: "https://ppt.sotary.com/web/wxapp/index.html", description: "",},
-                    {title: "PDF转换", url: "https://www.pdfpai.com/", description: "",},
-                    {title: "PDF转换", url: "https://www.ilovepdf.com/zh-cn", description: "",},
+                    {title: "PDF转换1", url: "https://www.pdfpai.com/", description: "",},
+                    {title: "PDF转换2", url: "https://www.ilovepdf.com/zh-cn", description: "",},
 
                     {title: "秘塔写作猫", url: "https://xiezuocat.com/#/", description: "论文降重",},
                     {title: "调音", url: "https://vocalremover.org/ch/", description: "对声音的一些处理",},
@@ -712,11 +640,7 @@ export default new Vuex.Store({
                     {title: "", url: "", description: "",},
                     {title: "", url: "", description: "",},
 
-                    {
-                        title: "JetBrains",
-                        url: "https://crustwebsites.net/ipfs/bafybeiatyghkzrrtodzt3stm652rkrjxndg4hq2ublfdmifk7plg5k5brq/",
-                        description: "JetBrains的激活码",
-                    },
+                    {title: "JetBrains", url: "https://crustwebsites.net/ipfs/bafybeiatyghkzrrtodzt3stm652rkrjxndg4hq2ublfdmifk7plg5k5brq/", description: "JetBrains的激活码",},
                     {title: "爱激活", url: "https://www.ajihuo.com/", description: "",},
                     {title: "积微成著", url: "https://www.jiweichengzhu.com/", description: "",},
 
@@ -841,17 +765,9 @@ export default new Vuex.Store({
                     {title: "", url: "", description: "",},
                     {title: "", url: "", description: "",},
 
-                    {
-                        title: "打发时间",
-                        url: "https://theuselessweb.com/",
-                        description: "一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站",
-                    },
+                    {title: "打发时间", url: "https://theuselessweb.com/", description: "一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站",},
                     {title: "打字", url: "https://barneyzhao.gitee.io/typing-cn/#/", description: "",},
-                    {
-                        title: "字符画",
-                        url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20",
-                        description: "字母生成字符画",
-                    },
+                    {title: "字符画", url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20", description: "字母生成字符画",},
 
                     {title: "摸鱼神器", url: "https://fakeupdate.net/", description: "假装windows升级界面",},
                     {title: "小霸王游戏机", url: "https://www.yikm.net/", description: "童年的怀旧小游戏",},
@@ -861,11 +777,7 @@ export default new Vuex.Store({
                     {title: "2048", url: "https://2048game.com/", description: "",},
                     {title: "俄罗斯方块", url: "https://www.goodoldtetris.com/", description: "",},
 
-                    {
-                        title: "三阶魔方",
-                        url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html",
-                        description: "",
-                    },
+                    {title: "三阶魔方", url: "https://uploadfiles.nowcoder.com/files/xiaosha/index.html", description: "",},
                     {title: "", url: "", description: "",},
                     {title: "", url: "", description: "",},
 
@@ -878,11 +790,7 @@ export default new Vuex.Store({
                     {title: "hexo", url: "https://hexo.io/zh-cn/", description: "快速、简洁且高效的博客框架",},
 
                     {title: "Vue资源精选", url: "http://vue.awesometiny.com/", description: "前端组件库资源",},
-                    {
-                        title: "wordpress",
-                        url: "https://cn.wordpress.org/",
-                        description: "WordPress是一款能让您建立出色网站、博客或应用程序的开源软件",
-                    },
+                    {title: "wordpress", url: "https://cn.wordpress.org/", description: "WordPress是一款能让您建立出色网站、博客或应用程序的开源软件",},
                     {title: "", url: "", description: "",},
 
                     {title: "", url: "", description: "",},
@@ -897,16 +805,8 @@ export default new Vuex.Store({
                     {title: "", url: "", description: "",},
                     {title: "", url: "", description: "",},
 
-                    {
-                        title: "公众号测试",
-                        url: "https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login",
-                        description: "",
-                    },
-                    {
-                        title: "企业微信",
-                        url: "https://work.weixin.qq.com/wework_admin/loginpage_wx?redirect_uri=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe#index",
-                        description: "",
-                    },
+                    {title: "公众号测试", url: "https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login", description: "",},
+                    {title: "企业微信", url: "https://work.weixin.qq.com/wework_admin/loginpage_wx?redirect_uri=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe#index", description: "",},
                     {title: "微信官网", url: "https://weixin.qq.com/", description: "",},
 
                     {title: "微信网页版", url: "https://wx.qq.com/", description: "",},
@@ -933,8 +833,8 @@ export default new Vuex.Store({
                     {title: "", url: "", description: "",},
                     {title: "", url: "", description: "",},
 
-                    {title: "简历", url: "https://www.51386.com/", description: "简历模板",},
-                    {title: "简历", url: "https://www.gerenjianli.com/", description: "简历模板",},
+                    {title: "简历1", url: "https://www.51386.com/", description: "简历模板",},
+                    {title: "简历2", url: "https://www.gerenjianli.com/", description: "简历模板",},
                     {title: "", url: "", description: "",},
 
                     {title: "", url: "", description: "",},
