@@ -1,253 +1,600 @@
-<!DOCTYPE html><!--声明网页-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><!-- 这是字符类型 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 在手机上登陆网站时 大小自动于手机对应 -->
-    <title>水木加贝</title><!--网页名称-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水木加贝</title>
     <style>
-        div{border: 1px solid aqua;}
+        a { text-decoration: none;}
 
-        #标题{height:400px;width: 1000px;text-align: center;margin: 0% auto;}
-        #标题>span{font-size: 22px;color: red;}
-        #标题>img{height: 270px;width: 432px;}
-                
-        #正文{height: 10%;width: 1000px;text-align: center;margin: 0% auto;}
-        #正文>span{font-size: 20px;color: red;}
-       
-        #上图片{height: 180px;width: 1000px;margin: 0% auto;}
-        #上图片>div{height: 160px;width: 115px;float: left;margin-top: 10px;margin-left: 2.43%;margin-right: 2.43%;}
-        #上图片>div>img{height:100%;width: 100%;}
-       
-        #中间{height: 500px;width: 1000px;margin: 10% auto;}
-        #中间>div{height: 100px;width: 90%;text-align: center;float: left;margin-top: 20px;margin-left: 4%;margin-right: 2%;}
-        /* #中间>div{height: 160px;width: 115px;text-align: center;float: left;margin-top: 10px;margin-left: 2%;margin-right: 2%;}
-        #中间>div>img{width: 115px;height: 115px;} */
+        .title_logo { height: 50px; margin: 2em 0 2em 2em; }
+        .title_logo>span { float: left; text-align: center; line-height: 25px; margin-top: 13px; }
+        .title_logo>span>a { width: 26px; height: 24px; display: block; font-weight: bold; }
+        .title_span_to_to>a:hover { background: #52575d; }
+        .title_span_to, .title_logo>.title_span_to>a { background: #ffffff; color: #414141; }
+        .title_logo>span>a, .title_span_to>a:hover{ background: #414141; color: #ffffff; }
+        .title_logo>div>{width: 200px; height: 50px; }
+        .title_logo>div>span { font-weight: bold; color: #414141; }
 
-        a{text-decoration: none;color:black;font-size: 20px;}
-        a:hover{color:blue}
-        a:active{color:red;}
-       
-        #下图片{height: 180px;width: 1000px;margin: 0% auto;}
-        #下图片>div{height: 160px;width: 115px;float: left;margin-top: 10px;margin-left: 2.43%;margin-right: 2.43%;}
-        #下图片>div>img{height:100%;width: 100%;}
+
+        ul { list-style: none; margin-left: 5%; }
+        li { display: block; position: relative; padding: 30px; float: left; width: 400px; height: 250px; margin: 1% 2.3%; border: 4px solid; }
+        .top_label { position: absolute; top: 0; left: 0; padding: 2px 14px 2px 10px; color: #ffffff; }
+        .content_list {margin-top: 10px; flex-flow: wrap; height: 250px; overflow: auto; position: relative;}
+        .content_list::-webkit-scrollbar { display: none; }
+        .content_list > span { display: block; width: 33%; height: 30px; float: left; text-align: center; margin: 1.3% 0.1%; }
+
+        .content_list>span>a{ font-weight: bold; color: #414141FF; font-size: 20px; }
+        .content_list>span>a:hover{ color: #ff5252cc; }
     </style>
 </head>
 <body>
 
-    <!-- <div id="标题">
-        <span>我是要成为海贼王的男人！！！！！！</span>
+<div class="title_logo" >
+    <span class="title_span_to_to" > <a href="" title=""> Y </a> </span>
+    <span class="title_span_to_to"> <a href="" title=""> U </a> </span>
+    <span class="title_span_to"> <a href="" title=""> H </a> </span>
+    <span class="title_span_to_to"> <a href="" title=""> M </a> </span>
+    <span class="title_span_to_to"> <a href="" title=""> E </a> </span>
+    <span class="title_span_to_to" > <a href="" title=""> · </a> </span>
+
+    <div style="float: right; text-align: center;">
+        <span class="ShowNowDate"> </span>
         <br>
-        <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2578059283,3786974076&fm=26&gp=0.jpg">
+        <span class="ShowNowTime"> </span>
     </div>
-    <div id="正文">
-        <span>悬赏令</span>
+</div>
+
+<div class="content">
+
+
+<ul>
+<li style="border-color: #414141FF; ">
+  <div>
+    <div style="background: #414141FF; " class="top_label"> 搜索</div>
+    <div class="content_list">
+      <span><a href="https://www.baidu.com/" target="_blank" title="百度一下,你就知道">百度</a></span>
+<span><a href="https://www.weibo.com/" target="_blank" title="随时随地发现新鲜事">微博</a></span>
+<span><a href="https://www.zhihu.com/" target="_blank" title="中文互联网高质量的问答社区和创作者聚集的原创内容平台">知乎</a></span>
+<span><a href="https://www.bilibili.com/" target="_blank" title="哔哩哔哩 (゜-゜)つロ 干杯~">B站</a></span>
+<span><a href="https://www.cnki.net/" target="_blank" title="">知网</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.csdn.net/" target="_blank" title="全球知名中文IT技术交流平台">CSDN</a></span>
+<span><a href="https://www.cnblogs.com/" target="_blank" title="一个面向开发者的知识分享社区">博客云</a></span>
+<span><a href="https://juejin.cn/" target="_blank" title="代码不止,掘金不停">掘金</a></span>
+<span><a href="https://gitee.com/" target="_blank" title="">Gitee</a></span>
+<span><a href="https://github.com/" target="_blank" title="">GitHub</a></span>
+<span><a href="https://www.runoob.com/" target="_blank" title="">菜鸟助手</a></span>
+<span><a href="https://www.oschina.net/" target="_blank" title="">开源中国</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://mail.qq.com/" target="_blank" title="">QQ邮箱</a></span>
+<span><a href="https://mail.163.com/" target="_blank" title="">网易邮箱</a></span>
+<span><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" title="">谷歌邮箱</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.cnblogs.com/1024th/p/11623258.html" target="_blank" title="">LaTeX公式</a></span>
+<span><a href="https://www.latexlive.com/" target="_blank" title="">在线LaTeX</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://icpc.global/" target="_blank" title="">ICPC</a></span>
+<span><a href="https://ccpc.io/" target="_blank" title="">CCPC</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.dbbqb.com/" target="_blank" title="表情包搜索">dbbqb</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://chat.openai.com/chat" target="_blank" title="ai回答">chatGPT</a></span>
+<span><a href="https://chrome.google.com/webstore/detail/chathub-all-in-one-chatbo/iaakpnchhognanibcahlpcplchdfmgma/related" target="_blank" title="ai回答">chathub</a></span>
+<span><a href="https://poe.com/" target="_blank" title="ai回答">poe</a></span>
+<span><a href="https://claude.ai/ " target="_blank" title="ai">claude </a></span>
+<span><a href="https://yiyan.baidu.com/" target="_blank" title="ai">文心一言</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://e.coding.net/" target="_blank" title="coding">coding</a></span>
+<span><a href="https://slack.com/" target="_blank" title="slack">slack</a></span>
+<span><a href="https://eolink.com/home" target="_blank" title="apikit">Eolink Apikit</a></span>
+<span><a href="https://www.figma.com/" target="_blank" title="">figma</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.youtube.com/" target="_blank" title="">youtube</a></span>
+<span><a href="https://twitter.com/" target="_blank" title="">twitter</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.ruankao.org.cn/" target="_blank" title="软考报名">软考</a></span>
+
     </div>
-    <div id="上图片">
-        <div class="路飞"><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2570016451,2685765088&fm=26&gp=0.jpg"></div>
-        <div class="索隆"><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=657069401,3692778443&fm=26&gp=0.jpg" ></div>
-        <div class="乌索普"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201607%2F04%2F20160704125933_ciauB.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611468870&t=428b756f2bae26fc8f839e31396286ab"></div>
-        <div class="山治"><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3983094463,354969919&fm=15&gp=0.jpg"></div>
-        <div class="娜美"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201607%2F04%2F20160704125957_tyiUm.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611468919&t=a2dc05fae0dc3d95a2203e308073eac6"></div>
-        <div class="乔巴"><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2675234704,903197142&fm=26&gp=0.jpg"></div>
-    </div>  -->
+  </div>
+</li>
+</ul>
+<ul>
+<li style="border-color: #414141FF; ">
+  <div>
+    <div style="background: #414141FF; " class="top_label"> online judge</div>
+    <div class="content_list">
+      <span><a href="https://ac.nowcoder.com" target="_blank" title="">牛客</a></span>
+<span><a href="https://www.luogu.com.cn" target="_blank" title="">洛谷</a></span>
+<span><a href="https://pintia.cn/" target="_blank" title="">PTA</a></span>
+<span><a href="https://leetcode.cn/" target="_blank" title="">力扣</a></span>
+<span><a href="https://www.acwing.com/" target="_blank" title="">AcWing</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.lanqiao.cn/" target="_blank" title="">蓝桥</a></span>
+<span><a href="http://acm.hdu.edu.cn" target="_blank" title="">hdu1</a></span>
+<span><a href="http://acm.dingbacode.com" target="_blank" title="">hdu2</a></span>
+<span><a href="http://zoj.pintia.cn" target="_blank" title="">zoj</a></span>
+<span><a href="http://poj.org/" target="_blank" title="">poj</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://codeforces.com/" target="_blank" title="">Codeforces</a></span>
+<span><a href="https://www.codechef.com/" target="_blank" title="">CodeChef</a></span>
+<span><a href="https://atcoder.jp/" target="_blank" title="">AtCoder</a></span>
+<span><a href="https://vjudge.net/" target="_blank" title="">VJudge</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://ojhunt.com/" target="_blank" title="">做题统计</a></span>
+<span><a href="https://cftracker.netlify.app/contests" target="_blank" title="cf的题目统计">CFTracker</a></span>
+<span><a href="https://kenkoooo.com/atcoder/#/table/" target="_blank" title="abc的题目统计">atc Problems</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://acm.521207.xyz/" target="_blank" title="">ZIME2020</a></span>
+<span><a href="http://106.53.134.113/loginpage.php" target="_blank" title="">ZIME2021</a></span>
+<span><a href="https://2023.acm.521207.xyz" target="_blank" title="">ZIME2022</a></span>
+<span><a href="http://2023.acm.ponyjump.com/" target="_blank" title="">zime2023</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="http://ybt.ssoier.cn:8088/index.php" target="_blank" title="">信奥</a></span>
+<span><a href="http://www.usaco.org/index.php" target="_blank" title="">USACO</a></span>
+<span><a href="http://openjudge.cn/" target="_blank" title="北大的">OpenJudge</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="http://acm.zzuli.edu.cn/" target="_blank" title="">郑州轻工业</a></span>
+<span><a href="https://oj.czos.cn/" target="_blank" title="">东方博宜</a></span>
+<span><a href="https://www.51nod.com/" target="_blank" title="">51nod</a></span>
+<span><a href="https://noobdream.com/DreamJudge/Contest/index_judge/" target="_blank" title="">N诺</a></span>
+<span><a href="http://noi-test.zzstep.com/" target="_blank" title="">NOI</a></span>
+<span><a href="http://www.jsuacm.cn/" target="_blank" title="">吉首</a></span>
+<span><a href="http://www.tzcoder.cn/acmhome/welcome.do?method=index" target="_blank" title="">台州学院</a></span>
+<span><a href="https://loj.ac/" target="_blank" title="">Libre OJ</a></span>
+<span><a href="https://acm.ecnu.edu.cn/" target="_blank" title="">华东师范</a></span>
+<span><a href="https://uoj.ac/" target="_blank" title="">UOJ</a></span>
+<span><a href="https://cpc.csgrandeur.cn/" target="_blank" title="">CSG</a></span>
+<span><a href="https://xjoi.net/" target="_blank" title="">学军</a></span>
+<span><a href="https://citel.bjtu.edu.cn/acm/" target="_blank" title="">北京交通</a></span>
+<span><a href="http://120.78.128.11/index.jsp" target="_blank" title="">福建工程</a></span>
+<span><a href="https://buctcoder.com/" target="_blank" title="">北京化工</a></span>
+<span><a href="https://scut.online/" target="_blank" title="">华南理工</a></span>
+<span><a href="https://qduoj.com/" target="_blank" title="">青岛</a></span>
+<span><a href="http://acm.ocrosoft.com/" target="_blank" title="">浙江财经</a></span>
 
-    <div id="中间">
-        <div id="yong">
-            <a href=https://www.baidu.com/ target="_blank" >百度</a>  <!--在新网页打开-->
-            <a href=http://fanyi.baidu.com/ target="_blank">百度翻译</a>
-            <a href=http://fanyi.youdao.com/ target="_blank">有道词典</a>
-            <a href=https://translate.google.cn/ target="_blank">谷歌翻译</a>
-            <a href=https://fanyi.sogou.com/text target="_blank">搜狗翻译</a>
-            <a href=https://www.deepl.com/translator target="_blank">翻译</a>
-            <br>
-            <a href=https://www.bilibili.com/ target="_blank">b站</a>
-            <a href=https://www.zhihu.com/ target="_blank">知乎</a>
-            <a href=https://www.csdn.net/ target="_blank">csdn</a>
-            <a href=https://www.cnblogs.com/ target="_blank">博客云</a>
-            <a href=https://c.runoob.com/front-end/854 target="_blank">正则测试</a>
-            <a href=https://www.runoob.com/ target="_blank">菜鸟助手</a>
-            <a href=https://www.w3school.com.cn/ target="_blank">w3school</a>
-            <a href=https://www.layuiweb.com/ target="_blank">layui</a>
-            <a href=https://codepen.io/ target="_blank">在线网站</a>
-        </div>
-        
-        <br>
-        
-        <div id="changyong">
-            <a href=https://ac.nowcoder.com/acm/home/947562388 target="_blank">nowcoder</a>
-            <a href=https://www.luogu.com.cn/problem/list target="_blank">luogu</a>
-            <a href=https://codeforces.com/ target="_blank">codeforces</a>
-            <a href=https://www.codechef.com/ target="_blank">codechef</a>
-            <a href=https://pintia.cn/ target="_blank">pta</a>
-            <a href=https://leetcode-cn.com/ target="_blank">leetcode</a>
-            <br>
-            <a href=https://vjudge.net/ target="_blank">vjudge</a>
-            <a href=https://www.acwing.com/ target="_blank">acwing</a>
-            <a href=https://www.lanqiao.cn/ target="_blank">lanqiao</a>
-            <a href=https://loj.ac/ target="_blank">loj</a>
-            <a href=http://acm.hdu.edu.cn target="_blank">hdu</a> 
-            <a href=http://acm.dingbacode.com target="_blank">hdu2</a> 
-            <a href=http://zoj.pintia.cn target="_blank">zoj</a>
-            <a href=http://poj.org/ target="_blank">poj</a>
-            <a href=https://atcoder.jp/home target="_blank">atcoder</a>    
-        </div>
-        
-        <br>
-        
-        <div id="yiban">
-            <a href=https://acm.ecnu.edu.cn/ target="_blank">ecnu</a>
-            <a href=http://acm.zzuli.edu.cn/problemset.php target="_blank">zzuli</a>
-            <a href=http://www.jsuacm.cn target="_blank">jsu</a>
-            <a href=https://oj.undefined.moe/ target="_blank">hydro</a>
-            <a href=http://www.tzcoder.cn/acmhome/welcome.do?method=index target="_blank">tz</a>
-            <a href=https://uoj.ac/ target="_blank">uoj</a>
-            <a href=http://ybt.ssoier.cn:8088/index.php target="_blank">ssoier</a>
-            <a href=https://cpc.csgrandeur.cn/ target="_blank">csg</a>
-            <br>
-            <a href=https://acm.521207.xyz/problemset.php target="_blank">zime2020</a>
-            <a href=http://106.53.134.113/index.php target="_blank">zime2021</a>
-            <a href=https://cftracker.netlify.app/contests target="_blank">cftracker</a>
-            <a href=https://xjoi.net/ target="_blank">学军</a>
-            <a href=https://citel.bjtu.edu.cn/acm/ target="_blank">北京交通</a>
+    </div>
+  </div>
+</li>
+</ul>
+<ul>
+<li style="border-color: #414141FF; ">
+  <div>
+    <div style="background: #414141FF; " class="top_label"> 学习</div>
+    <div class="content_list">
+      <span><a href="http://www.chaoxing.com/" target="_blank" title="">学习通</a></span>
+<span><a href="https://www.lanrenexcel.com/" target="_blank" title="学习Excel 我也不知道好还是不好">懒人Excel</a></span>
+<span><a href="https://oi-wiki.org/" target="_blank" title="编程知识整合站点">OI Wiki</a></span>
+<span><a href="https://flk.npc.gov.cn/" target="_blank" title="国家法律法规">律法</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://visualgo.net/zh" target="_blank" title="">可视化编程</a></span>
+<span><a href="https://wangxiao.xisaiwang.com/tiku2/list-zt132.html" target="_blank" title="软考">希赛</a></span>
+<span><a href="https://www.w3school.com.cn/" target="_blank" title="Web">W3school</a></span>
+<span><a href="https://quickref.me/" target="_blank" title="">QuickRef</a></span>
+<span><a href="https://echarts.apache.org/zh/index.html" target="_blank" title="一个基于 JavaScript 的开源可视化图表库">ECHARTS</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://vue3js.cn/" target="_blank" title="">vue3</a></span>
+<span><a href="https://cn.vuejs.org/index.html" target="_blank" title="">Vue.js</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://baomidou.com/" target="_blank" title="mybatis-plus">MyBatis-P</a></span>
+<span><a href="https://mybatis-flex.com/" target="_blank" title="MyBatis-Flex">MyBatis-F</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.vuepress.cn/" target="_blank" title="Vue 驱动的静态网站生成器">VuePress</a></span>
+<span><a href="https://element.eleme.cn/#/zh-CN/component/installation" target="_blank" title="基于 Vue2 的 UI 组件库和前端解决方案">Element-ui</a></span>
+<span><a href="https://element-plus.org/zh-CN/component/button.html" target="_blank" title="基于 Vue3 的 UI 组件库和前端解决方案">Element-plus</a></span>
+<span><a href="https://opentiny.design/" target="_blank" title="华为云 的 UI 组件库和前端解决方案">华为云组件</a></span>
+<span><a href="https://2x.antdv.com/components/overview-cn" target="_blank" title="蚂蚁金服UI组件库">Ant Design</a></span>
+<span><a href="https://www.iviewui.com/" target="_blank" title="基于 Vue3 的 UI 组件库和前端解决方案">View Design</a></span>
+<span><a href="http://typecho.org/" target="_blank" title="">typecho</a></span>
+<span><a href="https://www.vitejs.net/" target="_blank" title="">vite</a></span>
+<span><a href="https://www.tslang.cn/" target="_blank" title="">typescript</a></span>
+<span><a href="https://gridea.dev/" target="_blank" title="Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。">Gridea</a></span>
+<span><a href="https://www.zblogcn.com/" target="_blank" title="">zblogcn</a></span>
+<span><a href="https://gohugo.io/" target="_blank" title="Hugo 是最流行的开源静态站点生成器之一">hugo</a></span>
+<span><a href="https://sa-token.cc/" target="_blank" title="一个轻量级 java 权限认证框架，让鉴权变得简单、优雅！">sa-token</a></span>
+<span><a href="https://www.icourses.cn/home/" target="_blank" title="">爱课堂</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="http://doc.ruoyi.vip/" target="_blank" title="快速构建web应用程序">ruoyi</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://qwerty.liumingye.cn/" target="_blank" title="被单词">qwerty</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.codemart.com/" target="_blank" title="">码市</a></span>
+<span><a href="https://www.yuanjisong.com/" target="_blank" title="">猿急送</a></span>
+<span><a href="https://www.jfh.com/" target="_blank" title="">解放号</a></span>
+<span><a href="https://www.yuanling.com/home" target="_blank" title="">圆领</a></span>
+<span><a href="http://www.waibaodashi.com/" target="_blank" title="">外包大师</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.exam100.net/" target="_blank" title="自考">自考</a></span>
+<span><a href="http://video.kaola100.com/book_list/5142" target="_blank" title="">专升本数学</a></span>
 
-            <a href=https://ojhunt.com/ target="_blank">做题统计</a>
+    </div>
+  </div>
+</li>
+</ul>
+<ul>
+<li style="border-color: #414141FF; ">
+  <div>
+    <div style="background: #414141FF; " class="top_label"> 工具</div>
+    <div class="content_list">
+      <span><a href="http://fanyi.baidu.com/" target="_blank" title="">百度翻译</a></span>
+<span><a href="http://fanyi.youdao.com/" target="_blank" title="">有道词典</a></span>
+<span><a href="https://translate.google.cn/" target="_blank" title="">谷歌翻译</a></span>
+<span><a href="https://fanyi.sogou.com/text" target="_blank" title="">搜狗翻译</a></span>
+<span><a href="https://www.deepl.com/translator" target="_blank" title="全世界最准确的翻译">DeepL</a></span>
+<span><a href="https://regexr.com/" target="_blank" title="可视化验证正则表达式">可视化正则</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://note.youdao.com/" target="_blank" title="记笔记">有道云笔记</a></span>
+<span><a href="https://docs.qq.com/desktop/" target="_blank" title="">腾讯文档</a></span>
+<span><a href="https://cp.anyknew.com/" target="_blank" title="小文件的不同电脑传输下载">拷贝兔</a></span>
+<span><a href="https://www.notion.so/" target="_blank" title="">notion</a></span>
+<span><a href="https://szfilehelper.weixin.qq.com/" target="_blank" title="">微信文件传输</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://paste.ubuntu.com/" target="_blank" title="">写代码1</a></span>
+<span><a href="https://ideone.com/" target="_blank" title="">写代码2</a></span>
+<span><a href="https://paste.centos.org/" target="_blank" title="">写代码3</a></span>
+<span><a href="https://tool.lu/diff/" target="_blank" title="">代码对比1</a></span>
+<span><a href="https://www.diffchecker.com/diff" target="_blank" title="">代码对比2</a></span>
+<span><a href="https://csacademy.com/app/diffing_tool/" target="_blank" title="">代码对比3</a></span>
+<span><a href="http://oeis.org/hints.html" target="_blank" title="">数列</a></span>
+<span><a href="https://www.desmos.com/calculator?lang=zh-CN" target="_blank" title="">函数画图</a></span>
+<span><a href="https://csacademy.com/app/graph_editor/" target="_blank" title="">图论画图</a></span>
+<span><a href="https://www.wolframalpha.com/" target="_blank" title="">wolframalpha</a></span>
+<span><a href="http://youkud.com/tool/referance/index.html" target="_blank" title="参考文献格式生成器">参考文献格式</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://makecode.microbit.org/#" target="_blank" title="在线scratch">scratch</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://pythontutor.com/" target="_blank" title="代码可视化">代码可视化</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://codesearch.aixcoder.com/#/" target="_blank" title="一个ai的代码生成器">aixcoder</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://board.xcpcio.com/" target="_blank" title="">看榜</a></span>
+<span><a href="https://www.dooccn.com/" target="_blank" title="">在线运行</a></span>
+<span><a href="https://www.wailian.work/" target="_blank" title="">图床</a></span>
+<span><a href="https://note.ms/nyco" target="_blank" title="">留言本</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.huaweicloud.com/" target="_blank" title="">华为云</a></span>
+<span><a href="https://www.aliyun.com" target="_blank" title="">阿里云</a></span>
+<span><a href="https://cloud.tencent.com/" target="_blank" title="">腾讯云</a></span>
+<span><a href="https://cloud.baidu.com/" target="_blank" title="">百度智能云</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://cn.bluehost.com/" target="_blank" title="">bluehost</a></span>
+<span><a href="https://www.lightnode.com/zh-CN/home" target="_blank" title="">lightnode</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.godaddy.com/zh-sg" target="_blank" title="">godaddy</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.xshell.com/zh/free-for-home-school/" target="_blank" title="">xshell</a></span>
+<span><a href="https://tongji.baidu.com/" target="_blank" title="">百度统计</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://c.runoob.com/front-end/854" target="_blank" title="">菜鸟正则测试</a></span>
+<span><a href="https://app.diagrams.net/" target="_blank" title="">流程图</a></span>
+<span><a href="https://cron.qqe2.com/" target="_blank" title="">cron</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.tampermonkey.net/" target="_blank" title="油猴Tampermonkey">油猴</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://pixabay.com/zh/" target="_blank" title="">图片素材</a></span>
+<span><a href="https://wallhaven.cc/" target="_blank" title="">wallhaven</a></span>
+<span><a href="https://www.iconfont.cn/" target="_blank" title="阿里的矢量图图库">矢量图</a></span>
+<span><a href="https://fontawesome.com/" target="_blank" title="Font Awesome 图标库">FontAwesome</a></span>
+<span><a href="https://iconpark.oceanengine.com/official" target="_blank" title="字节跳动官方图标库">IconPark</a></span>
+<span><a href="http://www.remixicon.com/" target="_blank" title="Remix Icon 图标库">Remix Icon</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://color.uisdc.com/pick.html" target="_blank" title="">颜色选取</a></span>
+<span><a href="https://webgradients.com/" target="_blank" title="css渐变色">WebGradients</a></span>
+<span><a href="https://coolors.co/" target="_blank" title="">coolors</a></span>
+<span><a href="https://colorhunt.co/" target="_blank" title="">colorhunt</a></span>
+<span><a href="http://zhongguose.com/" target="_blank" title="">中国色</a></span>
+<span><a href="https://www.cncolor.cn/" target="_blank" title="">中国色彩网</a></span>
+<span><a href="https://mycolor.space/" target="_blank" title="选取颜色的三色编码">mycolor</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://ppt.sotary.com/web/wxapp/index.html" target="_blank" title="">PPT模板</a></span>
+<span><a href="https://www.pdfpai.com/" target="_blank" title="">PDF转换1</a></span>
+<span><a href="https://www.ilovepdf.com/zh-cn" target="_blank" title="">PDF转换2</a></span>
+<span><a href="https://xiezuocat.com/#/" target="_blank" title="论文降重">秘塔写作猫</a></span>
+<span><a href="https://vocalremover.org/ch/" target="_blank" title="对声音的一些处理">调音</a></span>
+<span><a href="https://www.uupoop.com/#/" target="_blank" title="">在线PS</a></span>
+<span><a href="https://www.aconvert.com/cn/" target="_blank" title="多种文件格式相互转换">aconvert</a></span>
+<span><a href="https://demo.unlock-music.dev/" target="_blank" title="">音乐解锁</a></span>
+<span><a href="http://www.zuohaotu.com/svg/" target="_blank" title="在线svg制作">在线svg</a></span>
+<span><a href="https://autocut.video/" target="_blank" title="">自动剪辑</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.ajihuo.com/" target="_blank" title="">爱激活</a></span>
+<span><a href="https://www.jiweichengzhu.com/" target="_blank" title="">积微成著</a></span>
+<span><a href="https://exception.site/" target="_blank" title="">异常教程</a></span>
+<span><a href="https://33tool.com/" target="_blank" title="">蜻蜓工具</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.qijishow.com/" target="_blank" title="">奇迹秀</a></span>
+<span><a href="https://www.bt.cn/new/index.html" target="_blank" title="">宝塔</a></span>
+<span><a href="http://rutracker.in/" target="_blank" title="俄罗斯的盗版资源">Rutracker</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://xiaomark.com/tool" target="_blank" title="">工具1</a></span>
+<span><a href="https://tooltt.com/" target="_blank" title="">工具2</a></span>
+<span><a href="https://www.toolfk.com/" target="_blank" title="">工具3</a></span>
+<span><a href="https://www.toolmao.com/#term-102" target="_blank" title="">工具4</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://tinypng.com/" target="_blank" title="在线压缩图片">tinypng</a></span>
+<span><a href="https://koutu.gaoding.com/" target="_blank" title="在线AI抠图">稿定抠图</a></span>
+<span><a href="https://cli.im/" target="_blank" title="草料二维码生成器">草料</a></span>
+<span><a href="https://class.acagrid.com/pc/comment" target="_blank" title="">评语生成器</a></span>
+<span><a href="https://www.eteste.com/" target="_blank" title="">字数统计</a></span>
+<span><a href="https://rubiks-cube-solver.com/zh/" target="_blank" title="">魔方还原</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.ghxi.com/" target="_blank" title="">果核</a></span>
+<span><a href="https://msdn.itellyou.cn/" target="_blank" title="">MSDN</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://ayden.lanzouw.com/iHfh30967kud" target="_blank" title="梯子">lanzouw</a></span>
+<span><a href="https://www.lico.live/" target="_blank" title="梯子">lico</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank" title="">清华镜像站</a></span>
+<span><a href="https://mirrors.huaweicloud.com/home" target="_blank" title="">华为镜像站</a></span>
+<span><a href="https://mirrors.cloud.tencent.com/" target="_blank" title="">腾讯镜像站</a></span>
 
-            <br>
-            <a href=https://cn.vuejs.org/index.html target="_blank">vuejs</a>
-            <a href=https://element.eleme.io/#/zh-CN target="_blank">element-ui</a>
-            <a href=https://www.iviewui.com/ target="_blank">iviewui</a>
-            <a href=https://echarts.apache.org/zh/index.html target="_blank">echarts</a>
-            <a href=https://www.vuepress.cn/ target="_blank">vuepress</a>
-            <a href=https://baomidou.com/ target="_blank">mybatis-plus</a>
-            <a href=https://halo.run/ target="_blank">halo</a>
-            <a href=https://hexo.io/zh-cn/ target="_blank">hexo</a>
+    </div>
+  </div>
+</li>
+</ul>
+<ul>
+<li style="border-color: #414141FF; ">
+  <div>
+    <div style="background: #414141FF; " class="top_label"> 娱乐</div>
+    <div class="content_list">
+      <span><a href="https://www.iqiyi.com/" target="_blank" title="">爱奇艺</a></span>
+<span><a href="https://v.qq.com/" target="_blank" title="">腾讯视频</a></span>
+<span><a href="https://www.youku.com/" target="_blank" title="">优酷视频</a></span>
+<span><a href="https://www.mgtv.com/" target="_blank" title="">芒果视频</a></span>
+<span><a href="https://www.migu.cn/index.html" target="_blank" title="">咪咕视频</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.nkvod.com/" target="_blank" title="">耐看点播</a></span>
+<span><a href="https://www.btnull.org/" target="_blank" title="">片库</a></span>
+<span><a href="https://www.ihejia.com.cn/" target="_blank" title="">合家影院</a></span>
+<span><a href="https://cupfox.app/" target="_blank" title="">茶杯狐</a></span>
+<span><a href="https://subaibai.vip/" target="_blank" title="">素白白</a></span>
+<span><a href="https://www.novipnoad.net/" target="_blank" title="">no</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.douyu.com/" target="_blank" title="">斗鱼</a></span>
+<span><a href="https://www.huya.com/" target="_blank" title="">虎牙</a></span>
+<span><a href="https://www.douyin.com/?enter=guide" target="_blank" title="">抖音</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://music.163.com/" target="_blank" title="">网易云音乐</a></span>
+<span><a href="https://y.qq.com/" target="_blank" title="">qq音乐</a></span>
+<span><a href="https://www.kugou.com/" target="_blank" title="">酷狗音乐</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://theuselessweb.com/" target="_blank" title="一个可以发呆的小网站 会随机蹦出一些奇奇怪怪的网站">打发时间</a></span>
+<span><a href="https://barneyzhao.gitee.io/typing-cn/#/" target="_blank" title="">打字</a></span>
+<span><a href="http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20" target="_blank" title="字母生成字符画">字符画</a></span>
+<span><a href="https://fakeupdate.net/" target="_blank" title="假装windows升级界面">摸鱼神器</a></span>
+<span><a href="https://www.yikm.net/" target="_blank" title="童年的怀旧小游戏">小霸王游戏机</a></span>
+<span><a href="http://lab.mkblog.cn/FCGames/#/" target="_blank" title="童年的怀旧小游戏">游戏机</a></span>
+<span><a href="http://www.minesweeper.cn/" target="_blank" title="">扫雷</a></span>
+<span><a href="https://2048game.com/" target="_blank" title="">2048</a></span>
+<span><a href="https://www.goodoldtetris.com/" target="_blank" title="">俄罗斯方块</a></span>
+<span><a href="https://uploadfiles.nowcoder.com/files/xiaosha/index.html" target="_blank" title="">三阶魔方</a></span>
 
-            <a href=https://www.bt.cn/new/index.html target="_blank">宝塔</a>
+    </div>
+  </div>
+</li>
+</ul>
+<ul>
+<li style="border-color: #414141FF; ">
+  <div>
+    <div style="background: #414141FF; " class="top_label"> 灵感</div>
+    <div class="content_list">
+      <span><a href="https://noisevip.cn/" target="_blank" title="">NV资源网</a></span>
+<span><a href="https://halo.run/" target="_blank" title="一款现代化的开源博客/CMS系统">Halo</a></span>
+<span><a href="https://hexo.io/zh-cn/" target="_blank" title="快速、简洁且高效的博客框架">hexo</a></span>
+<span><a href="https://cn.wordpress.org/" target="_blank" title="WordPress是一款能让您建立出色网站、博客或应用程序的开源软件">wordpress</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://huaban.com/" target="_blank" title="">花瓣</a></span>
+<span><a href="https://www.zcool.com.cn/" target="_blank" title="">站酷</a></span>
+<span><a href="https://docs.osrc.com/" target="_blank" title="">osrc</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login" target="_blank" title="">公众号测试</a></span>
+<span><a href="https://work.weixin.qq.com/wework_admin/loginpage_wx?redirect_uri=https%3A%2F%2Fwork.weixin.qq.com%2Fwework_admin%2Fframe#index" target="_blank" title="">企业微信</a></span>
+<span><a href="https://weixin.qq.com/" target="_blank" title="">微信官网</a></span>
+<span><a href="https://wx.qq.com/" target="_blank" title="">微信网页版</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://docs.hdoi.cn/" target="_blank" title="">hoj</a></span>
+<span><a href="https://zhblue.github.io/hustoj/#/" target="_blank" title="">hustoj</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.bmrs.top/" target="_blank" title="">bmrs</a></span>
+<span><a href="https://docs.soybean.pro/" target="_blank" title="">soybean</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://www.51386.com/" target="_blank" title="简历模板">简历1</a></span>
+<span><a href="https://www.gerenjianli.com/" target="_blank" title="简历模板">简历2</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://navnav.co/" target="_blank" title="css动画布局">navnav</a></span>
+<span><a href="https://animxyz.com/" target="_blank" title="css动画布局">animxyz</a></span>
+<span><a href="https://100dayscss.com/" target="_blank" title="">100天css</a></span>
+<span><a href="https://pixijs.com/" target="_blank" title="">pixijs</a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="" target="" title=""></a></span>
+<span><a href="https://ai-bot.cn/" target="_blank" title="ai工具集">ai-bot</a></span>
+<span><a href="https://www.cursor.so/" target="_blank" title="内置ai的编辑器">cursor</a></span>
 
-        </div>
-        
-        <br>
-        
-        <div href="shadiao">
-            <a href=https://tool.lu/diff/ target="_blank">代码对比</a>
-            <a href=https://www.diffchecker.com/diff target="_blank">代码对比</a>
-            <a href=https://paste.ubuntu.com/ target="_blank">写代码</a>
-            <a href=https://ideone.com/ target="_blank">ideone</a>
-            <a href=https://paste.centos.org/ target="_blank">centos</a>
-            <a href=https://board.xcpcio.com/ target="_blank">看榜</a>
-            <a href=https://gitee.com/ target="_blank">gitee</a>
-            <a href=https://github.com/ target="_blank">github</a>
-            <a href=https://www.desmos.com/calculator?lang=zh-CN target="_blank">画函数</a>
-            <a href=http://oeis.org/hints.html target="_blank">数列</a>
-            <a href=https://www.cnblogs.com/1024th/p/11623258.html target="_blank">latex公式</a>
-            <a href=http://www.dooccn.com/ target="_blank">在线运行</a>
-            <a href=https://icpc.global/ target="_blank">icpc</a>
-            <a href=https://ccpc.io/ target="_blank">ccpc</a>
-            <a href=https://www.latexlive.com/ target="_blank">latex</a>
-            <br>
-            <a href=https://www.btnull.org/ target="_blank">片库</a>
-            <a href=https://www.nkvod.cc target="_blank">南柯</a>
-            <a href=https://www.lkvod.com/ target="_blank">南柯2</a>
-            <a href=http://www.5ying.fun/ target="_blank">555</a>
-            <a href=https://cupfox.app/ target="_blank">茶杯狐</a>
-            <a href=https://ddrk.me/tag/recommend/ target="_blank">低端</a>
-            <a href=http://zime.fanya.chaoxing.com/portal target="_blank">学习通</a>
-            <a href=https://www.zjooc.cn/ target="_blank">zjooc</a>
-            <a href=https://newvpn.zime.edu.cn/login/login.html target="_blank">vpn</a>
-            <a href=https://www.douyu.com/ target="_blank">斗鱼</a>
-            <a href=https://www.huya.com/ target="_blank">虎牙</a>
-            <a href=http://rutracker.in/ target="_blank">rutracker</a>
-            <br>
-            <a href=https://xiezuocat.com/#/ target="_blank">秘塔写作猫</a>
-            <a href=https://app.diagrams.net/ target="_blank">流程图</a>
-            <a href=https://www.wailian.work/ target="_blank">上传照片</a>
-            <a href=https://quickref.me/ target="_blank">quickref</a>
-            <a href=https://noisevip.cn/ target="_blank">nv资源网</a>
-            <a href=https://www.toolmao.com/#term-102 target="_blank">工具猫</a>
-            <a href=https://flk.npc.gov.cn/ target="_blank">律法</a>
-            <a href=https://color.uisdc.com/pick.html  target="_blank">颜色选取</a>
-            
+    </div>
+  </div>
+</li>
+</ul>
 
-        </div>
-
-        <br>
-
-        <div href="yule">
-            
-            <a href=https://note.ms/nyco target="_blank">留言本</a>
-            <a href=https://oi-wiki.org/ target="_blank">oi</a>
-            <a href=http://noi.openjudge.cn/ target="_blank">open</a>
-            <a href=http://120.78.128.11/index.jsp target="_blank">120</a>
-            <a href=http://51xinao.com/loginpage.php target="_blank">乐清</a>
-            <a href=http://www.usaco.org/index.php target="_blank">usaco</a>
-            <a href=https://www.educity.cn/tiku/zt100110011004-1.html target="_blank">软考</a>
-            <a href=https://oj.czos.cn/ target="_blank">东方</a>
-            <a href=https://www.51nod.com/Challenge/Problem.html#problemId=1959 target="_blank">51nod</a>
-            <a href=http://openjudge.cn/ target="_blank">openjudge</a>
-            <a href=http://noobdream.com/DreamJudge/Contest/index_judge/ target="_blank">n诺</a>
-            <a href=http://182.92.175.181/ target="_blank">buct</a>
-            <a href=http://oj.fjaxyz.com:3389/ target="_blank">metocode</a>
-            <a href=http://noi-test.zzstep.com/ target="_blank">noi</a>
-            <a href=https://www.zybuluo.com/mdeditor#2272516 target="_blank">zybuluo</a>
-            <br>
-            <a href=http://lab.mkblog.cn/dinosaur/  target="_blank">恐龙快跑</a>
-            <a href=http://lab.mkblog.cn/FCGames/#/ target="_blank">游戏机</a>
-            <a href=https://theuselessweb.com/ target="_blank">发呆</a>
-            <a href=https://suulnnka.github.io/BullshitGenerator/index.html?%E4%B8%BB%E9%A2%98=%E5%AD%A6%E7%94%9F%E4%BC%9A%E9%80%80%E4%BC%9A&%E9%9A%8F%E6%9C%BA%E7%A7%8D%E5%AD%90=2140543336 target="_blank">文章生成</a>
-            <a href=https://ppt.sotary.com/web/wxapp/index.html target="_blank">ppt模板</a>
-            <a href=https://www.lanrenexcel.com/ target="_blank">excel</a>
-            <a href=https://pixabay.com/zh/images/search/?order=ec&pagi=2 target="_blank">素材</a>
-            <a href=https://vocalremover.org/ch/ target="_blank">调音</a>
-            <a href=https://barneyzhao.gitee.io/typing-cn/#/ target="_blank">打字</a>
-            <a href=https://wallhaven.cc/ target="_blank">壁纸</a>
-            <a href=https://xiaomark.com/tool target="_blank">工具1</a>
-            <a href=https://tooltt.com/ target="_blank">工具2</a>
-            <a href=https://www.toolfk.com/ target="_blank">工具3</a>
-            <a href=https://ujuji.com/ target="_blank">工具5</a>
-            <br>
-            <a href=https://www.pdfpai.com/ target="_blank">pdf</a>
-            <a href=https://visualgo.net/zh target="_blank">yami</a>
-            <a href=https://aidn.jp/mikutap/ target="_blank">music</a>
-            <a href=https://www.cxyxiaowu.com/suanfa-2/manhuasuanfa target="_blank">无聊看</a>
-            <a href=https://mijisou.com/ target="_blank">无</a>
-            <br>
-            <a href=http://patorjk.com/software/taag/#p=display&f=Graffiti&t=welcome%20to%202048%20 target="_blank">字符画</a>
-            <a href=https://www.ghxi.com/ target="_blank">果核</a>
-            <a href=https://msdn.itellyou.cn/ target="_blank">msdn</a>
-            <a href=https://www.qijishow.com/ target="_blank">奇秀</a>
-
-            <a href=https://arr003.network/download/ target="_blank">梯子</a>
-            <a href=https://sorry.xuty.tk/wangjingze/ target="_blank">表情包制作</a>
-
-            <a href=http://vue.awesometiny.com/ target="_blank">vue组件</a>
-
-           
-
-            
-        </div>
-
-    </div>   
-
-    <!-- <div id="下图片">
-        <div class="梅利">
-            <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2757090239,2539148094&fm=26&gp=0.jpg">
-        </div>
-        <div class="罗宾">
-            <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=539124320,3889005374&fm=26&gp=0.jpg">
-        </div>
-        <div class="布鲁克">
-            <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=427465492,2097797883&fm=26&gp=0.jpg">
-        </div>
-        <div class="弗兰奇">
-            <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1834245530,2647713001&fm=26&gp=0.jpg">
-        </div>
-        <div class="甚平">
-            <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1064235574,2087839200&fm=26&gp=0.jpg">
-        </div>
-        <div class="桑尼">
-            <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201506%2F06%2F20150606154324_4fM8v.thumb.700_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1650160269&t=240c6172e7c5a8daf2667bcb3ed003b5">
-        </div>
-    </div> -->
-
+</div>
 </body>
+
+<script>
+<!--  现在的时间显示  -->
+let weeks = ["天", "一", "二", "三", "四", "五", "六"];
+function GetDate() {
+  let data = new Date();
+  let year = data.getFullYear();
+  let month = data.getMonth() + 1;
+  let day = data.getDate();
+
+  let week = data.getDay();
+
+  return year + "年" + month + "月" + day + "日" + " \t " + "星期" + weeks[week];
+}
+function GetTime() {
+  let data = new Date();
+
+  let hour = data.getHours(); hour = hour < 10 ? '0' + hour : hour;
+  let minute = data.getMinutes(); minute = minute < 10 ? '0' + minute : minute;
+  let seconds = data.getSeconds(); seconds = seconds < 10 ? '0' + seconds : seconds;
+
+  return hour + "时" + minute + "分"  + seconds + "秒";
+}
+setInterval(function (){
+  document.querySelector('.ShowNowTime').innerHTML = GetTime();
+  document.querySelector('.ShowNowDate').innerHTML = GetDate();
+}, 100)
+</script>
+
 </html>

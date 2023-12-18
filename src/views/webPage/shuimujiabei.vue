@@ -45,8 +45,6 @@ export default {
 
   data() {
     return {
-      all_url: [],
-
       url: [],
 
       lastKeypressTime: 0,
@@ -61,8 +59,7 @@ export default {
   },
 
   mounted() {
-    this.all_url = Object.assign(this.$store.state.shuimujiabei_url, [])
-    this.url = Object.assign(this.all_url, [])
+    this.url = Object.assign([], this.$store.getters.shuimujiabeiUrl)
 
     window.addEventListener('keydown', this.handleKeyDown)
   },
@@ -80,33 +77,28 @@ export default {
     },
 
     select_website() {
-      const message = this.dialog.message;
+      let message = this.dialog.message.toLowerCase();
 
+      this.url = Object.assign([], this.$store.getters.shuimujiabeiUrl)
       if (!message) {
-        this.url = JSON.parse(JSON.stringify(this.all_url));
         this.dialog.show = false
-        return;
+        return
       }
 
-      const filteredData = this.all_url.map(item => {
-        const filteredWebsites = (item.content || []).filter(
-            website =>
-                (website.title && website.title.toLowerCase().includes(message.toLowerCase())) ||
-                (website.url && website.url.toLowerCase().includes(message.toLowerCase())) ||
-                (website.introduce && website.introduce.toLowerCase().includes(message.toLowerCase()))
-        );
-
-        if (filteredWebsites.length > 0) {
-          return {
-            ...item,
-            content: filteredWebsites
-          };
+      const filteredData = this.url.map(item => {
+        const filteredWebsites = item.websiteList.filter(
+            (website) =>
+                website.title.includes(message) ||
+                website.url.includes(message) ||
+                (website.description && website.description.includes(message))
+        )
+        return {
+          ...item,
+          websiteList: filteredWebsites,
         }
+      }).filter(item => item.websiteList.length > 0)
 
-        return null;
-      }).filter(item => item !== null);
-
-      this.url = JSON.parse(JSON.stringify(filteredData));
+      this.url = JSON.parse(JSON.stringify(filteredData))
 
       this.dialog.message = ''
       this.dialog.show = false
@@ -144,8 +136,7 @@ li {
   position: relative;
   padding: 30px;
   float: left;
-//width: 400px; width: 25%; height: 250px; margin: 1% 2%;
-  border: 4px solid;
+//width: 400px; width: 25%; height: 250px; margin: 1% 2%; border: 4px solid;
 }
 
 .top_label {
