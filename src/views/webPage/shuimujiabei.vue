@@ -22,7 +22,7 @@
             </div>
 
             <!--            </div>-->
-            <div class="content-list" style="min-width: 350px; height: 300px;">
+            <div class="content-list" style="min-width: 350px; height: 280px;">
               <span v-for="(res, j) in index.websiteList" :key="j"
                     style="width: 30%; max-width: 100%; min-width: 100px;">
                 <a :href="res.url" target="_blank"
