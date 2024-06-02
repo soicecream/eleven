@@ -1,41 +1,23 @@
 <template>
   <div>
-    <el-row :gutter="10" style="margin-left: 10px; margin-right: 10px;">
-      <el-col v-for="(index, i) in url" :key="i"
-              :xs="24" :sm="24" :md="12" :lg="12" :xl="8"
-              style="margin-bottom: 10px;">
-<!--            @mouseover="update_color(index, true)"-->
-<!--            @mouseout="update_color(index,false)"-->
-        <div
-            style="display: inline-block; width: 100%; height: 350px;"
-        >
-          <el-card :style="{'border': `5px solid ${index.url_body_color}`, height: '350px',}">
-            <!--            <div style="width: 100%;">-->
-<!--            <div :style="{ background: index.url_body_color,-->
-<!--                    display: 'flex', alignItems: 'center', padding: '4px 14px'}">-->
-<!--                <span style="font-weight: bold; font-size: 20px; color: #ffffff;">-->
-<!--                  {{ index.webClassify }}-->
-<!--                </span>-->
-<!--            </div>-->
-            <div slot="header" style="font-weight: bold; font-size: 20px; color: #414141FF;">
-              {{ index.webClassify}}
-            </div>
-
-            <!--            </div>-->
-            <div class="content-list" style="min-width: 350px; height: 300px;">
-              <span v-for="(res, j) in index.websiteList" :key="j"
-                    style="width: 30%; max-width: 100%; min-width: 100px;">
-                <a :href="res.url" target="_blank"
-                   :title="res.description && res.description !== '' ? res.description : ''">
-                  {{ res.title }}
-                </a>
-              </span>
-            </div>
-          </el-card>
+    <ul>
+      <li v-for="(index, i) in url" :key="i"
+          :style="{'border-color': index.url_body_color, }"
+          @mouseover="url[i].url_body_color = '#ff5252cc'"
+          @mouseout="url[i].url_body_color = '#414141FF'">
+        <div>
+          <div :style="{'background': index.url_body_color }" class="top_label"> {{ index.webClassify }}</div>
+          <div class="content_list">
+            <span v-for="(res, j) in index.websiteList" :key="j">
+              <a :href="res.url" target="_blank"
+                 :title="res.description && res.description !== '' ? res.description : ''">
+                {{ res.title }}
+              </a>
+            </span>
+          </div>
         </div>
-
-      </el-col>
-    </el-row>
+      </li>
+    </ul>
 
     <el-dialog :visible.sync="dialog.show" title="搜索" width="30%">
       <el-form label-width="50px">
@@ -57,8 +39,6 @@
 </template>
 
 <script>
-
-import {left} from "core-js/internals/array-reduce";
 
 export default {
   name: "shuimujiabei",
@@ -85,7 +65,6 @@ export default {
   },
 
   methods: {
-    left,
     handleKeyDown(event) {
       if (!this.dialog.show && event.key === 'Enter' && !event.repeat) {
         const currentTime = new Date().getTime()
@@ -123,14 +102,7 @@ export default {
 
       this.dialog.message = ''
       this.dialog.show = false
-    },
-
-    update_color(item, flag) {
-      item.url_body_color = '#414141FF'
-      if (flag) {
-        item.url_body_color = '#ff5252cc'
-      }
-    },
+    }
 
   },
 
@@ -141,12 +113,7 @@ export default {
 }
 </script>
 
-
 <style scoped>
-/deep/ .el-card__body {
-  padding: 0;
-}
-
 
 a {
   text-decoration: none;
@@ -159,18 +126,42 @@ a:hover {
   color: #ff5252cc;
 }
 
-.content-list {
+ul {
+  list-style: none;
+  margin-left: 1%;
+}
+
+li {
+  display: block;
+  position: relative;
+  padding: 30px;
+  float: left;
+  width: 25%;
+  height: 250px;
+  margin: 1% 2%;
+  border: 4px solid;
+}
+
+.top_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2px 14px 2px 10px;
+  color: #ffffff;
+}
+
+.content_list {
   margin-top: 10px;
   height: 250px;
   overflow: auto;
   position: relative;
 }
 
-.content-list::-webkit-scrollbar {
+.content_list::-webkit-scrollbar {
   display: none;
 }
 
-.content-list > span {
+.content_list > span {
   display: block;
   width: 33%;
   height: 30px;
