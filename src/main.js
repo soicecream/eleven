@@ -14,6 +14,11 @@ import form from "element-ui/packages/form";
 
 Vue.use(ElementUI);
 
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+
+Vue.use(mavonEditor)
+
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
