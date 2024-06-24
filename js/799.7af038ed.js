@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkshiyi"]=self["webpackChunkshiyi"]||[]).push([[799],{1799:function(t,e,n){n.r(e),n.d(e,{default:function(){return c}});var u=function(){var t=this,e=t._self._c;t._self._setupProxy;return e("mavon-editor",{staticStyle:{width:"90%",margin:"auto"}})},r=[],s={__name:"markdown",setup(t){return{__sfc:!0}}},i=s,a=n(1001),f=(0,a.Z)(i,u,r,!1,null,"4caeff39",null),c=f.exports}}]);
+//# sourceMappingURL=799.7af038ed.js.map
