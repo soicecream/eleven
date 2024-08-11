@@ -3,13 +3,15 @@
     <el-row :gutter="10" style="margin-left: 10px; margin-right: 10px;">
       <el-col v-for="(index, i) in url" :key="i"
               :xs="24" :sm="24" :md="12" :lg="12" :xl="8"
-              @mouseover="update_color(index, true)"
-              @mouseout="update_color(index,false)"
+
               style="margin-bottom: 10px;">
-        <div style="display: inline-block; width: 100%; height: 350px;">
+        <div style="display: inline-block; width: 100%; height: 350px;"
+             @mouseover="update_color(index, true)"
+             @mouseout="update_color(index,false)">
           <el-card :style="{'border': `5px solid ${index.url_body_color}`, height: '350px',}">
-            <div :style="{ background: index.url_body_color,
-                    display: 'flex', alignItems: 'center', padding: '4px 14px'}" class="title_news_width">
+            <div
+                :style="{ background: index.url_body_color, display: 'flex', alignItems: 'center', padding: '4px 14px'}"
+                class="title_news_width">
                 <span style="font-weight: bold; font-size: 20px; color: #ffffff;">
                   {{ index.webClassify }}
                 </span>
