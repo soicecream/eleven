@@ -3,25 +3,21 @@
     <el-row :gutter="10" style="margin-left: 10px; margin-right: 10px;">
       <el-col v-for="(index, i) in url" :key="i"
               :xs="24" :sm="24" :md="12" :lg="12" :xl="8"
+              @mouseover="update_color(index, true)"
+              @mouseout="update_color(index,false)"
               style="margin-bottom: 10px;">
-<!--            @mouseover="update_color(index, true)"-->
-<!--            @mouseout="update_color(index,false)"-->
-        <div
-            style="display: inline-block; width: 100%; height: 350px;"
-        >
+        <div style="display: inline-block; width: 100%; height: 350px;">
           <el-card :style="{'border': `5px solid ${index.url_body_color}`, height: '350px',}">
-            <!--            <div style="width: 100%;">-->
-<!--            <div :style="{ background: index.url_body_color,-->
-<!--                    display: 'flex', alignItems: 'center', padding: '4px 14px'}">-->
-<!--                <span style="font-weight: bold; font-size: 20px; color: #ffffff;">-->
-<!--                  {{ index.webClassify }}-->
-<!--                </span>-->
-<!--            </div>-->
-            <div slot="header" style="font-weight: bold; font-size: 20px; color: #414141FF;">
-              {{ index.webClassify}}
+            <div :style="{ background: index.url_body_color,
+                    display: 'flex', alignItems: 'center', padding: '4px 14px'}" class="title_news_width">
+                <span style="font-weight: bold; font-size: 20px; color: #ffffff;">
+                  {{ index.webClassify }}
+                </span>
             </div>
-
+            <!--            <div slot="header" style="font-weight: bold; font-size: 20px; color: #414141FF;" class="title_news_width">-->
+            <!--              {{ index.webClassify}}-->
             <!--            </div>-->
+
             <div class="content-list" style="min-width: 350px; height: 280px;">
               <span v-for="(res, j) in index.websiteList" :key="j"
                     style="width: 30%; max-width: 100%; min-width: 100px;">
@@ -179,5 +175,8 @@ a:hover {
   margin: 1.3% 0.1%;
 }
 
+.title_news_width {
+  width: fit-content;
+}
 
 </style>
