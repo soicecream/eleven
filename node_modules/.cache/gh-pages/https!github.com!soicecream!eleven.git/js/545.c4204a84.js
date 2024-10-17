@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkshiyi"]=self["webpackChunkshiyi"]||[]).push([[545],{9545:function(n,e,t){t.r(e),t.d(e,{default:function(){return l}});var u=function(){var n=this;n._self._c;return n._m(0)},i=[function(){var n=this,e=n._self._c;return e("div",[e("h1",[n._v("nononono")])])}],r={name:"text"},s=r,f=t(1001),c=(0,f.Z)(s,u,i,!1,null,"2fe0dbf7",null),l=c.exports}}]);
+//# sourceMappingURL=545.c4204a84.js.map
