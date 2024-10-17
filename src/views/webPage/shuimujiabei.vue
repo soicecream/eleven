@@ -3,7 +3,6 @@
     <el-row :gutter="10" style="margin-left: 10px; margin-right: 10px;">
       <el-col v-for="(index, i) in url" :key="i"
               :xs="24" :sm="24" :md="12" :lg="12" :xl="8"
-
               style="margin-bottom: 10px;">
         <div style="display: inline-block; width: 100%; height: 350px;"
              @mouseover="update_color(index, true)"
